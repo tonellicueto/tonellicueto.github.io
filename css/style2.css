@@ -1,0 +1,118 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html body{
+background-color : #FFFFFF;
+}
+body {
+  margin-top: 35px;
+  padding-top: 2rem;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.jumbotron {
+    margin-bottom: 50px;
+    background-image: url(../imgs/background.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+footer {
+    color: white;
+    background-color:#ee2523;
+}
+
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0.05px;
+  width: auto;
+}
+
+.navbar-default {
+  background-color:teal;
+  color: blue;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #ee2523;
+}
+.navbar-custom2 {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+
+/*Maybe the important can be quit in the future, for now, this works*/
+.nav-pills>li>a{
+     color: #ee2523!important;
+}
+
+.nav-pills>li>a.active,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background-color: #ee2523!important;
+    color: white!important;
+    font-style:normal;font-variant:normal;
+}
+
+
+
+.navbar-nav > .active > a{color: black!important; background-color: #FFFFFF;}
+.navbar-nav > li > a:hover{color: black!important; background-color: #FFFFFF;font-style:normal;font-variant:normal;}
+.navbar-nav > li > a{color: #FFFFFF!important; font-size: 1.3em;}
+
+
+
+.navbar-nav > li > .dropdown-menu {background-color:  #00B7EB;}
+
+.navbar-nav > li > .dropdown-menu a{color: #FFFFFF;}
+
+.navbar-nav > li > .dropdown-menu a:hover{background-color: #00B7EB;}
+
+.btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
+	background-color: #ee2523;
+	border-color : white;
+	color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
+    background-color: #FFFFFF;
+		border-color: #ee2523;
+		color: black;
+}
+
+
+span a, span a:active, span a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: medium;
+}
+
+ a { color: inherit; }
+
+ a:active, a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: inherit;
+}
+
+p{
+  text-align:justify;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="./imgs/logo.png"/>
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Josu&eacute; Tonelli-Cueto's Research</title>
+    <meta name="description" content="Research interests and list of publications of Josué Tonelli-Cueto" />
+    <!--  Bootstrap core CSS  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!--  Custom styles for this template  -->
+    <link href="css/style2.css" rel="stylesheet"/>
+    <link href="css/style_cv.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body data-spy="scroll" data-target="#navbarCV" data-offset="105">
+<div class="fixed-top" data-toggle="affix">
+   <nav class="navbar navbar-toggleable-md navbar-inverse navbar-custom" id="general">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="imgs/logo.png"/></a>
+
+      <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+	  <li class="nav-item active">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+
+	  <li class="nav-item">
+            <a class="nav-link" href="non-research.html">Non-Research</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+
+	  <li class="nav-item">
+            <a class="nav-link" href="multimedia.html">Multimedia</a>
+          </li>
+
+	<li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav r-auto">
+	<li class="nav-item active">
+            <a class="nav-link" href="research.html">en</a>
+          </li>
+	<li class="nav-item">
+            <a class="nav-link" href="research_es.html">es</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+   <nav id="navbarCV" class="navbar-toggleable-md navbar-inverse navbar-custom2">
+        <ul class="nav nav-pills">
+	         <li class="nav-item"><a class="nav-link active" href="#" style="background-color: #ee2523!important;color: white!important;"><i class="fas fa-square-root-alt"></i></a></li>
+	         <li class="nav-item"><a class="nav-link" href="#areas">Areas of interest</a></li>
+           <!--<li class="nav-item"><a class="nav-link" href="#topics">Topics of interest</a></li>-->
+           <li class="nav-item"><a class="nav-link" href="#papers">Papers and preprints</a></li>
+           <!--<li class="nav-item"><a class="nav-link" href="#other">Other</a></li>-->
+        </ul>
+    </nav>
+</div>
+
+
+    <!--  Main jumbotron for a primary marketing message or call to action  -->
+
+<div class="jumbotron">
+      <div class="container">
+        <center>
+        <h2 class="display-4">Research</h2>of<h2 class="display-4">Josu&eacute; Tonelli-Cueto</h2>
+        </center>
+     </div>
+</div>
+
+
+<div class="container">
+<hr>
+<div id="areas">
+  <h2 class="display-4">Areas of interest</h2>
+  <p>
+    Although I have interests in other areas of mathematics, my main areas of interest on which my work has focused are numerical algorithms and condition-based complexity, computational algebraic geometry, and random geometry.
+  </p>
+  <h3>Numerical algorithms and condition-based complexity</h3>
+  <p>
+    Numerical algorithms are algorithms and as such discrete in nature. They are specified by a finite <em>program</em> and they perform a computation composed by a discrete sequence of logical/arithmetic operations. They differ from classical algorithms because they deal with <em>continuous problems</em> where the input (and output) are described partially by sequences of real (and complex) numbers. With these, numerical algorithms can only work with approximations and not the real number themselves. In other words, numerical algorithms are doomed to run on inexact inputs, must round up the numbers along the way and can only produce approximate answers to the continuous problem (when this answer includes real numbers). Despite all of this, numerical algorithms manage to solve problems both in theory and in practice. Which makes numerical algorithms the oxymoron by which the discrete explores the continuous.
+  </p>
+  <p>
+    Analyzing the complexity of numerical algorithms is a challenge. The familiar worst-case complexity is hopeless for numerical algorithms. No matter how small the errors allowed in the approximations, there will always be inputs for which these errors make the algorithm produce a completely incorrect answer or loop forever. There are two common ways of solving this issue: worst-case input-restricted complexity and condition-based complexity.
+  </p>
+  <p>
+    In <em>worst-case input-restricted complexity</em>, one restricts the inputs that one allows for the numerical algorithm. This restriction is done by limiting the bit-size of the rational approximations to the real numbers that are allowed in the input and by restricting to <em>well-posed</em> inputs, which are inputs for which &ldquo;reasonably&rdquo; small errors do not affect the answer to the problem dramatically. Although many times successful, this complexity analysis tends to give bounds that are far away from the behavior of the algorithm observed in practice, and it fails to explain the phenomenon by which not all inputs take the same time.
+  </p>
+  <p>
+    In <em>condition-based complexity</em>, one performs a parameterized complexity analysis in terms of property of the input called <em>condition number</em>. The condition number is a quantitative measure of &ldquo;numerical sensitivity&rdquo; of the input for the given continuous problems and tell us how much the output of the problem varies with respect to how much the input varies. Condition numbers may vary depending on how we measure variations (e.g., maximum vs. Euclidean norm) and on the nature of the variations we consider (e.g., worst-case vs. average). However, they are a geometric property of the input and the continuous problem independent of the analyzed algorithm. Further, condition-based complexity analysis can explain the behavior of the numerical algorithms in practice and why some inputs take less time than others.
+  </p>
+  <p>
+    Further, condition-based complexity allows us to understand how much precision does a numerical algorithm need to guarantee a correct output and how does this algorithm behave probabilistically, when a sufficiently reasonable probability distribution is assumed on the input. In the first case, the precision needed is usually controlled by the logarithm of the condition number. In the second case, the study of the distribution of the condition number of the problem on a random input allows one to get complexity estimates with high probability (weak complexity) and on expectation (average complexity).
+  </p>
+  <p>
+    My interest focus on the development and analysis of numerical algorithms for a variety of problems (mainly in algebraic geometry) inside the framework of condition-based complexity. In this, I have a special focus on how to develop ana analyze numerical algorithms based on adaptive subdivisions methods and on improving existing complexity analyses by exploring different frameworks such as more realistic measures of the errors and more general distributions.
+  </p>
+  <h3>Computational algebraic geometry</h3>
+  <p>
+    Algebraic geometry deals broadly with objects that can be defined using polynomials and their properties. With the advent of computers, the possibility of turning certain constructive, but humanly impracticable, methods into working algorithms became real. This possibility was also motivated by the fact that polynomials appear in many practical applications (robotic arms, chemical networks, dynamical systems, etc.), which made that the possibility also became a necessity. This algorithmic possibility is the focus of computational algebraic geometry whose goal is to develop and analyze algorithms that solve problems in algebraic geometry.
+  </p>
+  <p>
+    Among the possible computational challenges, my focus lies in the search for zeros of polynomial equations and the computation of topological invariants of semialgebraic sets, which are sets described by real polynomials, inequalities, and their combination. In the first one, I am interested in understanding better theoretically the practitioners' tricks from a complexity viewpoint in the complex case and the subdivision and grid methods in the real case. In the second one, I try to develop an algorithm that computes the homology of semialgebraic sets in average singly exponential time in opposition to the state of the art algorithms that are either doubly exponential in the worst case or singly exponential with high probability. My long term project is to use computational algebraic geometry to effectively attack the first part of Hilbert's 16th problem in high degrees.
+  </p>
+  <h3>Random geometry</h3>
+  <p>
+    Given a random geometric structure, what can we say about the distributions of its properties? One might wonder about the topological properties of the object. For example, given a random polynomial system, what is the distribution of its number of zeros? Or given a random underdetermined polynomial system, what is the distribution of the Betti numbers of its zero sets? And one might also consider the geometric properties of the object. For example, given a random polynomial system, what is the minimum separation between two or its zeros? Or given a random underdetermined polynomial system, what is the distribution of the reach of its zero sets?
+  </p>
+  <p>
+    The centrality of this question can be appreciated in several aspects. First, in applications, it may help to explain why certain phenomena are more common than others. Second, in constructive algorithms, it may help to explain why a certain method fails to produce examples of a certain sort or why it will successfully produce examples of some desired sort. Third, in real algebraic geometry, random geometry is the only way to understand what happens &ldquo;in general&rdquo; since, in contrast to the complex case, there is no generic behavior in the real world.
+  </p>
+  <p>
+    My interests in random geometry focus on the distribution of topological invariants and, of course, condition numbers of random polynomial systems. A particular future goal is to generalize the current methods in real random algebraic geometry from Gaussian distributions to more general distributions, making current probabilistic estimates more robust.
+  </p>
+</div>
+<hr>
+<div id="papers">
+  <h2 class="display-4">Papers and preprints</h2>
+  <p style="margin:0;">The following shows my papers and preprint in the last few years. For a complete list, see <a href="cv.html#publications">the list on my CV</a> or <a href="arxiv.html">my list of arXiv preprints</a>.</p>
+
+  <br><div class="row"><div class="col-md-12">
+  <h3>Preprints <a class="btn btn-arxiv" href="arxiv.html" role="button"><i class="ai ai-arxiv-square"></i> arXiv preprints' list</a></h3>
+  </div></div>
+
+  <br><div class="cv">
+  <div class="year"><h4>2019</h4></div><div class="paper"><h4>&emsp;Computing the Homology of Semialgebraic Sets. II: General Formulas<a class="btn btn-arxiv" href="https://arxiv.org/abs/1903.10710" role="button">arXiv:1903.10710</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">(Together with <a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/prof_dr_peter_buergisser/">Peter B&uuml;rgisser</a> and <a href="https://www6.cityu.edu.hk/ma/people/profile/cuckerf.htm">Felipe Cucker</a>)</div>
+  </div>
+
+  <br><div class="cv">
+  <div class="year"></div><div class="paper"><h4>&emsp;Plantinga-Vegter algorithm takes average polynomial time<a class="btn btn-arxiv" href="https://arxiv.org/abs/1901.09234"  role="button">arXiv:1901.09234</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">(Together with <a href="https://www6.cityu.edu.hk/ma/people/profile/cuckerf.htm">Felipe Cucker</a> and <a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/dr_alperen_erguer/">Alperen A. Erg&uuml;r</a>)</div>
+   <div class="pretalktitle"></div><div class="collaborator">Accepted at ISSAC2019</div>
+  </div>
+
+  <br><div class="cv">
+  <div class="year"><h4>2018</h4></div><div class="paper"><h4>&emsp;On the Number of Real Zeros of Random Fewnomials
+  <a class="btn btn-arxiv" href="https://arxiv.org/abs/1811.09425"  role="button">arXiv:1811.09425</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">(Together with <a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/prof_dr_peter_buergisser/">Peter B&uuml;rgisser</a> and <a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/dr_alperen_erguer/">Alperen A. Erg&uuml;r</a>)</div>
+  </div>
+
+  <br><div class="row"><div class="col-md-12">
+  <h3>Papers</h3>
+  </div></div>
+
+  <br><div class="cv">
+  <div class="year"><h4>2019</h4></div><div class="paper"><h4>&emsp;Computing the Homology of Semialgebraic Sets I: Lax Formulas<a class="btn btn-arxiv" href="https://arxiv.org/abs/1807.06435"  role="button">arXiv:1807.06435</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">P. Bürgisser, F. Cucker, J. Tonelli-Cueto; Computing the Homology of Semialgebraic Sets. I: Lax Formulas, <i>Foundations of Computational Mathematics</i>, May 2019. <span><a href="https://doi.org/10.1007/s10208-019-09418-y">DOI 10.1007/s10208-019-09418-y</a></span></div>
+  </div>
+</div>
+<br>
+</div>
+
+<footer>
+<hr>
+    <p style="text-align:left;">&emsp;&emsp;&copy;Josu&eacute; Tonelli-Cueto
+        <span id="finalsentence" style="float:right;"> Code of the webpage created through the art of copying, pasting, editing and crossing fingers&emsp;&emsp;</span></p>
+<hr style="margin: 0;">
+</footer> <!--  /container  -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript"></script>
+    <!-- For math expression-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+        }
+       });
+    </script>
+     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </body>
+</html>

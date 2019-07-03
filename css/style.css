@@ -1,0 +1,122 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html body{
+background-color : #FFFFFF;
+}
+body {
+  margin-top: 35px;
+  padding-top: 2rem;
+}
+
+.jumbotron {
+    margin-bottom: 50px;
+    background-image: url(../imgs/background.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+footer {
+    color: white;
+    background-color:#ee2523;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0.05px;
+  width: auto;
+}
+
+.navbar-default {
+  background-color:teal;
+  color: blue;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #ee2523;
+}
+
+/*Maybe the important can be quit in the future, for now, this works*/
+.navbar-nav > .active > a{color: black!important; background-color: #FFFFFF;}
+.navbar-nav > li > a:hover{color: black!important; background-color: #FFFFFF;font-style:normal;font-variant:normal;}
+.navbar-nav > li > a{color: #FFFFFF!important; font-size: 1.3em;}
+
+
+
+.navbar-nav > li > .dropdown-menu {background-color:  #00B7EB;}
+
+.navbar-nav > li > .dropdown-menu a{color: #FFFFFF;}
+
+.navbar-nav > li > .dropdown-menu a:hover{background-color: #00B7EB;}
+
+.btn-secondary, .btn-secondary:active{
+	background-color: #ee2523;
+	border-color : white;
+	color: white;
+  width:30%;font-size:inherit;
+}
+
+.btn-secondary:hover, .btn-secondary:focus{
+    background-color: #FFFFFF;
+		border-color: #ee2523;
+		color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
+.btn-arxiv, .btn-arxiv:active{
+	background-color: #00ff00;
+	border-color : #F3BC1B;
+	color: #F3BC1B;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width:30%;font-size:inherit;
+}
+
+.btn-arxiv:hover, .btn-arxiv:focus{
+    background-color: #F3BC1B;
+		border-color: white;
+		color: #00ff00;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
+.btn-pikasle, .btn-pikasle:active{
+	background-color: #0071A9;
+	border-color : white;
+	color: white;
+  width:30%;font-size:inherit;
+}
+
+.btn-pikasle:hover, .btn-pikasle:focus{
+    background-color: #FFFFFF;
+		border-color: #0071A9;
+		color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
+
+span a, span a:active, span a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: medium;
+}
+
+ a { color: inherit; }
+
+ a:active, a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: inherit;
+}

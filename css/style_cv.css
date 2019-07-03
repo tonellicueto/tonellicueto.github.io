@@ -1,0 +1,162 @@
+.cv .year{
+  width:8.8%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:left;
+  }
+
+.cv .title, .cv .paper, .cv .article {
+  text-align:left;
+  width:91.2%;
+  display:inline-block;
+  box-sizing:border-box;
+  }
+
+.cv .property{
+  width:25%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:right;
+  }
+
+.cv .value{
+  text-align:left;
+  padding-left:10px;
+  width:75%;
+  display:inline-block;
+  box-sizing:border-box;
+  }
+
+.cv .talktitle{
+  text-align:left;
+  padding-left:10px;
+  width:87%;
+  display:inline-block;
+  box-sizing:border-box;
+  font-variant: small-caps;
+  font-style:italic;
+  font-size: large;
+  }
+
+.cv .collaborator{
+  text-align:left;
+  padding-left:10px;
+  width:87%;
+  display:inline-block;
+  box-sizing:border-box;
+  }
+
+.cv .pretalktitle{
+  width:13%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:right;
+  font-style:italic;
+  font-variant: small-caps;
+  }
+
+.cv-lang .property{
+  width:12%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:right;
+  }
+
+.cv-lang .value{
+  text-align:left;
+  padding-left:10px;
+  width:88%;
+  display:inline-block;
+  box-sizing:border-box;
+  }
+
+.cv > .value a:active, .cv > .value a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+}
+
+.cv > .property a:active, .cv > .property a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+}
+
+.cv > .talktitle a:active, .cv > .talktitle a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+}
+
+.cv > .collaborator a:active, .cv > .collaborator a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+}
+
+.cv > .paper h4, .cv > .article h4 {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cv > .article a, .cv > .article h4 a:active, .cv > .article h4 a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+    float:right;
+    font-size: medium;
+    font-weight: normal;
+}
+
+
+h4 a:active, h4 a:hover{
+    color: #ee2523;
+    font-style:italic;
+    font-variant: small-caps;
+}
+
+button {
+    color: #ffffff;
+    background-color: #ee2523;
+    border:none;
+    display: inline-block;
+    height: 20px;
+}
+
+.btn-arxiv, .btn-arxiv:active{
+	background-color: #00ff00;
+	border-color : #F3BC1B;
+	color: #F3BC1B;
+  display: inline;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width:30%;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:15%;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-arxiv:hover, .btn-arxiv:focus{
+    background-color: #F3BC1B;
+		border-color: #00ff00;
+		color: #00ff00;
+    display: inline;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:15%;
+    padding: 0em 0em;
+    text-align: center;
+}
