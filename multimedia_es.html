@@ -288,7 +288,9 @@
      <p style="margin:0;text-align:center;padding-top:0em;">Berlin, February 2018</p>
      <p style="text-align:justify;font-size:small;">At the <em>Wine and Cheese</em> of the 6th BMS Student Conference reading the description of the <a href="https://en.wikipedia.org/wiki/Idiazabal_cheese"><em>Idiazabal</em> cheese</a> in Basque. The text I read was compiled from the <a href="https://www.idiazabalgazta.eus/queso-idiazabal/deskribapena">official page of the <em>Idiazabal</em> cheese</a>. </p>
    </div>
-
+ </div>
+ <p id="botonfotos" style="text-align:center;"><button class="btn-primary" style="width:40%;font-size:1.5em;" onclick="show(1901)">Mostrar m&aacute;s fotos</button></p>
+ <div id="extrapictures" class="row" style="display:none;align-items: center;">
    <div class="col-md-4" style="padding-top:1em;text-align:center;">
      <img style="width:90%;" src="imgs/LeventJosue102017.jpg" alt="Levent Dogan and Josue Tonelli-Cueto"/>
      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2017 BMS)</p>
@@ -416,6 +418,16 @@
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
+    </script>
+    <!--For buttons-->
+    <script type="text/javascript">
+    function show(y) {
+      if (y === 1901){
+        var x = document.getElementById("extrapictures");
+        x.style.display = "flex";
+        document.getElementById("botonfotos").style="display:none;";
+        }
+    }
     </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
