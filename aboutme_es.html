@@ -80,7 +80,7 @@
 
 
 <div class="container" style="text-align:justify;">
-  <img src="imgs/josue_tonellicueto_aboutme.JPG" alth="Josué Tonelli-Cueto in fron a blackboard holding a piece of chalk" style="float:right;margin-left:1.2em;margin-bottom:1.5em;margin-top:1.5em;" width="40%"/>
+  <img id="portrait" src="imgs/josue_tonellicueto_aboutme.JPG" alt="Josué Tonelli-Cueto in fron a blackboard holding a piece of chalk" style="float:right;margin-left:1.2em;margin-bottom:1.5em;margin-top:1.5em;" width="40%"/>
   <p>
     My nombre es Josué Tonelli Cueto. Sin embargo, el nombre que uso académicamente es Josué Tonelli-Cueto. El guión es para evitar confusiones en el contexto internacional, dado que en muchos países de tradición no hispana lo común es tener un solo apellido. De esta forma, está claro que ambas palabras forman parte de mis apellidos y que ninguna de ellas en un segundo nombre.
   </p>
@@ -126,7 +126,16 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript"></script>
+    <!-- For phone -->
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    document.getElementById("portrait").style="margin-bottom:1em;margin-top:1em;";
+    document.getElementById("portrait").width="100%";
+    document.getElementById("finalsentence").innerHTML="";
+    }
+    //-->
+    </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({

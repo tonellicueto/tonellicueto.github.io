@@ -79,7 +79,7 @@
 
 
 <div class="container" style="text-align:justify;">
-  <img src="imgs/josue_tonellicueto_aboutme.JPG" alth="Josué Tonelli-Cueto in fron a blackboard holding a piece of chalk" style="float:right;margin-left:1.2em;margin-bottom:1.5em;margin-top:1.5em;" width="40%"/>
+  <img id="portrait" src="imgs/josue_tonellicueto_aboutme.JPG" alt="Josué Tonelli-Cueto in fron a blackboard holding a piece of chalk" style="float:right;margin-left:1.2em;margin-bottom:1.5em;margin-top:1.5em;" width="40%"/>
   <p>
   My name is Josué Tonelli-Cueto. However, this is a small lie. My actual name is Josué Tonelli Cueto. In Spain, it is customary to have two surnames, one being the first one of the father and the other one the first one of the mother. However, to avoid confusion in international contexts, I write my surname with a dash. In this way, it is clear that both words form part of my surname and that none of them is a middle name.
   </p>
@@ -125,7 +125,16 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript"></script>
+    <!-- For phone -->
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    document.getElementById("portrait").style="margin-bottom:1em;margin-top:1em;";
+    document.getElementById("portrait").width="100%";
+    document.getElementById("finalsentence").innerHTML="";
+    }
+    //-->
+    </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
