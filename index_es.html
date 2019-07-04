@@ -136,20 +136,24 @@
     x = document.getElementsByTagName("H1");
     var i;
       for (i = 0; i < x.length; i++) {
-       x[i].style="font-size:2em;font-weight:bold;";
+       x[i].style="font-size:2.5em;font-weight:bold;";
       }
     x = document.getElementsByTagName("H2");
       for (i = 0; i < x.length; i++) {
-       x[i].style="font-size:1.5em;font-weight:bold;";
+       x[i].style="font-size:1.8em;font-weight:bold;";
     }
     x = document.getElementsByTagName("H3");
       for (i = 0; i < x.length; i++) {
        x[i].style="font-size:1em;font-weight:bold;";
     }
+    x[0].innerHTML='<a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/josue_tonelli_cueto/">PhD Student at TU Berlin</a>';
+    x[1].innerHTML='<a href="https://www.math-berlin.de/students/phase-ii-students">Phase II Student at BMS</a>';
     x = document.getElementsByClassName("jumbotron");
-     x[0].style="";
+     x[0].style="margin-bottom: 0.4em;";
+    x = document.getElementsByClassName("col-md-5");
+      x[0].style="margin-bottom: 0.5em;";
     x = document.getElementsByClassName("row");
-     x[1].style="font-size:large;padding-top:5vw;";
+     x[1].style="font-size:1em;padding-top:5vw;";
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
