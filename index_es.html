@@ -99,7 +99,7 @@
         <h3><a href="https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/josue_tonelli_cueto/">Doctorando en la Technische Universit&auml;t Berlin</a></h3>
         <h3><a href="https://www.math-berlin.de/students/phase-ii-students">Phase II Student en la Berlin Mathematical School</a></h3>
         </center>
-        <div class="row" align="center" style="font-size:x-large;padding-top:5vw;font-size:2vw;">
+        <div class="row" align="center" style="padding-top:5vw;font-size:2vw;">
           <div class="col">
             <a class="btn btn-secondary" href="aboutme_es.html" role="button" style="width:80%;">Sobre mi</a><br><br>
             <a class="btn btn-arxiv" href="arXiv_es.html" role="button" style="width:80%;"><i class="ai ai-arxiv-square"></i> mi arXiv</a>
@@ -128,6 +128,32 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- For phone -->
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    var x;
+    x = document.getElementsByTagName("H1");
+    var i;
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:2em;font-weight:bold;";
+      }
+    x = document.getElementsByTagName("H2");
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1.5em;font-weight:bold;";
+    }
+    x = document.getElementsByTagName("H3");
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1em;font-weight:bold;";
+    }
+    x = document.getElementsByClassName("jumbotron");
+     x[0].style="";
+    x = document.getElementsByClassName("row");
+     x[1].style="font-size:large;padding-top:5vw;";
+    document.getElementById("finalsentence").innerHTML="";
+    }
+    //-->
+    </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({

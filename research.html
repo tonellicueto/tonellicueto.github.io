@@ -186,7 +186,45 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript"></script>
+    <!-- For phone -->
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    document.getElementById("navbarCV").innerHTML="";
+    var x;
+    x = document.getElementsByTagName("H4");
+    var i;
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1em;font-weight:bold;";
+      }
+    x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("year");
+    for (i = 0; i < x.length; i++) {
+     if (!(x[i].innerHTML === "")){
+     x[i].style="width:6em;";}
+     else{
+       x[i].style="width:0%;";
+     }
+    }
+    x = document.getElementsByClassName("paper");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("pretalktitle");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:0%;";
+    }
+    x = document.getElementsByClassName("collaborator");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    document.getElementById("finalsentence").innerHTML="";
+    }
+    //-->
+    </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({

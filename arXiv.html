@@ -155,15 +155,19 @@ This list is powered by my <a href="https://arxiv.org/a/tonellicueto_j_1.html">a
     <script type="text/javascript">
     <!--
     if (screen.width <= 699) {
-    var x;
-    x = document.getElementsByClassName("btn btn-arxiv");
-    var i;
-    for (i = 0; i < x.length; i++) {
-     x[i].style="width:10em;";
-    }
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
     </script>
+    <!-- For math expression-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+        }
+       });
+    </script>
+     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
   </body>
 </html>
