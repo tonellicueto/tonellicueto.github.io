@@ -53,7 +53,22 @@
     </style>
 
     <!--  arXiv widget with papers  -->
-    <script type="text/javascript" src="js/arxiv.js"></script>
+    <script type="text/javascript">
+    <!--
+    function loadScript(url) {
+      var head = document.getElementsByTagName("head")[0];
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = url;
+      head.appendChild(script);
+    }
+    if (screen.width <= 699) {
+      loadScript("js/arxiv_phone.js");
+    } else {
+      loadScript("js/arxiv.js");
+    }
+    //-->
+    </script>
 </head>
 
   <body>

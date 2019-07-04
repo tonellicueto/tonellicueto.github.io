@@ -69,7 +69,7 @@ function makearXiv(feed)
 	    //open a set of divs to contain the various fields
 	    html+='<dd style="padding-bottom:1em;">\n\t<div class="meta" style="line-height:130%;">\n\t\t<div class="list-title" style="font-size:medium;">\n'
 	    //Add the title in a span
-	    html += '\t\t\t'+ '<em><b>' + feed.entries[x].title+ '</b></em>'+ '<a  class="btn btn-arxiv" href="' + feed.entries[x].id.substring(0, feed.entries[x].id.length - 2) + '" role="button">arXiv:'+feed.entries[x].id.substring(21, feed.entries[x].id.length - 2)+'</a>' +'\n\t\t</div>';
+	    html += '\t\t\t'+ '<a  class="btn btn-arxiv" width="100%" href="' + feed.entries[x].id.substring(0, feed.entries[x].id.length - 2) + '" role="button">arXiv:'+feed.entries[x].id.substring(21, feed.entries[x].id.length - 2)+'</a><br/>' +'<em><b>' + feed.entries[x].title+ '</b></em>'+ '\n\t\t</div>';
 	    //add authors in a div
 	    html += '\t\t<div class="list-authors" style="font-weight:normal;font-size:medium;text-decoration:none;">&ensp;'+feed.entries[x].authors+'</div>\n';
 	    //Add the subject in a div
