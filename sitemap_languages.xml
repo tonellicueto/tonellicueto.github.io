@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+   <loc>https://tonellicueto.xyz/arXiv_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/arXiv.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/arXiv.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/arXiv_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/contact.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/contact_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/contact_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/contact.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/cv.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/cv_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/cv_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/cv.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/index.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/index_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/index_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/index.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/multimedia.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/multimedia_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/multimedia_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/multimedia.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/non-research.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/non-research_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/non-research_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/non-research.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/research.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/research_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/research_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/research.html"/>
+  </url>
+
+  <!-- PIKASLE -->
+
+  <url>
+   <loc>https://tonellicueto.xyz/pikasle_en.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/pikasle_es.html"/>
+   <xhtml:link
+              rel="alternate"
+              hreflang="eu"
+              href="https://tonellicueto.xyz/pikasle_eu.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/pikasle_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="eu"
+              href="https://tonellicueto.xyz/pikasle_eus.html"/>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/pikasle_en.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/pikasle_eus.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/pikasle_es.html"/>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/pikasle_en.html"/>
+  </url>
+
+</urlset>
