@@ -168,4 +168,15 @@
 <priority>0.6</priority>
 </url>
 
+<!--Slides-->
+<url>
+<loc>https://tonellicueto.xyz/pdf/1stBYMAT_slides.pdf</loc>
+<lastmod>2019-07-12</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/SIAMAG19_slides.pdf</loc>
+<lastmod>2019-07-12</lastmod>
+</url>
+
 </urlset>
