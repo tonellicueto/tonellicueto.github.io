@@ -35,6 +35,38 @@
   </url>
 
   <url>
+   <loc>https://tonellicueto.xyz/aboutme.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/aboutme_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/aboutme_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/aboutme.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/phdthesis.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/phdthesis_es.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/phdthesis_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/phdthesis.html"/>
+  </url>
+
+  <url>
    <loc>https://tonellicueto.xyz/cv.html</loc>
    <xhtml:link
               rel="alternate"

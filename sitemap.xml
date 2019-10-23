@@ -4,7 +4,7 @@
 
    <url>
     <loc>https://tonellicueto.xyz/</loc>
-    <lastmod>2019-07-04</lastmod>
+    <lastmod>2019-10-21</lastmod>
     <priority>1</priority>
    </url>
 
@@ -18,6 +18,40 @@
     <loc>https://tonellicueto.xyz/arXiv.html</loc>
     <lastmod>2019-07-04</lastmod>
     <priority>1</priority>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/aboutme_es.html</loc>
+    <lastmod>2019-10-23</lastmod>
+    <priority>1</priority>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/aboutme.html</loc>
+    <lastmod>2019-10-23</lastmod>
+    <priority>1</priority>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/phdthesis_es.html</loc>
+    <lastmod>2019-10-23</lastmod>
+    <priority>1</priority>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/phdthesis.html</loc>
+    <lastmod>2019-10-23</lastmod>
+    <priority>1</priority>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/thesis/coverthesis_tonellicueto.jpg</loc>
+    <lastmod>2019-10-23</lastmod>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/thesis/thesis_tonellicueto.pdf</loc>
+    <lastmod>2019-10-23</lastmod>
    </url>
 
    <url>
@@ -64,13 +98,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/index.html</loc>
-    <lastmod>2019-07-04</lastmod>
+    <lastmod>2019-10-23</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/index_es.html</loc>
-    <lastmod>2019-07-04</lastmod>
+    <lastmod>2019-10-23</lastmod>
     <priority>1</priority>
    </url>
 

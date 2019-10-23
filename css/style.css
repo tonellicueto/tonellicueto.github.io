@@ -88,6 +88,22 @@ footer {
     width:30%;font-size:inherit;
 }
 
+.btn-phd, .btn-phd:active{
+	background-color: #FF69B4;
+  border-color : white;
+  color: white;
+  width:30%;font-size:inherit;
+}
+
+.btn-phd:hover, .btn-phd:focus{
+    background-color: #FFFFFF;
+		border-color: #FF69B4;
+    color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
 .btn-pikasle, .btn-pikasle:active{
 	background-color: #0071A9;
 	border-color : white;
