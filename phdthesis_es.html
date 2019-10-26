@@ -89,6 +89,13 @@
     <em>(Condición y Homología en Geometría Semialgebraica)</em>
   </h1>
   </center>
+  <hr>
+  <div class="row" align="center">
+  <div class="col" align="center">
+  <a class="btn btn-phd" href="thesis/thesis_tonellicueto.pdf" role="button" style="width:100%;">Tesis (PDF) [versión entregada]</a></div><div class="col" align="center">
+  <a class="btn btn-phd" href="thesis/coverthesis_tonellicueto.jpg" role="button" style="width:100%;">Cubierta de la tesis (JPG)</a>
+  </div></div>
+  <hr>
   <div class="row" align="center">
     <div class="col" align="center">
        <a href="thesis/thesis_tonellicueto.pdf"><img id="cover" src="thesis/coverpage.jpg" style="margin-bottom:0.5em;margin-top:1em;" alt="Portada de Conditionand Homology in Semialgebraic Geometry por Josué Tonelli Cueto" width="73%"/></a>
@@ -97,11 +104,6 @@
       <a href="https://www.instagram.com/p/B3fBRcdgdQw/"><img id="portrait" src="imgs/josue_tonelli_cueto_thesis.JPG" style="margin-bottom:0.5em;margin-top:1em;" alt="Josué Tonelli Cueto sosteniendo una copia de su tesis doctoral" width="100%"/></a>
     </div>
   </div>
-  <hr>
-  <p style="text-align:center;">
-  <a class="btn btn-phd" href="thesis/thesis_tonellicueto.pdf" role="button" style="width:80%;">Tesis (PDF) [versión entregada]</a><br>
-  <a class="btn btn-phd" href="thesis/coverthesis_tonellicueto.jpg" role="button" style="width:80%;">Cubierta de la tesis (JPG)</a>
-  </p>
   <hr>
   <h3>
   Resumen
@@ -176,7 +178,20 @@
     <script type="text/javascript">
     <!--
     if (screen.width <= 699) {
-    document.getElementById("portrait").style="width:100%;float:center;margin-bottom:1em;margin-top:1em;";
+      var x;
+      x = document.getElementsByTagName("H1");
+      var i;
+        for (i = 0; i < x.length; i++) {
+         x[i].style="font-size:2.5em;font-weight:bold;";
+        }
+      x = document.getElementsByTagName("H2");
+        for (i = 0; i < x.length; i++) {
+         x[i].style="font-size:1.8em;font-weight:bold;";
+      }
+      x = document.getElementsByTagName("H3");
+        for (i = 0; i < x.length; i++) {
+         x[i].style="font-size:1em;font-weight:bold;";
+      }
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
