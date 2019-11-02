@@ -68,13 +68,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2019-11-01</lastmod>
+    <lastmod>2019-11-02</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2019-11-01</lastmod>
+    <lastmod>2019-11-02</lastmod>
     <priority>0.9</priority>
    </url>
 
@@ -233,6 +233,22 @@
 <url>
 <loc>https://tonellicueto.xyz/pdf/felipefest2019_slides.pdf</loc>
 <lastmod>2019-08-23</lastmod>
+</url>
+
+<!--Posters-->
+<url>
+<loc>https://tonellicueto.xyz/pdf/Poster_Computing_the_Homology_of_Semialgebraic_Sets.pdf</loc>
+<lastmod>2019-11-02</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/Poster_Computing_the_shape_of_semialgebraic_sets.pdf</loc>
+<lastmod>2019-11-02</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/Poster_Polynomial_Identity_Testing_and_the_Combinatorics_of_Completely_Positive_Operators.pdf</loc>
+<lastmod>2019-11-02</lastmod>
 </url>
 
 <!--PIkasle-->
