@@ -34,13 +34,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/doctoralthesis_es.html</loc>
-    <lastmod>2019-12-03</lastmod>
+    <lastmod>2019-12-20</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/doctoralthesis.html</loc>
-    <lastmod>2019-12-03</lastmod>
+    <lastmod>2019-12-20</lastmod>
     <priority>1</priority>
    </url>
 
@@ -50,8 +50,13 @@
    </url>
 
    <url>
-    <loc>https://tonellicueto.xyz/thesis/thesis_tonellicueto.pdf</loc>
-    <lastmod>2019-10-23</lastmod>
+    <loc>https://tonellicueto.xyz/thesis/vorgelegteDissertation_TonelliCueto.pdf</loc>
+    <lastmod>2019-12-20</lastmod>
+   </url>
+
+   <url>
+    <loc>https://tonellicueto.xyz/thesis/genehmigteDissertation_TonelliCueto.pdf</loc>
+    <lastmod>2019-12-20</lastmod>
    </url>
 
    <url>
