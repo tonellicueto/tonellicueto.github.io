@@ -104,6 +104,23 @@ footer {
     width:30%;font-size:inherit;
 }
 
+.btn-phdtulink, .btn-phdtulink:active{
+	background-color: #c50e1f;
+  border-color : white;
+  font-variant: small-caps;
+  color: white;
+  width:30%;font-size:inherit;
+}
+
+.btn-phdtulink:hover, .btn-phdtulink:focus{
+    background-color: #FFFFFF;
+		border-color: #c50e1f;
+    font-variant: small-caps;
+    color: black;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
 .btn-pikasle, .btn-pikasle:active{
 	background-color: #0071A9;
 	border-color : white;
