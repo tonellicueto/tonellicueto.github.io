@@ -71,7 +71,7 @@
 	         <li class="nav-item"><a class="nav-link" href="#areas">Areas of interest</a></li>
            <!--<li class="nav-item"><a class="nav-link" href="#topics">Topics of interest</a></li>-->
            <li class="nav-item"><a class="nav-link" href="#papers">Papers and preprints</a></li>
-           <!--<li class="nav-item"><a class="nav-link" href="#other">Other</a></li>-->
+           <li class="nav-item"><a class="nav-link" href="#other">Other</a></li>
         </ul>
     </nav>
 </div>
@@ -166,6 +166,20 @@
    <div class="pretalktitle"></div><div class="collaborator">P. Bürgisser, F. Cucker and J. Tonelli-Cueto. Computing the Homology of Semialgebraic Sets. I: Lax Formulas, <i>Foundations of Computational Mathematics</i>, May 2019. <span><a href="https://doi.org/10.1007/s10208-019-09418-y">DOI 10.1007/s10208-019-09418-y</a></span></div>
   </div>
 </div>
+<hr>
+<div id="other">
+  <h2 class="display-4">Other</h2>
+
+  <br><div class="row"><div class="col-md-12">
+  <h3>Theses</h3>
+  </div></div>
+
+  <br><div class="cv">
+  <div class="year"><h4>2019</h4></div><div class="paper"><h4>&emsp;Condition  and  Homology  in  Semialgebraic  Geometry<a class="btn btn-phd" href="doctoralthesis.html" role="button">doctoral thesis</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">J. Tonelli-Cueto. <i>Condition  and  Homology  in  Semialgebraic  Geometry</i>. PhD thesis, Technsiche Universit&auml;t Berlin, DepositOnce Repository, December 2019. <span><a href="http://dx.doi.org/10.14279/depositonce-9453">DOI 10.14279/depositonce-9453</a></span></div>
+  </div>
+
+</div>
 <br>
 </div>
 
@@ -197,6 +211,10 @@
        x[i].style="font-size:1em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("btn btn-phd");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:10em;";
     }

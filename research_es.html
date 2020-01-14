@@ -72,7 +72,7 @@
 	         <li class="nav-item"><a class="nav-link" href="#areas">Áreas de interés</a></li>
            <!--<li class="nav-item"><a class="nav-link" href="#topics">Topics of interest</a></li>-->
            <li class="nav-item"><a class="nav-link" href="#papers">Artículos científicos y preprints</a></li>
-           <!--<li class="nav-item"><a class="nav-link" href="#other">Other</a></li>-->
+           <li class="nav-item"><a class="nav-link" href="#other">Otros</a></li>
         </ul>
     </nav>
 </div>
@@ -137,7 +137,7 @@
 <div id="papers">
   <h2 class="display-4">Artículos científicos y preprints</h2>
   <p style="margin:0;">Los siguientes son mi artículos científicos y preprints en los últimos años. Para una lista completa, consultar <a href="cv.html#publications">la lista de mi CV</a> o <a href="arXiv.html">mi lista de preprints de arXiv</a>.</p>
-  <br><div class="row"><div class="col-md-12">
+
     <br><div class="row"><div class="col-md-12">
     <h3>Preprints <a class="btn btn-arxiv" href="arXiv.html" role="button"><i class="ai ai-arxiv-square"></i> arXiv preprints' list</a></h3>
     </div></div>
@@ -166,6 +166,20 @@
     <div class="year"></div><div class="paper"><h4>&emsp;Computing the Homology of Semialgebraic Sets I: Lax Formulas<a class="btn btn-arxiv" href="https://arxiv.org/abs/1807.06435"  role="button">arXiv:1807.06435</a></h4></div>
      <div class="pretalktitle"></div><div class="collaborator">P. Bürgisser, F. Cucker y J. Tonelli-Cueto. Computing the Homology of Semialgebraic Sets. I: Lax Formulas (Inglés) [Computando la Homología de Conjuntos Semialgebraicos. I: Fórmulas Laxas], <i>Foundations of Computational Mathematics</i>, May 2019. <span><a href="https://doi.org/10.1007/s10208-019-09418-y">DOI 10.1007/s10208-019-09418-y</a></span></div>
     </div>
+</div>
+<hr>
+<div id="other">
+  <h2 class="display-4">Otros</h2>
+
+  <br><div class="row"><div class="col-md-12">
+  <h3>Tesis</h3>
+  </div></div>
+
+  <br><div class="cv">
+  <div class="year"><h4>2019</h4></div><div class="paper"><h4>&emsp;Condition  and  Homology  in  Semialgebraic  Geometry<a class="btn btn-phd" href="doctoralthesis_es.html" role="button">tesis doctoral</a></h4></div>
+   <div class="pretalktitle"></div><div class="collaborator">J. Tonelli-Cueto. <i>Condition  and  Homology  in  Semialgebraic  Geometry (Inglés) [Condición y Homología en Geometría Semialgebraica]</i>. Tesis doctoral, Technsiche Universit&auml;t Berlin, Repositorio DepositOnce, diciembre 2019. <span><a href="http://dx.doi.org/10.14279/depositonce-9453">DOI 10.14279/depositonce-9453</a></span></div>
+  </div>
+
 </div>
 <br>
 </div>
@@ -198,6 +212,10 @@
        x[i].style="font-size:1em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("btn btn-phd");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:10em;";
     }
