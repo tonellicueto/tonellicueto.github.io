@@ -177,7 +177,7 @@ button {
   height:1.5em;
   width:15%;
   padding: 0em 0em;
-  text-align: center;
+  text-align: center; 
 }
 
 .btn-phd:hover, .btn-phd:focus{
