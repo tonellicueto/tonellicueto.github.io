@@ -85,11 +85,11 @@ function makearXiv(feed)
 
 	    //Add journal_ref if present
 	    if (feed.entries[x].journal_ref && feed.entries[x].journal_ref.length > 1) {
-		    html += '\t\t<div class="list-journal-ref" style="font-weight:normal;font-size:medium;"><span class="descriptor">Journal ref:</span> ' + feed.entries[x].journal_ref + '</div>\n';
+		    html += '\t\t<div class="list-journal-ref" style="font-weight:normal;font-size:medium;"><span class="descriptor">&ensp;Ref:</span> ' + feed.entries[x].journal_ref + '</div>\n';
 	    }
 	    //Add and link DOI if present
 	    if (feed.entries[x].doi && feed.entries[x].doi.length > 0) {
-		    html += '\t\t<div class="list-doi" style="font-weight:normal;font-size:medium;"><span class="descriptor">DOI:</span> ';
+		    html += '\t\t<div class="list-doi" style="font-weight:normal;font-size:medium;"><span class="descriptor">&ensp;DOI:</span> ';
 		    var dois = feed.entries[x].doi.split(' ');
 		    for (var j in dois) {
 		       html += '<a href="https://dx.doi.org/'+dois[j]+'">'+dois[j]+'</a> ';
