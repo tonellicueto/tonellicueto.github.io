@@ -14,6 +14,7 @@
 
     <!--  Custom styles for this template  -->
     <link href="css/style2.css" rel="stylesheet"/>
+    <link href="css/style_cv.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -68,8 +69,9 @@
    <nav id="navbarCV" class="navbar-toggleable-md navbar-inverse navbar-custom2">
         <ul class="nav nav-pills">
 	         <li class="nav-item"><a class="nav-link active" href="#" style="background-color: #ee2523!important;color: white!important;"><i class="fas fa-pencil-alt"></i></a></li>
-	         <li class="nav-item"><a class="nav-link" href="#teaching">Enseñanza</a></li>
-           <li class="nav-item"><a class="nav-link" href="#act">Actividades</a></li>
+           <li class="nav-item"><a class="nav-link" href="#teaching">Docencia</a></li>
+           <li class="nav-item"><a class="nav-link" href="#popmath">Divulgación</a></li>
+           <li class="nav-item"><a class="nav-link" href="#misc">Miscelánea</a></li>
         </ul>
 
     </nav>
@@ -88,37 +90,32 @@
 
 
 <div class="container">
-  <!--<p style="text-align:center;font-variant: small-caps;">Esta página está en proceso de traducción. Disculpen las molestias.</p>-->
-<hr>
-  <p style="text-align:center;font-variant: small-caps;">Página en construcción.</p>
-<hr>
-
- <div class="row">
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
-
-     </p>
+  <hr>
+    <p style="text-align:center;font-variant: small-caps;">Página en construcción.</p>
+  <hr>
+  <div id="teaching">
+    <h2 class="display-4">Docencia</h2>
+    <p>
+       
+    </p>
   </div>
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
+  <hr>
+  <div id="popmath">
+    <h2 class="display-4">Divulgación</h2>
+    <p>
 
-     </p>
+    </p>
   </div>
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
+  <hr>
+  <div id="miscellanea">
+    <h2 class="display-4">Docencia</h2>
+    <p>
 
-     </p>
+    </p>
   </div>
- </div>
+
+<br/>
+</div>
 
 </div>
 <footer>
@@ -142,9 +139,53 @@
     <!--
     if (screen.width <= 699) {
     document.getElementById("navbarCV").innerHTML="";
+    var x;
+    x = document.getElementsByTagName("H4");
+    var i;
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1em;font-weight:bold;";
+      }
+    x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("btn btn-phd");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("year");
+    for (i = 0; i < x.length; i++) {
+     if (!(x[i].innerHTML === "")){
+     x[i].style="width:6em;";}
+     else{
+       x[i].style="width:0%;";
+     }
+    }
+    x = document.getElementsByClassName("paper");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("pretalktitle");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:0%;";
+    }
+    x = document.getElementsByClassName("collaborator");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
     </script>
+    <!-- For math expression-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+        }
+       });
+    </script>
+     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
   </body>
 </html>

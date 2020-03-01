@@ -1,5 +1,5 @@
 .cv .year{
-  width:8.8%;
+  width:9%;
   display:inline-block;
   box-sizing:border-box;
   text-align:left;
@@ -7,7 +7,7 @@
 
 .cv .title, .cv .paper, .cv .article {
   text-align:left;
-  width:91.2%;
+  width:91%;
   display:inline-block;
   box-sizing:border-box;
   }
@@ -177,7 +177,7 @@ button {
   height:1.5em;
   width:15%;
   padding: 0em 0em;
-  text-align: center; 
+  text-align: center;
 }
 
 .btn-phd:hover, .btn-phd:focus{

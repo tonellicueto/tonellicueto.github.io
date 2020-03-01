@@ -14,6 +14,7 @@
 
     <!--  Custom styles for this template  -->
     <link href="css/style2.css" rel="stylesheet"/>
+    <link href="css/style_cv.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -68,7 +69,8 @@
         <ul class="nav nav-pills">
 	         <li class="nav-item"><a class="nav-link active" href="#" style="background-color: #ee2523!important;color: white!important;"><i class="fas fa-pencil-alt"></i></a></li>
 	         <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-           <li class="nav-item"><a class="nav-link" href="#act">Activities</a></li>
+           <li class="nav-item"><a class="nav-link" href="#popmath">PopMath</a></li>
+           <li class="nav-item"><a class="nav-link" href="#misc">Miscellanea</a></li>
         </ul>
 
     </nav>
@@ -90,34 +92,48 @@
   <hr>
     <p style="text-align:center;font-variant: small-caps;">Page under construction.</p>
   <hr>
-
- <div class="row">
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
-
+  <div id="teaching">
+    <h2 class="display-4">Teaching</h2>
+    <p>
+       My teaching experience consist of approximately 200 hours distributed among six university-level courses. Below, a simplified account of my teaching experience can be found. Since this is a very limited experience, I am planning to extend this experience in the next years if possible.
      </p>
+     <ul style="list-style-type:none;font-weight: bold;  padding: 0em;margin-left:0.5em;">
+       <li>Technische Universit&auml;t Berlin</li>
+       <ul style="list-style-type:none;font-weight: normal;padding: 0em;margin-left:1.5em;">
+         <li><em>Effective Algebraic Geometry</em> Seminar, organizer (together with Peter B&uuml;rgisser and Alperen A. Erg&uuml;r), SuSe 2018. (<span><a href="pdf/Effective_Algebraic_Geometry_Seminar.pdf">syllabus</a></span>)</li>
+       </ul>
+       <li>University of the Basque Country</li>
+       <ul style="list-style-type:none;font-weight: normal;padding: 0em;margin-left:1.5em;">
+         <li>Groups of units in complete discrete valuations rings (Minicourse), lecturer, February 2014.</li>
+         <li>&ldquo;$\mathsf{P}$ vs. \(\mathsf{NP}\) and related topics&rdquo; Seminar, organizer (together with Luis Mart&iacute;nez) and main lecturer, WiSe 2012-13 and SuSe 2013.</li>
+       </ul>
+       <li>Centro de Estudios INTEC</li>
+       <ul style="list-style-type:none;font-weight: normal;padding: 0em;margin-left:1.5em;">
+         <li>1st year Mathematics for students of the B.Sc. Chemical Engineering at the University of the Basque Country, private remedial teacher, SuSe 2014.</li>
+         <li>1st year Linear Algebra for students of the B.Sc. Mathematics at the University of the Basque Country, private remedial teacher, WiSe 2013-14.</li>
+         <li>2nd year Linear Algebra for students of the B.Sc. Mathematics at the University of the Basque Country, private remedial teacher, WiSe 2013-14.</li>
+       </ul>
+     </ul>
+     <p>
+       For more details regarding my teaching experience, see <a href="cv.html#teaching">the corresponding section of my CV</a>.
+    </p>
   </div>
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
+  <hr>
+  <div id="popmath">
+    <h2 class="display-4">Popular Mathematics</h2>
+    <p>
 
-     </p>
+    </p>
   </div>
-  <div class="col-md-4">
-    <center>
-    <h2></h2>
-    </center>
-     <p align="justify">
-
-     </p>
+  <hr>
+  <div id="miscellanea">
+    <h2 class="display-4">Miscellanea</h2>
+    <p>
+       
+    </p>
   </div>
- </div>
 
+<br/>
 </div>
 <footer>
 <hr>
@@ -140,9 +156,53 @@
     <!--
     if (screen.width <= 699) {
     document.getElementById("navbarCV").innerHTML="";
+    var x;
+    x = document.getElementsByTagName("H4");
+    var i;
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1em;font-weight:bold;";
+      }
+    x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("btn btn-phd");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:10em;";
+    }
+    x = document.getElementsByClassName("year");
+    for (i = 0; i < x.length; i++) {
+     if (!(x[i].innerHTML === "")){
+     x[i].style="width:6em;";}
+     else{
+       x[i].style="width:0%;";
+     }
+    }
+    x = document.getElementsByClassName("paper");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("pretalktitle");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:0%;";
+    }
+    x = document.getElementsByClassName("collaborator");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
     </script>
+    <!-- For math expression-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+        }
+       });
+    </script>
+     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
   </body>
 </html>
