@@ -95,8 +95,6 @@
 }
 
 .cv > .paper h4, .cv > .article h4 {
-    font-size: medium;
-    font-weight: bold;
     font-style: italic;
 }
 
@@ -130,14 +128,13 @@ button {
 	color: #F3BC1B;
   display: inline;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  width:30%;
   font-size:medium;
   float:right;
   font-weight: normal;
   font-style: normal;
   font-variant:normal;
   height:1.5em;
-  width:15%;
+  width:11em;
   padding: 0em 0em;
   text-align: center;
 }
@@ -147,16 +144,13 @@ button {
 		border-color: #00ff00;
 		color: #00ff00;
     display: inline;
-    font-variant:inherit;
-    font-style:inherit;
-    width:30%;
     font-size:medium;
     float:right;
     font-weight: normal;
     font-style: normal;
     font-variant:normal;
     height:1.5em;
-    width:15%;
+    width:11em;
     padding: 0em 0em;
     text-align: center;
 }
@@ -166,16 +160,13 @@ button {
   border-color : white;
   color: white;
   display: inline;
-  font-variant:inherit;
-  font-style:inherit;
-  width:30%;
   font-size:medium;
   float:right;
   font-weight: normal;
   font-style: normal;
   font-variant:normal;
   height:1.5em;
-  width:15%;
+  width:11em;
   padding: 0em 0em;
   text-align: center;
 }
@@ -185,16 +176,77 @@ button {
 		border-color: #FF69B4;
     color: black;
     display: inline;
-    font-variant:inherit;
-    font-style:inherit;
-    width:30%;
     font-size:medium;
     float:right;
     font-weight: normal;
     font-style: normal;
     font-variant:normal;
     height:1.5em;
-    width:15%;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
+.btn-manuscript, .btn-manuscript:active{
+	background-color: #ee2523;
+  border-color : white;
+  color: white;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-manuscript:hover, .btn-manuscript:focus{
+    background-color: #FFFFFF;
+		border-color: #ee2523;
+    color: black;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
+.btn-pikasle, .btn-pikasle:active{
+  background-color: #0071A9;
+  border-color : white;
+  color: white;
+  width:11em;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-pikasle:hover, .btn-pikasle:focus{
+    background-color: #FFFFFF;
+    border-color: #0071A9;
+    color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:11em;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
     padding: 0em 0em;
     text-align: center;
 }

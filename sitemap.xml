@@ -61,43 +61,43 @@
 
    <url>
     <loc>https://tonellicueto.xyz/contact.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/contact_es.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Long_CV_tonellicueto.pdf</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/UnDetailed_CV_tonellicueto.pdf</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Resume_tonellicueto.pdf</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>1</priority>
    </url>
 
@@ -115,37 +115,37 @@
 
    <url>
     <loc>https://tonellicueto.xyz/multimedia.html</loc>
-    <lastmod>2019-10-31</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.7</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/multimedia_es.html</loc>
-    <lastmod>2019-10-31</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.7</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/non-research.html</loc>
-    <lastmod>2019-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.8</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/non-research_es.html</loc>
-    <lastmod>2019-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>0.8</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/research.html</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/research_es.html</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-17</lastmod>
     <priority>1</priority>
    </url>
 
@@ -270,7 +270,52 @@
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/Effective_Algebraic_Geometry_Seminar.pdf</loc>
-<lastmod>2019-02-29</lastmod>
+<lastmod>2020-02-29</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/aplicacion_householder_geometria.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/emmy_noether_alphabetic_portrait</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/girl_in_cold</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/Rompedlas.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/Routine.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/Selfinitions.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/symmetric_extension_polytopes.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/teorema_curva_jordan.pdf</loc>
+<lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/torres_hanoi.pdf</loc>
+<lastmod>2020-03-17</lastmod>
 </url>
 
 <!--PIkasle-->
@@ -278,19 +323,19 @@
 
 <url>
  <loc>https://tonellicueto.xyz/pikasle_en.html</loc>
- <lastmod>2020-03-02</lastmod>
+ <lastmod>2020-03-17</lastmod>
  <priority>1</priority>
 </url>
 
 <url>
  <loc>https://tonellicueto.xyz/pikasle_es.html</loc>
- <lastmod>2020-03-02</lastmod>
+ <lastmod>2020-03-17</lastmod>
  <priority>1</priority>
 </url>
 
 <url>
  <loc>https://tonellicueto.xyz/pikasle_eus.html</loc>
- <lastmod>2020-03-02</lastmod>
+ <lastmod>2020-03-17</lastmod>
  <priority>1</priority>
 </url>
 
