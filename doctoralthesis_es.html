@@ -12,6 +12,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!--  Custom styles for this template  -->
+    <style>
+    .btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
+    	background-color: #ee2523;
+    	border-color : white;
+    	color: white;
+    }
+
+    .btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
+        background-color: #FFFFFF;
+    		border-color: #ee2523;
+    		color: black;
+    }
+    </style>
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -201,9 +214,94 @@
   <p>
   La defensa doctoral tuvo lugar el 28 de noviembre del 2019 a las 12:00 en el aula MA313/314 en la 3ª planta del Institut für Mathematik de la Technische Universität Berlin (Str. des 17. Juni 136). Este evento público consistió de una presentación de 30 minutos seguida por una discusión de 90 minutos. Tras la defensa, el tribunal de tesis se reunió en privado. Tras tomar una descisión, se me comunicó en privado que había superado el proceso de evaluación del doctorado. Adicionalmente, me dieron comentarios, y cambios y correcciones menores posibles para la versión final de la tesis.
   </p>
+  <div class="row" style="display:flex;align-items: center;">
+  <div class="col-md-3"></div>
+  <div class="col-md-6" style="padding-top:1em;text-align:center;">
+    <img style="width:90%;" src="imgs/DocDef01.jpeg" alt="Josue Tonelli-Cueto during his doctoral defence."/>
+    <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Milica Valent)</p>
+  </div>
+  <div class="col-md-3"></div>
+  </div>
   <p>
-  Después de una defensa exitosa, hubo una pequeña celebración con comida y bebidas en el Matheon Lounge (MA315).
+  Después de una defensa exitosa, hubo una pequeña celebración con comida y bebidas en el Matheon Lounge (MA315) con amigues y familiares.
   </p>
+  <p id="botonfotos" style="text-align:center;"><button class="btn-primary" style="width:40%;font-size:1.5em;" onclick="show(1901)">Mostrar fotos de la postdefensa</button></p>
+  <div id="extrapictures" class="row" style="display:none;align-items: center;">
+  <div class="row" style="display:flex;align-items: center;">
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc02.JPG" alt="Josue Tonelli-Cueto with his parents after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mis padres. De izquierd a derecha, Massimiliano Tonelli, yo, y María Jesús Cueto Puente.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc01.JPG" alt="Josue Tonelli-Cueto and his supervisors after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mis directores de tesis. De izquierda a derecha, Peter B&uuml;rgisser, yo, y Felipe Cucker.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc03.JPG" alt="Josue Tonelli-Cueto and his academic and non-academic parents after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mis padres académicos y de vida. De izquierda a derecha, Massimiliano Tonelli, Peter B&uuml;rgisser, yo, Felipe Cucker, y María Jesús Cueto Puente.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc05.JPG" alt="Josue Tonelli-Cueto with his parents and friends from Bilbao."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mis padres y un par de amigues de Bilbao. De izquierda a derecha, yo, Massimiliano Tonelli, Aritzeder Aranguren Cebas, María Jesús Cueto Puente,  y Iratxe Niño Adan.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc06.JPG" alt="Josue Tonelli-Cueto with some of his friends from Berlin after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con algunes amigues de Berlín. De izquierda a derecha, Robert Schwieger, Shane Carlson, Rinat Khanbekov, Eddie Seabrook, yo, Justine Mullon, y Milica Valent.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc04.JPG" alt="Josue Tonelli-Cueto with his doctoral committee after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mis directores de tesis y el evaluador externo de mi tribunal de tesis. De izquierda a derecha, Felipe Cucker, Peter B&uuml;rgisser, yo, y Pierre Lairez.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc08.JPG" alt="Josue Tonelli-Cueto with some Spanish friends from Berlin after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con algunes amigues españoles de Berlín. De izquierda a derecha, Concha Álvarez, yo, Zara (Juan Antonio Zaratiegui), y Pedro Ángel Castillejo.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc07.JPG" alt="Josue Tonelli-Cueto with Justine Mullon after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mi amiga Justine Mullon.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc09.JPG" alt="Josue Tonelli-Cueto with some friend from Berlin after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con algunes amigues de Berlín. De izquierda a derecha, Qianheng Chen, Qiao Luo, yo, y Héctor Andrade Loarca.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc10.JPG" alt="Josue Tonelli-Cueto with John M. Sullivan after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con John M. Sullivan, presidente de mi tribunal de tesis.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc11.JPG" alt="Josue Tonelli-Cueto with Matias Bender after his doctoral defence."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Con mi amigo y colegae Matías Bender.</p>
+    </div>
+
+    <div class="col-md-4" style="padding-top:1em;text-align:center;">
+      <img style="width:90%;" src="imgs/Doc12.JPG" alt="Celebratory dinner of the doctoral defence of Josue Tonelli-Cueto."/>
+      <p style="margin:0;text-align:center;font-size:0.5em;">(&copy;2019 Evgenia Lagoda)</p>
+      <p style="text-align:justify;font-size:small;">Celebrando una defensa exitosa. De izquierda a derecha, Aritzeder Aranguren Cebas, María Jesús Cueto Puente, Claudia Cucker Martorell, Pierre Lairez, yo, Peter B&uuml;rgisser, Felipe Cucker, Iratxe Niño Adan, y Massimiliano Tonelli.</p>
+    </div>
+
+  </div>
+  </div>
   <h3>
     Publicación de la tesis (30 de diciembre del 2019)
   </h3>
@@ -265,6 +363,16 @@
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->
+    </script>
+    <!--For buttons-->
+    <script type="text/javascript">
+    function show(y) {
+      if (y === 1901){
+        var x = document.getElementById("extrapictures");
+        x.style.display = "flex";
+        document.getElementById("botonfotos").style="display:none;";
+        }
+    }
     </script>
     <!-- For math expression-->
     <script type="text/x-mathjax-config">
