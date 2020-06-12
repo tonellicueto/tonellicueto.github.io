@@ -89,6 +89,24 @@ footer {
 		color: black;
 }
 
+.btn-MGP, .btn-MGP:active{
+	background-color: #88480a;
+  border-color : white;
+  color: white;
+  width:80%;
+}
+
+.btn-MGP:hover, .btn-MGP:focus{
+	background-color: white;
+  border-color : #88480a;
+  color: #88480a;
+  width:80%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
 
 span a, span a:active, span a:hover{
     color: #ee2523;

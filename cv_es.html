@@ -112,10 +112,17 @@
     <a class="btn btn-secondary" href="pdf/Resume_tonellicueto.pdf" Labor="button" style="width:80%;">Versión 2 páginas (PDF) [Inglés]</a>
   </div></div>
   <hr>
-<p>
-  Mi número de ORCiD es <a href="https://orcid.org/0000-0002-2904-1215" style="color:#A6CE39;font-variant:normal;font-style:normal;font-size: 1em;"><i class="ai ai-orcid"></i> 0000-0002-2904-1215</a>.<br/>
-  Mi MR Author ID de MathScinet es <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1346001" style="color:#E46200;font-weight: bold;font-variant:normal;font-style:normal;font-size: 1em;">1346001</a>.
-</p>
+  <div class="row" style="text-align:center;"><div class="col-md-6">
+    <a class="btn btn-orcid" href="https://orcid.org/0000-0002-2904-1215" role="button">ORCiD <i class="ai ai-orcid"></i> 0000-0002-2904-1215</a>
+  </div><div class="col-md-6">
+    <a class="btn btn-mathscinet" href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1346001" role="button">MathScinet MR Author ID: 1346001</a>
+  </div></div>
+  <br/>
+  <div class="row" style="text-align:center;"><div class="col-md-6">
+    <a class="btn btn-idarxiv" href="https://arxiv.org/a/tonellicueto_j_1.html" role="button">arxiv ID: tonellicueto_j_1</a>
+  </div><div class="col-md-6">
+    <a class="btn btn-idhal" href="https://cv.archives-ouvertes.fr/tonelli-cueto" role="button">IdHal: tonelli-cueto</a>
+  </div></div>
 <hr>
    <div id="positions">
    <!-- Positions
@@ -2090,6 +2097,10 @@ YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY -->
        x[i].style="font-size:1em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-arxiv");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("btn btn-hal");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:100%;";
     }

@@ -155,6 +155,38 @@ button {
     text-align: center;
 }
 
+.btn-hal, .btn-hal:active{
+	background-color: #292063;
+	border-color : white;
+	color: white;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-hal:hover, .btn-hal:focus{
+    background-color: white;
+		border-color: #292063;
+		color: #292063;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
 .btn-phd, .btn-phd:active{
 	background-color: #FF69B4;
   border-color : white;
@@ -249,4 +281,67 @@ button {
     font-variant:normal;
     padding: 0em 0em;
     text-align: center;
+}
+
+.btn-orcid, .btn-orcid:active, .btn-orcid:hover, .btn-orcid:focus{
+	background-color: white;
+  border-color : #A6CE39;
+  color: #A6CE39;
+  width:80%;
+  font-variant:inherit;
+}
+
+.btn-mathscinet, .btn-mathscinet:active{
+	background-color: #E46200;
+  border-color : white;
+  color: white;
+  width:80%;
+}
+
+.btn-mathscinet:hover, .btn-mathscinet:focus{
+	background-color: white;
+  border-color : #E46200;
+  color: #E46200;
+  width:80%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
+.btn-idhal, .btn-idhal:active{
+	background-color: #292063;
+  border-color : white;
+  color: white;
+  width:80%;
+}
+
+.btn-idhal:hover, .btn-idhal:focus{
+	background-color: white;
+  border-color : #292063;
+  color: #292063;
+  width:80%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
+.btn-idarxiv, .btn-idarxiv:active{
+  background-color: #00ff00;
+  border-color : #F3BC1B;
+  color: #F3BC1B;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width:80%;
+}
+
+.btn-idarxiv:hover, .btn-idarxiv:focus{
+	background-color: #F3BC1B;
+  border-color : #00ff00;
+  color: #00ff00;
+  font-size:medium;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+  width:80%;
 }
