@@ -3,6 +3,7 @@
   display:inline-block;
   box-sizing:border-box;
   text-align:left;
+  vertical-align: top;
   }
 
 .cv .title, .cv .paper, .cv .article {
@@ -10,6 +11,7 @@
   width:91%;
   display:inline-block;
   box-sizing:border-box;
+  vertical-align: top;
   }
 
 .cv .property{
@@ -17,6 +19,7 @@
   display:inline-block;
   box-sizing:border-box;
   text-align:right;
+  vertical-align: top;
   }
 
 .cv .value{
@@ -25,6 +28,7 @@
   width:75%;
   display:inline-block;
   box-sizing:border-box;
+  vertical-align: top;
   }
 
 .cv .talktitle{
@@ -36,6 +40,7 @@
   font-variant: small-caps;
   font-style:italic;
   font-size: large;
+  vertical-align: top;
   }
 
 .cv .collaborator{
@@ -44,6 +49,7 @@
   width:87%;
   display:inline-block;
   box-sizing:border-box;
+  vertical-align: top;
   }
 
 .cv .pretalktitle{
@@ -53,6 +59,7 @@
   text-align:right;
   font-style:italic;
   font-variant: small-caps;
+  vertical-align: top;
   }
 
 .cv-lang .property{
