@@ -93,14 +93,14 @@ footer {
 	background-color: #88480a;
   border-color : white;
   color: white;
-  width:50%;
+  width:49%;
 }
 
 .btn-MGP:hover, .btn-MGP:focus{
 	background-color: white;
   border-color : #88480a;
   color: #88480a;
-  width:50%;
+  width:49%;
   font-size:inherit;
   font-weight:inherit;
   font-style:inherit;
