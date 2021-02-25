@@ -17,6 +17,47 @@
 // that code without the copy of the GNU GPL normally required by
 // section 4, provided you include this license notice and a URL
 // through which recipients can access the Corresponding Source.
+// 
+// We note that this version need the class btn btn-arxiv to display
+// propperly the button. This can be defined as follows:
+/*
+.btn-arxiv, .btn-arxiv:active{
+  background-color: #00ff00;
+  border-color : #F3BC1B;
+  color: #F3BC1B;
+  display: inline;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width:30%;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:15%;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-arxiv:hover, .btn-arxiv:focus{
+    background-color: #F3BC1B;
+    border-color: #00ff00;
+    color: #00ff00;
+    display: inline;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:15%;
+    padding: 0em 0em;
+    text-align: center;
+}
+*/
 
 var arxiv_authorid = "0000-0002-2904-1215";
 
@@ -75,11 +116,16 @@ function makearXiv(feed)
 	    //Add the subject in a div
 		html += '\t\t<div class="list-subjects" style="font-size:medium;"><span class="descriptor">&ensp;Subject:</span> ' + feed.entries[x].subject;
 		//Add non-primaries if available
-		    if (feed.entries[x].categories && feed.entries[x].categories.length > 2) {
-                       for(y=1;y<feed.entries[x].categories.length;y++){
-			    if(feed.entries[x].categories[y][feed.entries[x].categories[y].length-1]==')'){html += '; '+feed.entries[x].categories[y];}
-                       }
-                    }
+    if (feed.entries[x].categories && feed.entries[x].categories.length > 2) {
+      for(y=1;y<feed.entries[x].categories.length;y++){
+      if(feed.entries[x].categories[y][feed.entries[x].categories[y].length-1]==')'){
+      //There is an issue with Numerical Analysis (math.NA). It can be duplicated. The reason is that Numerical Analysis (cs.NA) is stored also as Numerical Analysis (math.NA) in the list.
+      if(feed.entries[x].categories[y]!="Numerical Analysis (math.NA)"){
+        html += '; '+feed.entries[x].categories[y];
+      }else{//Either Numerical Analysis (math.NA) is at position 0 and other position, or they are in consecutive positions
+        if(feed.entries[x].categories[y]!=feed.entries[x].categories[y-1] && feed.entries[x].categories[y]!=feed.entries[x].categories[0]){html += '; '+feed.entries[x].categories[y];}
+      }
+    }}}
 		//Close subjects div
 		    html += '</div>\n';
 
