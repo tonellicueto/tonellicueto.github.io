@@ -146,42 +146,4 @@
               href="https://tonellicueto.xyz/research.html"/>
   </url>
 
-  <!-- PIKASLE -->
-
-  <url>
-   <loc>https://tonellicueto.xyz/pikasle_en.html</loc>
-   <xhtml:link
-              rel="alternate"
-              hreflang="es"
-              href="https://tonellicueto.xyz/pikasle_es.html"/>
-   <xhtml:link
-              rel="alternate"
-              hreflang="eu"
-              href="https://tonellicueto.xyz/pikasle_eu.html"/>
-  </url>
-
-  <url>
-   <loc>https://tonellicueto.xyz/pikasle_es.html</loc>
-   <xhtml:link
-              rel="alternate"
-              hreflang="eu"
-              href="https://tonellicueto.xyz/pikasle_eus.html"/>
-   <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://tonellicueto.xyz/pikasle_en.html"/>
-  </url>
-
-  <url>
-   <loc>https://tonellicueto.xyz/pikasle_eus.html</loc>
-   <xhtml:link
-              rel="alternate"
-              hreflang="es"
-              href="https://tonellicueto.xyz/pikasle_es.html"/>
-   <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://tonellicueto.xyz/pikasle_en.html"/>
-  </url>
-
 </urlset>
