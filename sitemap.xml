@@ -73,13 +73,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2021-06-01</lastmod>
+    <lastmod>2021-07-09</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2021-06-01</lastmod>
+    <lastmod>2021-07-09</lastmod>
     <priority>0.9</priority>
    </url>
 
@@ -221,6 +221,20 @@
 
 <!--Slides-->
 
+<url>
+<loc>https://tonellicueto.xyz/pdf/coloquioUFRJ2021.pdf</loc>
+<lastmod>2021-07-09</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/MEGA2021_slides_18.pdf</loc>
+<lastmod>2021-06-15</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/MEGA2021_slides_41.pdf</loc>
+<lastmod>2021-06-15</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/aatrn-tutorial-a-thon_NSWtheorem.pdf</loc>
