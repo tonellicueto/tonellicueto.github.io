@@ -317,16 +317,16 @@ button {
 }
 
 .btn-zbmath, .btn-mzbmath:active{
-	background-color: #414141;
-  color:#A51E55;
+	background-color: #A51E55;
+  color:white;
   border-color : #A51E55;
   width:80%;
 }
 
 .btn-zbmath:hover, .btn-zbmath:focus{
-	background-color: #A51E55;
-  border-color :  #414141;
-  color:  #414141;
+	background-color: white;
+  border-color :  #A51E55;
+  color:  #A51E55;
   width:80%;
   font-size:inherit;
   font-weight:inherit;
