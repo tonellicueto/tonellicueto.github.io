@@ -316,6 +316,24 @@ button {
   font-variant:inherit;
 }
 
+.btn-zbmath, .btn-mzbmath:active{
+	background-color: #414141;
+  color:#A51E55;
+  border-color : #A51E55;
+  width:80%;
+}
+
+.btn-zbmath:hover, .btn-zbmath:focus{
+	background-color: #A51E55;
+  border-color :  #414141;
+  color:  #414141;
+  width:80%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
 .btn-idhal, .btn-idhal:active{
 	background-color: #292063;
   border-color : white;
