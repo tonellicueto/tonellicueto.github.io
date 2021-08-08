@@ -138,22 +138,31 @@
 <url>
 <loc>https://tonellicueto.xyz/contact.html</loc>
 <image:image>
-<image:loc>https://tonellicueto.xyz/imgs/contact.png</image:loc>
+<image:loc>https://tonellicueto.xyz/imgs/contact2.jpg</image:loc>
 </image:image>
 </url>
 
 <url>
 <loc>https://tonellicueto.xyz/contact_es.html</loc>
 <image:image>
-<image:loc>https://tonellicueto.xyz/imgs/contact.png</image:loc>
+<image:loc>https://tonellicueto.xyz/imgs/contact2.jpg</image:loc>
 </image:image>
 </url>
 
-<!-- Multimedia inglés -->
+<!-- Multimedia ENGLISH -->
 
 <url>
 <loc>https://tonellicueto.xyz/multimedia.html</loc>
 <!-- Photos -->
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/origami_crane_MPF.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/contact.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/contact2.jpg</image:loc>
+</image:image>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/Doc06.JPG</image:loc>
 </image:image>
@@ -273,11 +282,18 @@
 
 <!-- Multimedia CASTELLANO -->
 
-<!-- Multimedia inglés -->
-
 <url>
 <loc>https://tonellicueto.xyz/multimedia_es.html</loc>
 <!-- Photos -->
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/origami_crane_MPF.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/contact.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/contact2.jpg</image:loc>
+</image:image>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/Doc06.JPG</image:loc>
 </image:image>
