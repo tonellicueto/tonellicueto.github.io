@@ -4,7 +4,7 @@
 
    <url>
     <loc>https://tonellicueto.xyz/</loc>
-    <lastmod>2021-08-08</lastmod>
+    <lastmod>2022-01-18</lastmod>
     <priority>1</priority>
    </url>
 
@@ -103,13 +103,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/index.html</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2022-01-18</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/index_es.html</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2022-01-18</lastmod>
     <priority>1</priority>
    </url>
 
@@ -214,8 +214,14 @@
 
 <!-- Portrait-->
 <url>
-<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index.JPG</loc>
-<lastmod>2019-07-03</lastmod>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index000.JPG</loc>
+<lastmod>2022-01-18</lastmod>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index001.jpg</loc>
+<lastmod>2022-01-18</lastmod>
 <priority>0.6</priority>
 </url>
 

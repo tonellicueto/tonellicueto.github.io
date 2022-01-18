@@ -108,7 +108,7 @@
     <div class="jumbotron" style="margin-bottom: 0px;">
      <div class="row" style="display: flex;">
       <div class="col-md-5" align="center">
-            <a href="imgs/josue_tonellicueto_index.JPG"><img itemprop="image" src="imgs/josue_tonellicueto_index.png" style="width: 80%;" class="img-responsive center_image" alt="Fotografía de Josué Tonelli Cueto en la TU Berlin"/></a>
+            <img id="profilepic" itemprop="image" src="imgs/josue_tonellicueto_index.png" style="width: 80%;" class="img-responsive center_image" alt="Fotografía de Josué Tonelli Cueto en la TU Berlin" onclick="changeProfileImage()"/>
       </div>
       <div class="col-md-7">
         <center>
@@ -158,6 +158,36 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- change of profile image -->
+    <script type="text/javascript">
+    <!--
+    let count=0;
+    function changeProfileImage() {
+    count++;
+    if (count <= 19){
+     if (document.getElementById("profilepic").src == "index000.png")
+     {
+         document.getElementById("profilepic").style="width: 66.5%;"
+         document.getElementById("profilepic").src = "index001.jpg";
+         document.getElementById("profilepic").alt = "Retrato de Josué Tonelli-Cueto hecho por Emmi Arvidsson";
+     }
+     else if (document.getElementById("profilepic").src == "index001.jpg")
+     {
+         document.getElementById("profilepic").style="width: 80%;"
+         document.getElementById("profilepic").src = "index000.png";
+         document.getElementById("profilepic").alt = "Fotografía de Josué Tonelli Cueto en la TU Berlin";
+     }
+    }
+    else if (count == 20)
+    {
+        document.getElementById("profilepic").style="width: 62.7%;"
+        document.getElementById("profilepic").src = "indexclicks.jpg";
+        document.getElementById("profilepic").alt = "Gato Suchen diciendo que no más clicks en inglés";
+    }
+    else {}
+    }
+    //-->
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!-- For phone -->
