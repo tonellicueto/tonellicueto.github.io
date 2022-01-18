@@ -162,23 +162,25 @@
     <script type="text/javascript">
     <!--
     let count=0;
+    let profimgs=2;
+    let lim=2*profimgs;
     function changeProfileImage() {
     count++;
-    if (count <= 19){
-     if (document.getElementById("profilepic").src == "index000.png")
+    if (count < lim){
+     if (count%2 == 1)
      {
          document.getElementById("profilepic").style="width: 66.5%;"
          document.getElementById("profilepic").src = "imgs/index001.jpg";
          document.getElementById("profilepic").alt = "Retrato de Josué Tonelli-Cueto hecho por Emmi Arvidsson";
      }
-     else if (document.getElementById("profilepic").src == "index001.jpg")
+     else if (count%2 == 0)
      {
          document.getElementById("profilepic").style="width: 80%;"
          document.getElementById("profilepic").src = "imgs/index000.png";
          document.getElementById("profilepic").alt = "Fotografía de Josué Tonelli Cueto en la TU Berlin";
      }
     }
-    else if (count == 20)
+    else if (count == lim)
     {
         document.getElementById("profilepic").style="width: 62.7%;"
         document.getElementById("profilepic").src = "imgs/indexclicks.jpg";
