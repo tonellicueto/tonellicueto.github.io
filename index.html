@@ -110,7 +110,7 @@
 <div class="jumbotron" style="margin-bottom: 0px;">
  <div class="row" style="display: flex;">
   <div class="col-md-5" align="center">
-        <img id="profilepic" itemprop="image" src="imgs/josue_tonellicueto_index.png" style="width: 80%;" class="img-responsive center_image" alt="Picture of Josué Tonelli-Cueto at the TU Berlin" onclick="changeProfileImage()"/>
+        <img id="profilepic" itemprop="image" src="imgs/index000.png" style="width: 80%;" class="img-responsive center_image" alt="Picture of Josué Tonelli-Cueto at the TU Berlin" onclick="changeProfileImage()"/>
   </div>
   <div class="col-md-7">
         <center>
@@ -167,23 +167,23 @@
     function changeProfileImage() {
     count++;
     if (count <= 19){
-     if (document.getElementById("profilepic").src == "index000.png")
+     if (document.getElementById("profilepic").src == "imgs/index000.png")
      {
          document.getElementById("profilepic").style="width: 66.5%;"
-         document.getElementById("profilepic").src = "index001.jpg";
+         document.getElementById("profilepic").src = "imgs/index001.jpg";
          document.getElementById("profilepic").alt = "Portrait of Josué Tonelli-Cueto by Emmi Arvidsson";
      }
      else if (document.getElementById("profilepic").src == "index001.jpg")
      {
          document.getElementById("profilepic").style="width: 80%;"
-         document.getElementById("profilepic").src = "index000.png";
+         document.getElementById("profilepic").src = "imgs/index000.png";
          document.getElementById("profilepic").alt = "Picture of Josué Tonelli-Cueto at the TU Berlin";
      }
     }
     else if (count == 20)
     {
         document.getElementById("profilepic").style="width: 62.7%;"
-        document.getElementById("profilepic").src = "indexclicks.jpg";
+        document.getElementById("profilepic").src = "imgs/indexclicks.jpg";
         document.getElementById("profilepic").alt = "Gato Suchen saying that there are no more clicks";
     }
     else {}
