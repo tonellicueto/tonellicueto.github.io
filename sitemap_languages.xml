@@ -19,6 +19,22 @@
   </url>
 
   <url>
+   <loc>https://tonellicueto.xyz/redbubble_es.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tonellicueto.xyz/redbubble.html"/>
+  </url>
+
+  <url>
+   <loc>https://tonellicueto.xyz/redbubble.html</loc>
+   <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="https://tonellicueto.xyz/redbubble_es.html"/>
+  </url>
+
+  <url>
    <loc>https://tonellicueto.xyz/contact.html</loc>
    <xhtml:link
               rel="alternate"
