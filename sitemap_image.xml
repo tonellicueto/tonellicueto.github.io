@@ -11,6 +11,9 @@
 <image:loc>https://tonellicueto.xyz/imgs/index001.jpg</image:loc>
 </image:image>
 <image:image>
+<image:loc>https://tonellicueto.xyz/imgs/index002.jpg</image:loc>
+</image:image>
+<image:image>
 <image:loc>https://tonellicueto.xyz/imgs/indexclicks.jpg</image:loc>
 </image:image>
 </url>
@@ -22,6 +25,9 @@
 </image:image>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/index001.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/index002.jpg</image:loc>
 </image:image>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/indexclicks.jpg</image:loc>
@@ -491,6 +497,13 @@
 <loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index001.jpg</loc>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index001.jpg</image:loc>
+</image:image>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index002.jpg</loc>
+<image:image>
+<image:loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index002.jpg</image:loc>
 </image:image>
 </url>
 

@@ -108,7 +108,7 @@
     <div class="jumbotron" style="margin-bottom: 0px;">
      <div class="row" style="display: flex;">
       <div class="col-md-5" align="center">
-            <img id="profilepic" itemprop="image" src="imgs/index000.png" style="width: 80%;" class="img-responsive center_image" alt="Fotografía de Josué Tonelli Cueto en la TU Berlin" onclick="changeProfileImage()"/>
+            <img id="profilepic" itemprop="image" src="imgs/index002.jpg" style="width: 66.5%;" class="img-responsive center_image" alt="Fotografía de Josué Tonelli Cueto en Inria.  &copy; Inria / Photo B. Fourrier" onclick="changeProfileImage()"/>
       </div>
       <div class="col-md-7">
         <center>
@@ -148,6 +148,7 @@
 <footer style="padding-top:1em;">
     <p style="text-align:left;">&emsp;&emsp;&copy;Josué Tonelli-Cueto
         <span id="finalsentence" style="float:right;"> C&oacute;digo de la p&aacute;gina creado por el arte de copiar, pegar y cruzar los dedos&emsp;&emsp;</span></p>
+    <p style="text-align:left;" id="copyrightimage">&emsp;&emsp;Retrato: &copy; Inria / Photo B. Fourrier</p>
 <hr style="margin: 0;">
 </footer> <!--  /container  -->
 
@@ -162,22 +163,31 @@
     <script type="text/javascript">
     <!--
     let count=0;
-    let profimgs=2;
+    let profimgs=3;
     let lim=3*profimgs;
     function changeProfileImage() {
     count++;
     if (count < lim){
-     if (count%2 == 1)
+     if (count%profimgs == 2)
      {
          document.getElementById("profilepic").style="width: 66.5%;"
          document.getElementById("profilepic").src = "imgs/index001.jpg";
-         document.getElementById("profilepic").alt = "Retrato de Josué Tonelli-Cueto hecho por Emmi Arvidsson";
+         document.getElementById("profilepic").alt = "Retrato de Josué Tonelli Cueto hecho por Emmi Arvidsson";
+         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Emmi Arvidsson";
      }
-     else if (count%2 == 0)
+     else if (count%profimgs == 0)
+     {
+         document.getElementById("profilepic").style="width: 66.5%;"
+         document.getElementById("profilepic").src = "imgs/index002.jpg";
+         document.getElementById("profilepic").alt = "Fotografía de Josué Tonelli Cueto en Inria.  &copy; Inria / Photo B. Fourrier";
+         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Inria / Photo B. Fourrier";
+     }
+     else if (count%profimgs == 1)
      {
          document.getElementById("profilepic").style="width: 80%;"
          document.getElementById("profilepic").src = "imgs/index000.png";
          document.getElementById("profilepic").alt = "Fotografía de Josué Tonelli Cueto en la TU Berlin";
+         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Evgeniya Lagoda";
      }
     }
     else if (count == lim)
@@ -185,12 +195,14 @@
         document.getElementById("profilepic").style="width: 62.7%;"
         document.getElementById("profilepic").src = "imgs/indexclicks.jpg";
         document.getElementById("profilepic").alt = "Gato Suchen diciendo que no más clicks en inglés";
+        document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Imagen: &copy; Josué Tonelli Cueto";
     }
-    else if (count == lim*lim)
+    else if (count == 5*profimgs)
     {
         document.getElementById("profilepic").style="width: 73.5%;"
         document.getElementById("profilepic").src = "imgs/indexclicks1.jpg";
         document.getElementById("profilepic").alt = "Gato Suchen peeing";
+        document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Imagen: &copy; Josué Tonelli Cueto";
     }
     else {}
     }
