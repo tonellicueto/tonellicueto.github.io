@@ -249,6 +249,12 @@
 </image:image>
 <!--Design -->
 <image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro1small.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro2small.jpg</image:loc>
+</image:image>
+<image:image>
 <image:loc>https://tonellicueto.xyz/design/algnum_poster_red.jpg</image:loc>
 </image:image>
 <image:image>
@@ -380,6 +386,12 @@
 </image:image>
 <!--Design -->
 <image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro1small.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro2small.jpg</image:loc>
+</image:image>
+<image:image>
 <image:loc>https://tonellicueto.xyz/design/algnum_poster_red.jpg</image:loc>
 </image:image>
 <image:image>
@@ -504,6 +516,38 @@
 <loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index002.jpg</loc>
 <image:image>
 <image:loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index002.jpg</image:loc>
+</image:image>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/design/PosterTeatro1.jpg</loc>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro1.jpg</image:loc>
+</image:image>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/design/PosterTeatro2.jpg</loc>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro2.jpg</image:loc>
+</image:image>
+</url>
+
+<!-- Teatro -->
+
+<url>
+<loc>https://tonellicueto.xyz/pikasle/fotogrupo2014.jpg</loc>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro1.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro1small.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro2.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://tonellicueto.xyz/design/PosterTeatro2small.jpg</image:loc>
 </image:image>
 </url>
 
@@ -653,6 +697,8 @@
 <image:loc>https://tonellicueto.xyz/pikasle/fotogrupo2014.jpg</image:loc>
 </image:image>
 </url>
+
+
 
 
 

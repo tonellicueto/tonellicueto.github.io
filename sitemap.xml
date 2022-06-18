@@ -127,13 +127,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/multimedia.html</loc>
-    <lastmod>2022-02-06</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <priority>0.7</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/multimedia_es.html</loc>
-    <lastmod>22022-02-06</lastmod>
+    <lastmod>22022-06-18</lastmod>
     <priority>0.7</priority>
    </url>
 
@@ -161,7 +161,25 @@
     <priority>1</priority>
    </url>
 
+  <url>
+   <loc>https://tonellicueto.xyz/teatroespanolaparis2022.html</loc>
+   <lastmod>2022-06-18</lastmod>
+   <priority>0.3</priority>
+  </url>
+
 <!-- IMAGES -->
+
+<!--posteres teatro -->
+
+<url>
+<loc>https://tonellicueto.xyz/design/PosterTeatro1.jpg</loc>
+<lastmod>2022-06-18</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/design/PosterTeatro2.jpg</loc>
+<lastmod>2022-06-18</lastmod>
+</url>
 
 <!-- Trait DÚnion -->
 <url>
