@@ -31,24 +31,56 @@
 
 <div class="container" style="text-align:justify;">
 <br/>
-<h3>Teatro Español à Paris</h3>
+<h1 align="center">drama<span style="color:#ee2523;">TOUR</span>gia<br/>
+un viaje teatral a través de España</h1>
+
+<div class="row" style="padding-bottom:2em;">
+<div class="col" style="text-align:center;">
+<a href="imgs/PosterTeatro1.jpg"><img style="width:30%;" src="imgs/PosterTeatro1small.jpg" alt="Poster del espectáculo"/></a>
+</div>
+<div class="col" style="text-align:center;">
+<a href="imgs/PosterTeatro2.jpg"><img style="width:30%;" src="imgs/PosterTeatro2small.jpg" alt="Poster del espectáculo"/></a>
+</div>
+</div>
+
 <p sytle="text-align: justify;">
-El grupo amateur <em>Teatro Español à París</em> realizará su primera representación el jueves 30 de junio de 2022 a las 21:30 en Comédie Oberkampf (115 Rue du Chemin Vert, 75011 Paris). Las entradas son colaborativas, así tienen un precio mínimo de 3 euros hasta un precio máximo de 5 euros según el importe que la persona quiera pagar. Par adquirir tus entradas, realiza tu pago a traves de Lydia:
+El proyecto <em>Teatro Espaõol à Paris</em> de Luzía Eviza consiste de varios grupos de teatro amateur en castellano en París. Al final de este cursos, sus dos grupos realizarán una representación en la Comédie Oberkampf (115 Rue du Chemin Vert, 75011 Paris), respectivamente, el 30 de junio
+y el 4 de julio a las 21:30.
+</p>
+<p sytle="text-align: justify;">
+Ambas representaciones tratan sobre el presente, el pasado y la historia más reciente de España. En cada representación, se reúnen diferentes obras de teatro breve, centradas en la dramaturgia española contemporánea. Entre las obras representadas, se encuentran obras de los siguientes autores: Juan Mayorga, Juan Carlos Rubio, Denise Despeyroux, Cristina Colmena, Luis Fernando de Julián, Elisenda Guiu y Manuel Benito.
+</p>
+<p sytle="text-align:justify;padding-top:1em;">Más información en: teatroespanolentradas@gmail.com</p>
+<h2>Primera representación (30/junio, 21:30)</h2>
+<p sytle="text-align: justify;">
+  <b>¿Cuándo?</b> 30 de junio de 2022<br/>
+  <b>¿A qué hora?</b> A las 21:30<br/>
+  <b>¿Dónde?</b> Comédie Oberkampf (115 Rue du Chemin Vert, 75011 Paris)<br/>
+  <b>¿Cuánto?</b> Precio de 3 euros, con la posibilidad de pagar hasta un precio 5 euros para ayudar con los costes de la obra.<br/>
+  <b>¿Cómo adquiero las entradas?</b> A traves de <a href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr">nuestro link en Lydia</a>:
+</p>
+<div class="row" align="center" style="font-size:2vw;padding-bottom:1vw;">
+    <div class="col">
+      <a class="btn btn-secondary" href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr" role="button" style="width:80%;">Compra tus entradas para la primera representación</a>
+    </div>
+</div>
+<h2>Segunda representación (30/junio, 21:30)</h2>
+<p sytle="text-align: justify;">
+  <b>¿Cuándo?</b> 4 de julio de 2022<br/>
+  <b>¿A qué hora?</b> A las 21:30<br/>
+  <b>¿Dónde?</b> Comédie Oberkampf (115 Rue du Chemin Vert, 75011 Paris)<br/>
+  <b>¿Cuánto?</b> A determinar.<br/>
+  <b>¿Cómo adquiero las entradas?</b> A determinar. <!--A traves de <a href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr">nuestro link en Lydia</a>:
 </p>
 <div class="row" align="center" style="font-size:2vw;">
     <div class="col">
-      <a class="btn btn-secondary" href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr" role="button" style="width:80%;">Compra tus entradas</a>
+      <a class="btn btn-secondary" href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr" role="button" style="width:80%;">Compra tus entradas para la segunda representación</a>
     </div>
-</div>
-<p sytle="text-align:justify;padding-top:1em;">Más información sobre las entradas en: teatroespanolentradas@gmail.com</p>
-<h4>Detalles</h4>
-<p sytle="text-align: justify;">
-<b>¿Cuándo?</b> 30 de junio de 2022<br/>
-<b>¿A qué hora?</b> A las 21:30<br/>
-<b>¿Dónde?</b> Comédie Oberkampf (115 Rue du Chemin Vert, 75011 Paris)<br/>
-<b>¿Cuánto?</b> De 3 a 5 euros<br/>
-<b>¿Cómo adquiero las entradas?</b> A traves de <a href="https://lydia-app.com/collect/81109-muestra-teatro-espanol-en-paris/fr">nuestro link en Lydia</a>.
-</p>
+</div>-->
+
+<h2>Carteles</h2>
+
+Los carteles fueron diseñados por Josué Tonelli Cueto. El primero muestra a Clara Campoamor y el segundo a Federico García Lorca.
 
 <div class="row" style="padding-bottom:2em;">
 <div class="col-md-6" style="text-align:center;">
@@ -86,10 +118,24 @@ El grupo amateur <em>Teatro Español à París</em> realizará su primera repres
 
     if (screen.width <= 699) {
     var x;
-    x = document.getElementsByClassName("col-md-4");
-     x[0].style="";
-     x[1].style="";
+    x = document.getElementsByTagName("H1");
+    var i;
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:2.5em;font-weight:bold;";
+      }
+    x = document.getElementsByTagName("H2");
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1.8em;font-weight:bold;";
+    }
+    x = document.getElementsByTagName("H3");
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1em;font-weight:bold;";
+    }
     document.getElementById("finalsentence").innerHTML="";
+    x = document.getElementsByClassName("btn btn-secondary");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
     }
     //-->
     </script>
