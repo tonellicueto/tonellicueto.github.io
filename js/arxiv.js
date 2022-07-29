@@ -67,7 +67,6 @@ var urlPrefix = 'https://arxiv.org/a/';
 
 newScript.src = urlPrefix + arxiv_authorid + '.js';
 
-
 headID.appendChild(newScript);
 
 
@@ -82,9 +81,22 @@ function htmlFix(html)
 	return html;
 }
 
+//FixesforMyArxiv
+function fixes_data(feed)
+{
+   var x = 0;
+   num_entries = feed.entries.length;
+   for (x=0; x<num_entries; x++) {
+     if(feed.entries[x].published=="2019-12-17T12:52:24-05:00"){feed.entries[x].published="2022-06-20T13:28:33-05:00";}
+   }
+}
+
 
 function jsonarXivFeed(feed)
 {
+
+    fixes_data(feed);
+
     feed.entries.sort(function(a,b) {
       var pa = a.published;
       var pb = b.published;

@@ -10,13 +10,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/arXiv_es.html</loc>
-    <lastmod>2021-08-08</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.5</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/arXiv.html</loc>
-    <lastmod>2021-08-08</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.5</priority>
    </url>
 
@@ -85,31 +85,31 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Long_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/UnDetailed_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Resume_tonellicueto.pdf</loc>
-    <lastmod>2022-04-30</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>1</priority>
    </url>
 
@@ -139,13 +139,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/non-research.html</loc>
-    <lastmod>2022-12-22</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.8</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/non-research_es.html</loc>
-    <lastmod>2022-12-22</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <priority>0.8</priority>
    </url>
 
@@ -270,6 +270,21 @@
 <!--Slides-->
 
 <url>
+<loc>https://tonellicueto.xyz/pdf/Santalo2022_slides.pdf</loc>
+<lastmod>2022-07-29</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/MEGA2022_slides.pdf</loc>
+<lastmod>2022-07-29</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/ISSAC22_slides.pdf</loc>
+<lastmod>2022-07-29</lastmod>
+</url>
+
+<url>
 <loc>https://tonellicueto.xyz/pdf/AAA2021_slides.pdf</loc>
 <lastmod>2021-12-02</lastmod>
 </url>
@@ -355,6 +370,11 @@
 </url>
 
 <!--Posters-->
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/ISSAC22_poster.pdf</loc>
+<lastmod>2022-07-29</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/Poster_Computing_the_Homology_of_Semialgebraic_SetsTDA.pdf</loc>

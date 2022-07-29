@@ -17,7 +17,7 @@
 // that code without the copy of the GNU GPL normally required by
 // section 4, provided you include this license notice and a URL
 // through which recipients can access the Corresponding Source.
-// 
+//
 // We note that this version need the class btn btn-arxiv to display
 // propperly the button. This can be defined as follows:
 /*
@@ -83,8 +83,22 @@ function htmlFix(html)
 }
 
 
+//FixesforMyArxiv
+function fixes_data(feed)
+{
+   var x = 0;
+   num_entries = feed.entries.length;
+   for (x=0; x<num_entries; x++) {
+     if(feed.entries[x].published=="2019-12-17T12:52:24-05:00"){feed.entries[x].published="2022-06-20T13:28:33-05:00";}
+   }
+}
+
+
 function jsonarXivFeed(feed)
 {
+
+    fixes_data(feed);
+
     feed.entries.sort(function(a,b) {
       var pa = a.published;
       var pb = b.published;
