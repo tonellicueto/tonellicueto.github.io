@@ -85,13 +85,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2022-09-06</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2022-09-06</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <priority>0.9</priority>
    </url>
 
@@ -139,13 +139,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/non-research.html</loc>
-    <lastmod>2022-09-06</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <priority>0.8</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/non-research_es.html</loc>
-    <lastmod>2022-09-06</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <priority>0.8</priority>
    </url>
 
@@ -461,6 +461,11 @@
 <url>
 <loc>https://tonellicueto.xyz/pdf/torres_hanoi.pdf</loc>
 <lastmod>2020-03-17</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/exponencial_matriz.pdf</loc>
+<lastmod>2022-09-10</lastmod>
 </url>
 
 <!-- Other -->
