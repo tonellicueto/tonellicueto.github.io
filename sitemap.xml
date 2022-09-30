@@ -85,25 +85,25 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-09-26</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-09-26</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Long_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-09-26</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/UnDetailed_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-09-26</lastmod>
     <priority>1</priority>
    </url>
 
@@ -375,6 +375,11 @@
 </url>
 
 <!--Posters-->
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/TAGS2022_poster.pdf</loc>
+<lastmod>2022-09-29</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/ISSAC22_poster.pdf</loc>
