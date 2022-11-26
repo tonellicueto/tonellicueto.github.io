@@ -227,9 +227,9 @@ button {
 }
 
 .btn-open-access, .btn-open-access:active{
-	background-color: white;
-  border-color : #f58021;
-  color: #f58021;
+	background-color: #f58021;
+	border-color: white;
+	color: white;
   display: inline;
   font-size:medium;
   float:right;
@@ -243,9 +243,9 @@ button {
 }
 
 .btn-open-access:hover, .btn-open-access:focus{
-    background-color: #f58021;
-		border-color: white;
-    color: white;
+    background-color: white;
+    border-color : #f58021;
+    color: #f58021;
     display: inline;
     font-size:medium;
     float:right;
