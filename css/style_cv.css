@@ -226,6 +226,38 @@ button {
     text-align: center;
 }
 
+.btn-open-access, .btn-open-access:active{
+	background-color: white;
+  border-color : #f58021;
+  color: #f58021;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-open-access:hover, .btn-open-access:focus{
+    background-color: #f58021;
+		border-color: white;
+    color: white;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
 .btn-manuscript, .btn-manuscript:active{
 	background-color: #ee2523;
   border-color : white;
