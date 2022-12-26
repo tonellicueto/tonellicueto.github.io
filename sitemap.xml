@@ -85,31 +85,31 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Long_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/UnDetailed_CV_tonellicueto.pdf</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Resume_tonellicueto.pdf</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>1</priority>
    </url>
 
@@ -151,13 +151,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/research.html</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/research_es.html</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-12-26</lastmod>
     <priority>1</priority>
    </url>
 
@@ -390,6 +390,11 @@
 </url>
 
 <!--Posters-->
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/RSMEUMA2_poster.pdf</loc>
+<lastmod>2022-11-08</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/5SIAMTXLA_poster.pdf</loc>

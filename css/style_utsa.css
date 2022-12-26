@@ -1,0 +1,171 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+html body{
+background-color : #FFFFFF;
+}
+body {
+  margin-top: 35px;
+  padding-top: 2rem;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.jumbotron {
+    margin-bottom: 50px;
+    background-color:#0C2340;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F15A22;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+footer {
+    color:#0C2340;
+    background-color:#F15A22;
+}
+
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0.05px;
+  width: auto;
+}
+
+.navbar-default {
+  background-color:teal;
+  color: blue;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+.navbar-custom {
+	color:#0C2340;
+	background-color:#F15A22;
+}
+.navbar-custom2 {
+	color:#F15A22;
+	background-color:#0C2340;
+}
+
+
+/*Maybe the important can be quit in the future, for now, this works*/
+.nav-pills>li>a{
+     color: #F15A22!important;
+}
+
+.nav-pills>li>a.active,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background-color: #F15A22!important;
+    color: #0C2340!important;
+    font-style:normal;font-variant:normal;
+}
+
+
+
+.navbar-nav > .active > a{color: #F15A22!important; background-color: #0C2340;}
+.navbar-nav > li > a:hover{color: #F15A22!important; background-color: #0C2340;font-style:normal;font-variant:normal;}
+.navbar-nav > li > a{color: #0C2340!important; font-size: 1.3em;}
+
+
+
+.navbar-nav > li > .dropdown-menu {background-color:  #00B7EB;}
+
+.navbar-nav > li > .dropdown-menu a{color: #0C2340;}
+
+.navbar-nav > li > .dropdown-menu a:hover{background-color: #00B7EB;}
+
+.btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
+	background-color: #F15A22;
+	border-color : #0C2340;
+	color: #0C2340;
+	font-weight:bold;
+	font-variant: small-caps;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
+    background-color: #0C2340;
+		border-color: #F15A22;
+		color: #F15A22;
+		font-weight:bold;
+}
+
+.btn-MGP, .btn-MGP:active{
+	background-color: #88480a;
+  border-color : #0C2340;
+  color: #0C2340;
+  width:49%;
+}
+
+.btn-MGP:hover, .btn-MGP:focus{
+	background-color: #0C2340;
+  border-color : #88480a;
+  color: #88480a;
+  width:49%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
+
+span a, span a:active, span a:hover{
+    color: #F15A22;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: medium;
+}
+
+ a { color: inherit; }
+
+ a:active, a:hover{
+    color: #F15A22;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: inherit;
+}
+
+p{
+  text-align:justify;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+
+.infocomputer td:nth-child(even){
+	color:#0C2340;
+	font-weight:normal;
+	text-align:left;
+  padding: 0 0.5em;
+}
+
+.infocomputer td:nth-child(odd){
+	color:#F15A22;
+	font-weight:bold;
+	text-align:right;
+	padding: 0 0.5em;
+}
+
+.phone tr:nth-child(even){
+	color:#0C2340;
+	font-weight:normal;
+	text-align:right;
+  padding: 0 0.5em;
+}
+
+.phone tr:nth-child(odd) td{
+	color:#F15A22;
+	font-weight:bold;
+	text-align:left;
+	padding: 0 0.5em;
+}
