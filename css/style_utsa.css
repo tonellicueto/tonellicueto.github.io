@@ -114,6 +114,38 @@ footer {
   font-variant:inherit;
 }
 
+.btn-book, .btn-book:active{
+  background-color: #F15A22;
+	border-color : #0C2340;
+	color: #0C2340;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-book:hover, .btn-book:focus{
+  background-color: #0C2340;
+  border-color: #F15A22;
+  color: #F15A22;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
 
 span a, span a:active, span a:hover{
     color: #F15A22;
