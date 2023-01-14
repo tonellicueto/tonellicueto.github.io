@@ -114,7 +114,7 @@ footer {
   font-variant:inherit;
 }
 
-.btn-book, .btn-book:active{
+.btn-wiki, .btn-wiki:active{
   background-color: #F15A22;
 	border-color : #0C2340;
 	color: #0C2340;
@@ -130,10 +130,42 @@ footer {
   text-align: center;
 }
 
-.btn-book:hover, .btn-book:focus{
+.btn-wiki:hover, .btn-wiki:focus{
   background-color: #0C2340;
   border-color: #F15A22;
   color: #F15A22;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-book, .btn-book:active{
+  background-color: #f4d019;
+	border-color : black;
+	color: black;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-book:hover, .btn-book:focus{
+  background-color: black;
+  border-color: #f4d019;
+  color: #f4d019;
   display: inline;
   font-size:medium;
   float:right;
