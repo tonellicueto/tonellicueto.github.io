@@ -87,8 +87,9 @@
 	         <li class="nav-item"><a class="nav-link" href="#basic">Basic Information</a></li>
 					 <li class="nav-item"><a class="nav-link" href="#lectures">Lectures</a></li>
            <li class="nav-item"><a class="nav-link" href="#bio">Bibliography and more</a></li>
-           <li class="nav-item"><a class="nav-link" href="#gradesexams">Grades & Exams</a></li>
-           <li class="nav-item"><a class="nav-link" href="#misc">Miscellanea</a></li>
+           <li class="nav-item"><a class="nav-link" href="#grading">Grading</a></li>
+           <li class="nav-item"><a class="nav-link" href="#homework">Homework</a></li>
+           <li class="nav-item"><a class="nav-link" href="#exams">Exams</a></li>
         </ul>
     </nav>
 </div>
@@ -478,12 +479,12 @@ The final exam will take place...
 </ol>
 </div>
 <hr/>
-<div id="grade">
-<h2 class="display-4">Grades</h2>
+<div id="grading">
+<h2 class="display-4">Grading</h2>
 <p>
 The grade in this course will depend on homework, three midterm exams and one (compulsory) final exam according to the following formula:
 </p>
-\[\frac{HW+ME_1+ME_2+ME_3+FE}{5}\]
+\[\frac{HW+ME_1+ME_2+ME_3+FE}{5}\in [0,100]\]
 <p>
 where $HW\in [0,100]$ is the grade on the homework, $ME_1\in [0,100]$ is the grade on the 1st midterm exam, $ME_2\in [0,100]$ is the grade on the 2nd midterm exam, $ME_3\in [0,100]$ is the 3rd midterm exam and $FE\in [0,100]$ is the grade on the final exam. Note that each one of these grade is a numerical scale from $0$ to $100$.
 </p>
@@ -496,7 +497,7 @@ Once the numerical grade is computed, this will be converted to a letter grade a
 <p>
 If the grade in the final exam is greater than the grade in any of the midterm exams, then the grade in the final exam will substitute the lowest grade in a midterm exam when computing the final grade. In other words, the actual formula to compute the final grade will be:
 </p>
-\[\max\left\{\frac{HW+ME_1+ME_2+ME_3+FE}{5},\frac{HW+ME_2+ME_3+2\,FE}{5},\frac{HW+ME_1+ME_3+2\,FE}{5},\frac{HW+ME_1+ME_2+2\,FE}{5}\right\}\in [0,100]\]
+\[\frac{HW+\max\left\{ME_1+ME_2+ME_3+FE,ME_2+ME_3+2\,FE,ME_1+ME_3+2\,FE,ME_1+ME_2+2\,FE\right\}}{5}\right\}\in [0,100]\]
 <p>
 where $HW\in [0,100]$ is the grade on the homework, $ME_1\in [0,100]$ is the grade on the 1st midterm exam, $ME_2\in [0,100]$ is the grade on the 2nd midterm exam, $ME_3\in [0,100]$ is the 3rd midterm exam and $FE\in [0,100]$ is the grade on the final exam.
 </p>
@@ -509,26 +510,39 @@ Before each of the midterm exams and the final exam, a set of practice problems 
 <hr/>
 <div id="homework">
 <h2 class="display-4">Homework</h2>
+<p>
+All homework will be assigned through WeBWork. You can access WebWork through the following link using your UTSA credentials. In case you cannot access, please, <b>let me know immediately</b>.
+</p>
+<p style="text-align:center;">
+  <a class="btn btn-secondary" href="http://webwork.math.utsa.edu/webwork2/MAT_1224_009_Spring_2023/" role="button" style="width:30%;">WebWork</a>
+</p>
+<p>
+You will have one week starting at 11.00 am after each lecture to complete each of the assignments. In case you miss this first deadline, you will have an extra week to complete the assignments for 70% of the original credit.
+</p>
 </div>
 <hr/>
 <div id="exams">
 <h2 class="display-4">Exams</h2>
 <p>
-There will be three midterm exams and one final exam.
+There will be three midterm exams and one compulsory final exam, which must be taken to pass the course. In all the exams, the use of a scientific (non-graphing) calculator without internet capabilities is allowed. However, under no circumstances are students permitted to utilize an online resource, website or tutor to find solutions to exam problems.
 </p>
 <h3>Midterm Exams</h3>
 <p>
-There will be three midterm exams.
+There will be three midterm exams administered during the class. Each of these exams will consist of written problems similar to the homework problems and examples discussed in class. The exams will have a time limit of 50 minutes.
 </p>
+<p>
+The midterm exams will take place in the following days (any change will be communicated in advance):
+</p>
+<ul style="list-style: none;">
+  <li><b>1st Midterm Exam:</b> February 1</li>
+  <li><b>2nd Midterm Exam:</b> March 8</li>
+  <li><b>3rd Midterm Exam:</b> April 17</li>
+</ul>
+<p>In case you cannot attend the class the day of the midterm exam, you should inform the instructor as soon as possible and always before the exam. Otherwise, no alternative arrangement will be possible.</p>
 <h3>Final Exam (May 10, 9:00 am-10:50 am)</h3>
 <p>
-In accordance with the <a href="https://asap.utsa.edu/terms.htm">2022 Spring Final Exam Schedule</a>, the final exam of this course will on Wednesday, May 10, from 9.00 am to 10:50 am. More details on the location will be given later.
+In accordance with the <a href="https://asap.utsa.edu/terms.htm">2022 Spring Final Exam Schedule</a>, the final exam of this course will on Wednesday, May 10, from 9.00 am to 10:50 am. The final exam will consist of written problems similar to the homework problems and problems from the midterm exams. More details on the location will be given later.
 </p>
-</div>
-<hr>
-<div id="misc">
-<h2 class="display-4">Miscellanea</h2>
-
 </div>
 <br/>
 </div>
@@ -557,16 +571,20 @@ In accordance with the <a href="https://asap.utsa.edu/terms.htm">2022 Spring Fin
 		document.getElementById("infocomputer").style.display="none";
 		document.getElementById("infophone").style.display="table";
     var x;
-    x = document.getElementsByTagName("H4");
     var i;
+    x = document.getElementsByTagName("H3");
       for (i = 0; i < x.length; i++) {
        x[i].style="font-size:1em;font-weight:bold;";
       }
-    x = document.getElementsByClassName("btn btn-arxiv");
+    x = document.getElementsByTagName("H2");
+      for (i = 0; i < x.length; i++) {
+       x[i].style="font-size:1.4em;font-weight:bold;";
+      }
+    x = document.getElementsByClassName("btn btn-book");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:100%;";
     }
-    x = document.getElementsByClassName("btn btn-hal");
+    x = document.getElementsByClassName("btn btn-secondary");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:100%;";
     }
