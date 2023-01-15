@@ -162,6 +162,14 @@ footer {
   text-align: center;
 }
 
+.btn-booktop, .btn-booktop:active{
+  background-color: #f4d019;
+	border-color : black;
+	color: black;
+  font-weight:bold;
+	font-variant: small-caps;
+}
+
 .btn-book:hover, .btn-book:focus{
   background-color: black;
   border-color: #f4d019;
@@ -176,6 +184,13 @@ footer {
   width:11em;
   padding: 0em 0em;
   text-align: center;
+}
+
+.btn-booktop:hover, .btn-booktop:focus{
+  background-color: black;
+  border-color: #f4d019;
+  color: #f4d019;
+  font-weight:bold;
 }
 
 
