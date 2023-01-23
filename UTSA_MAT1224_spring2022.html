@@ -315,13 +315,13 @@ where $F$ is an <em>antiderivative</em> of $f$, i.e., $F$ is a continuous functi
 <p>
 In another formulation of the <b>Fundamental Theorem of Calculus</b>, we just say the function $F:[a,b]\rightarrow\mathbb{R}$ given by
 \[F(x):=\int_{a}^{x}f(t)\,\mathrm{d}t\]
-is an antiderivative of $f$ on [a,b]$, i.e., a continuous function derivable in $(a,b)$ and such that for all $x\in(a,b)$, $F'(x)=f(x)$. Note that this is equivalent to the above version due to <a href="https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem">the Mean Value Theorem (see Theorem 4.7 in Vol. 1)</a>. However, this version asserts succintly that the antiderivative of a continuous function exists, which is not necessarily clear from the version above.
+is an antiderivative of $f$ on $[a,b]$, i.e., a continuous function derivable in $(a,b)$ and such that for all $x\in(a,b)$, $F'(x)=f(x)$. Note that this is equivalent to the above version due to <a href="https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem">the Mean Value Theorem (see Theorem 4.7 in Vol. 1)</a>. However, this version asserts succintly that the antiderivative of a continuous function exists, which is not necessarily clear from the version above.
 </p>
 <p>
 The reason we call this theorem 'fundamental' is because it relates the two fundamental notions of calculus: the derivative—how does the function vary?—and the integral—how does the change accumulate?—. This theorem establishes a direct connection between these two fundamental notions of calculus, allowing us both to compute and study deeper how the functions that we encounter in the world change. A main focus of this course will be in how to use this theorem for computing areas and other physical quantities.
 </p>
 <p>
-<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">Gottfried Wilhelm Leibniz</a>, the other father of calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=9UKGPOwR-iw&t=97s"><em>Newton and Leibniz: Crash Course History of Science #17</em> by CrashCourse</a>. <a href="https://www.youtube.com/watch?v=68bQ3qSl6jc"><em>Gottfried Wilhem Leibniz</em> by Strayer</a>. <a href="https://www.youtube.com/watch?v=8BwbEMlQOUQ"><em>Philosophy of rationalism—Descartes and Leibniz</em> by Philosophy Animal</a>.
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">Gottfried Wilhelm Leibniz</a>, the other father of calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=9UKGPOwR-iw"><em>Newton and Leibniz: Crash Course History of Science #17</em> by CrashCourse</a>. <a href="https://www.youtube.com/watch?v=68bQ3qSl6jc"><em>Gottfried Wilhem Leibniz</em> by Strayer</a>. <a href="https://www.youtube.com/watch?v=8BwbEMlQOUQ"><em>Philosophy of rationalism—Descartes and Leibniz</em> by Philosophy Animal</a>.
 </p>
 <p>
 <b>Media to Watch</b>:
@@ -337,7 +337,14 @@ c) Explain the relationship between differentiation and integration.
 <h3>Lecture 1 (Jan 23)<br/>
 <em>Integration by Substitution</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Substitution" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/1-5-substitution" role="button">Sec. 1.5</a></h3>
 <p>
-
+The chain rule allows us to compute the derivative of a composition of functions, the analogue when we integrate is the so-called <em>integration by substitution</em> or <em>change of variables</em>. Change of variables is based on the following formula:
+\[
+\int_a^bf(g(u))g'(u)\,\mathrm{d}u=\int_{g(a)}^{g(b)}\,f(v)\,\mathrm{d}v
+\]
+where $f$ is continuous on the range of $g:[a,b]\rightarrow\mathbb{R}$ whose derivative $g'$ is continuous. This formula allows to transform the functions that we have to integrate. Unfortunately, unlike the chain rule, integration by substitution is not automatic. Because of this, we need to practice in order to identify and come up with the correct change of variables.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Gloria_Conyers_Hewitt">Gloria Conyers Hewitt</a>, an African-American mathematician specialized in group theory and abstract algebra and the 4th African-American woman to receive a PhD in Mathematics in the USA. Additional materials to learn more: <a href="https://mathematicallygiftedandblack.com/honorees/gloria-conyers-hewitt/"><em>Gloria Conyers Hewitt</em>, Black History Month 2018 Honoree in Mathematically Gifted and Black</a>. <a href="https://mathwomen.agnesscott.org/women/hewitt.htm"><em>Gloria Hewitt</em> in Biographies of Women Mathematicians (by Shannon Hensley)</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -348,7 +355,11 @@ c) Use substitution to evaluate definite integrals.
 <h3>Lecture 2 (Jan 25)<br/>
 <em>Area between Curves</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Area_between_Curves" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-1-areas-between-curves" role="button">Sec. 2.1</a></h3>
 <p>
-
+The definite integral is the signed area under a function. Because of this, we can use definite areas also to compute the area between two curves. More concretely, we want to find the area of the region bounded by the two curves given by $y=f(x)$ and $y=g(x)$ and the two vertical axis at $a$ and $b$. If the curves do not cross between $x=a$ and $x=b$ and $g(x)\leq f(x)$ for all $x\in [a,b]$, then the area is given by
+\[\int_a^b\,(f(x)-g(x))\,\mathrm{d}x.\]
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Katherine_Johnson">Katherine Johnson</a>, African-American mathematician whose calculations of orbital mechanics where fundamental for the sucess of NASA's first crewed spaceflights. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=nKxgieXQ82w"><em>Katherine Johnson: An American Hero</em> by NASA</a>. <a href="https://www.youtube.com/watch?v=SvsHjWVgqcY&t=33s"><em>The Woman Behind Project Mercury (Outlier)</em> by Timeline</a>. <b>Film to Watch:</b> <a href="https://en.wikipedia.org/wiki/Hidden_Figures">Hidden Figures</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -361,6 +372,7 @@ c) Determine the area of a region between two curves by integrating with respect
 <p>
 
 </p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Bonaventura_Cavalieri">Bonaventura Cavalieri</a>, Italian mathematician and Jesuate, known among other things as a precursor to calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=2TDFtCKMoKk"><em>Cavalieri's principle in 3D</em> by Khan Academy</a>. <a href="https://www.shellsandpebbles.com/2018/04/18/the-war-against-disorder/"><em>The War agains Disorder: The Jesuit Victory over Indivisibles</em> by Amir Alexander</a>. <a href="https://plato.stanford.edu/entries/continuity/#ContInfiMediRenaEarlModePeri"><em>The Continuum and the Infinitesimal in the Medieval, Renaissance, and Early Modern Periods</em> of <em>Continuity and Infinitesimals</em> in Standford Encyclopedia of Philosophy.</a>
 <p>
 <b>Learning Objectives:</b>
 a) Determine the volume of a solid by integrating a cross-section (the slicing method).
@@ -371,6 +383,9 @@ c) Find the volume of a solid of revolution with a cavity using the washer metho
 <em>Volumes of Revolution: Cylindrival Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
 <p>
 
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Archimedes">Archimedes</a>, the greatest mathematician of anchient history. His work was a precursor or calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=68bQ3qSl6jc"><em>How taking a bath led to Archimedes' principle</em> by Mark Salata</a>. <a href="https://www.youtube.com/watch?v=0v86Yk14rf8"><em>The real story behind Archimedes' Eureka!</em> by Armand D'Angour</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -845,6 +860,10 @@ UTSA continues its partnership with TutorMe, a free 24/7 online tutoring platfor
        x[i].style="font-size:1.4em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-book");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("btn btn-booktop");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:100%;";
     }
