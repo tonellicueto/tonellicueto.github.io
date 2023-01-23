@@ -303,7 +303,7 @@
 <div id="lectures">
   <h2 class="display-4">Lectures<a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=MAT1224" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/details/books/calculus-volume-2" role="button">Textbook</a></h2>
 <p>Each lecture will have a short pitch (3-5 minutes), called <em>MathInContext</em>, where I will introduce different aspect of the context of mathematics: the people who have done and do math, the history of math or the applications of math to everyday life.</p>
-<h3>Lecture 0 (Jan 18)<br/>
+<h3 id="lec0">Lecture 0 (Jan 18)<br/>
 <em>The Fundamental Theorem of Calculus</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=The_Fundamental_Theorem_of_Calculus" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/1-3-the-fundamental-theorem-of-calculus" role="button">Sec. 1.3</a></h3>
 <p>
 Recall that for a continuous function $f:[a,b]\rightarrow\mathbb{R}$,
@@ -334,10 +334,10 @@ a) Use the Fundamental Theorem of Calculus to evaluate derivatives of integrals.
 b) Use the Fundamental Theorem of Calculus to evaluate definite integrals.
 c) Explain the relationship between differentiation and integration.
 </p>
-<h3>Lecture 1 (Jan 23)<br/>
+<h3 id="lec1">Lecture 1 (Jan 23)<br/>
 <em>Integration by Substitution</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Substitution" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/1-5-substitution" role="button">Sec. 1.5</a></h3>
 <p>
-The chain rule allows us to compute the derivative of a composition of functions, the analogue when we integrate is the so-called <em>integration by substitution</em> or <em>change of variables</em>. Change of variables is based on the following formula:
+The chain rule allows us to compute the derivative of a composition of functions, the analogue when we integrate is the so-called <em>integration by substitution</em>, <em>change of variables</em> or <em>$u$-substitution</em>. Change of variables is based on the following formula:
 \[
 \int_a^bf(g(u))g'(u)\,\mathrm{d}u=\int_{g(a)}^{g(b)}\,f(v)\,\mathrm{d}v
 \]
@@ -352,7 +352,7 @@ a) Recognize when to use integration by substitution.
 b) Use substitution to evaluate indefinite integrals.
 c) Use substitution to evaluate definite integrals.
 </p>
-<h3>Lecture 2 (Jan 25)<br/>
+<h3 id="lec2">Lecture 2 (Jan 25)<br/>
 <em>Area between Curves</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Area_between_Curves" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-1-areas-between-curves" role="button">Sec. 2.1</a></h3>
 <p>
 The definite integral is the signed area under a function. Because of this, we can use definite areas also to compute the area between two curves. More concretely, we want to find the area of the region bounded by the two curves given by $y=f(x)$ and $y=g(x)$ and the two vertical axis at $a$ and $b$. If the curves do not cross between $x=a$ and $x=b$ and $g(x)\leq f(x)$ for all $x\in [a,b]$, then the area is given by
@@ -367,7 +367,7 @@ a) Determine the area of a region between two curves by integrating with respect
 b) Find the area of a compound region.
 c) Determine the area of a region between two curves by integrating with respect to the dependent variable.
 </p>
-<h3>Lecture 3 (Jan 30)<br/>
+<h3 id="lec3">Lecture 3 (Jan 30)<br/>
 <em>Determining Volumes by Slicing</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Determining_Volumes_by_Slicing" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-2-determining-volumes-by-slicing" role="button">Sec. 2.2</a></h3>
 <p>
 
@@ -379,7 +379,7 @@ a) Determine the volume of a solid by integrating a cross-section (the slicing m
 b) Find the volume of a solid of revolution using the disk method.
 c) Find the volume of a solid of revolution with a cavity using the washer method.
 </p>
-<h3>Lecture 4 (Feb 1)<br/>
+<h3 id="lec4">Lecture 4 (Feb 1)<br/>
 <em>Volumes of Revolution: Cylindrival Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
 <p>
 
@@ -392,7 +392,7 @@ c) Find the volume of a solid of revolution with a cavity using the washer metho
 a) Calculate the volume of a solid of revolution by using the method of cylindrical shells.
 b) Compare the different methods for calculating a volume of revolution.
 </p>
-<h3>Lecture 5 (Feb 6)<br/>
+<h3 id="lec5">Lecture 5 (Feb 6)<br/>
 <em>Arc Length of a Curve and Surface Area</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Arc_Length_and_Surface_Area" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-4-arc-length-of-a-curve-and-surface-area" role="button">Sec. 2.4</a></h3>
 <p>
 
@@ -402,7 +402,7 @@ b) Compare the different methods for calculating a volume of revolution.
 a) Determine the length of a plane curve between two points.
 b) Find the surface area of a solid of revolution.
 </p>
-<h3>Lecture 6 (Feb 8)<br/>
+<h3 id="lec6">Lecture 6 (Feb 8)<br/>
 <em>Physical Applications</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Physical_Applications" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-5-physical-applications" role="button">Sec. 2.5</a></h3>
 <p>
 
@@ -417,7 +417,7 @@ e) Calculate the work done in lifting a rope/cable.
 f) Calculate the work done in pumping a liquid from one height to another.
 g) Find the hydrostatic force against a submerged vertical plate.
 </p>
-<h3>Lecture 7 (Feb 13)<br/>
+<h3 id="lec7">Lecture 7 (Feb 13)<br/>
 <em>Moments and Center of Mass</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Moments_and_Center_of_Mass" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-6-moments-and-centers-of-mass" role="button">Sec. 2.6</a></h3>
 <p>
 
@@ -429,7 +429,7 @@ b) Find the center of mass of objects distributed in a plane.
 c) Locate the center of mass of a thin plate.
 d) Use symmetry to help locate the centroid of a thin plate.
 </p>
-<h3>Lecture 8 (Feb 15)<br/>
+<h3 id="lec8">Lecture 8 (Feb 15)<br/>
 <em>Integration by Parts</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Parts" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts" role="button">Sec. 3.1</a></h3>
 <p>
 
@@ -442,7 +442,7 @@ c) Use the integration-by-parts formula to evaluate definite integrals.
 d) Use the tabular method to perform integration by parts.
 e) Solve problems involving applications of integration using integration by parts.
 </p>
-<h3>Lecture 9 (Feb 20)<br/>
+<h3 id="lec9">Lecture 9 (Feb 20)<br/>
 <em>Trigonometric Integrals</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Trigonometric_Integrals" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-2-trigonometric-integrals" role="button">Sec. 3.2</a></h3>
 <p>
 
@@ -454,7 +454,7 @@ b) Evaluate integrals involving products and powers of $\sec(x)$ and $\tan(x)$.
 c) Evaluate integrals involving products of $\sin(mx)$ and $\cos(nx)$ for $m,n$ integers.
 d) Solve problems involving applications of integration using trigonometric integrals.
 </p>
-<h3>Lecture 10 (Feb 22)<br/>
+<h3 id="lec10">Lecture 10 (Feb 22)<br/>
 <em>Trigonometric Substitution</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Trigonometric_Substitution" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-3-trigonometric-substitution" role="button">Sec. 3.3</a></h3>
 <p>
 
@@ -464,7 +464,7 @@ d) Solve problems involving applications of integration using trigonometric inte
 a) Evaluate integrals involving the square root of a sum or difference of two squares.
 b) Solve problems involving applications of integration using trigonometric substitution.
 </p>
-<h3>Lecture 11 (Feb 27)<br/>
+<h3 id="lec11">Lecture 11 (Feb 27)<br/>
 <em>Partial Fractions</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Partial_Fractions" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-4-partial-fractions" role="button">Sec. 3.4</a></h3>
 <p>
 
@@ -478,7 +478,7 @@ d) Recognize distinct irreducible quadratic factors in a rational function.
 e) Recognize repeated irreducible quadratic factors in a rational function.
 f) Solve problems involving applications of integration using partial fractions.
 </p>
-<h3>Lecture 12 (Mar 1)<br/>
+<h3 id="lec12">Lecture 12 (Mar 1)<br/>
 <em>Improper Integrals</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Improper_Integrals" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-7-improper-integrals" role="button">Sec. 3.7</a></h3>
 <p>
 
@@ -490,7 +490,7 @@ b) Evaluate an integral over an infinite interval.
 c) Evaluate an integral over a closed interval with an infinite discontinuity within the interval.
 d) Use the comparison theorem to determine whether an improper integral is convergent or divergent.
 </p>
-<h3>Lecture 13 (Mar 6)<br/>
+<h3 id="lec13">Lecture 13 (Mar 6)<br/>
 <em>Separation of Variables</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Separation_of_Variables" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations" role="button">Sec. 4.3</a></h3>
 <p>
 
@@ -501,7 +501,7 @@ a) Recognize separable differential equations.
 b) Use separation of variables to solve a differential equation.
 c) Develop and analyze elementary mathematical models.
 </p>
-<h3>Lecture 14 (Mar 8)<br/>
+<h3 id="lec14">Lecture 14 (Mar 8)<br/>
 <em>First-Order Linear Differential Equations</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=First-Order_Linear_Equations" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations" role="button">Sec. 4.5</a></h3>
 <p>
 
@@ -514,7 +514,7 @@ b) Solve applied problems involving first-order linear differential equations.
 <hr>
 <h3 style="font-variant: small-caps;text-align:center;">Spring Break</h3>
 <hr>
-<h3>Lecture 15 (Mar 20)<br/>
+<h3 id="lec15">Lecture 15 (Mar 20)<br/>
 <em style="font-variant: small-caps;">Review of Integration and Differential Equations</em></h3>
 <p>
 
@@ -522,7 +522,7 @@ b) Solve applied problems involving first-order linear differential equations.
 <p>
 <b>Learning Objectives:</b>
 </p>
-<h3>Lecture 16 (Mar 22)<br/>
+<h3 id="lec16">Lecture 16 (Mar 22)<br/>
 <em>Sequences</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Sequences" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-1-sequences" role="button">Sec. 5.1</a></h3>
 <p>
 
@@ -536,7 +536,7 @@ d) Find the limit of a convergent sequence.
 e) Determine whether a sequence is bounded and/or monotone.
 f) Apply the Monotone Convergence Theorem.
 </p>
-<h3>Lecture 17 (Mar 27)<br/>
+<h3 id="lec17">Lecture 17 (Mar 27)<br/>
 <em>Infinite Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Infinite_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series" role="button">Sec. 5.2</a></h3>
 <p>
 
@@ -552,7 +552,7 @@ f) Find the sum of a convergent geometric series.
 g) Identify a telescoping series.
 h) Find the sum of a telescoping series.
 </p>
-<h3>Lecture 18 (Mar 29)<br/>
+<h3 id="lec18">Lecture 18 (Mar 29)<br/>
 <em>The Divergence and Integral Tests</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=The_Divergence_and_Integral_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-3-the-divergence-and-integral-tests" role="button">Sec. 5.3</a></h3>
 <p>
 
@@ -564,7 +564,7 @@ b) Use the Integral Test to determine whether a series converges or diverges.
 c) Use the p-Series Test to determine whether a series converges or diverges.
 d) Estimate the sum of a series by finding bounds on its remainder term.
 </p>
-<h3>Lecture 19 (Apr 3)<br/>
+<h3 id="lec19">Lecture 19 (Apr 3)<br/>
 <em>Comparison Test</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Comparison_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-4-comparison-tests" role="button">Sec. 5.4</a></h3>
 <p>
 
@@ -574,7 +574,7 @@ d) Estimate the sum of a series by finding bounds on its remainder term.
 a) Use the Direct Comparison Test to determine whether a series converges or diverges.
 b) Use the Limit Comparison Test to determine whether a series converges or diverges.
 </p>
-<h3>Lecture 20 (Apr 5)<br/>
+<h3 id="lec20">Lecture 20 (Apr 5)<br/>
 <em>Alternating Sequences</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Alternating_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-5-alternating-series" role="button">Sec. 5.5</a></h3>
 <p>
 
@@ -585,7 +585,7 @@ a) Use the Alternating Series Test to determine the convergence of an alternatin
 b) Estimate the sum of an alternating series.
 c) Explain the meaning of absolute convergence and conditional convergence.
 </p>
-<h3>Lecture 21 (Apr 10)<br/>
+<h3 id="lec21">Lecture 21 (Apr 10)<br/>
 <em>Ratio and Root Tests</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Ratio_and_Root_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-6-ratio-and-root-tests" role="button">Sec. 5.6</a></h3>
 <p>
 
@@ -596,7 +596,7 @@ a) Use the Ratio Test to determine absolute convergence or divergence of a serie
 b) Use the Root Test to determine absolute convergence or divergence of a series.
 c) Describe a strategy for testing the convergence or divergence of a series.
 </p>
-<h3>Lecture 22 (Apr 12)<br/>
+<h3 id="lec22">Lecture 22 (Apr 12)<br/>
 <em style="font-variant: small-caps;">Review of Series</em></h3>
 <p>
 
@@ -607,7 +607,7 @@ a) Identify a power series.
 b) Determine the interval of convergence and radius of convergence of a power series.
 c) Use a power series to represent certain functions.
 </p>
-<h3>Lecture 23 (Apr 17)<br/>
+<h3 id="lec23">Lecture 23 (Apr 17)<br/>
 <em>Power Series and Functions</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Power_Series_and_Functions" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-1-power-series-and-functions" role="button">Sec. 6.1</a></h3>
 <p>
 
@@ -619,7 +619,7 @@ b) Multiply two power series together.
 c) Differentiate and integrate power series term-by-term.
 d) Use differentiation and integration of power series to represent certain functions as power series.
 </p>
-<h3>Lecture 24 (Apr 19)<br/>
+<h3 id="lec24">Lecture 24 (Apr 19)<br/>
 <em>Properties of Power Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Properties_of_Power_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-2-properties-of-power-series" role="button">Sec. 6.2</a></h3>
 <p>
 
@@ -631,7 +631,7 @@ b) Find the radius of convergence of a Taylor Series or Maclaurin series.
 c) Finding a Taylor polynomial of a given order for a function.
 d) Use Taylor's Theorem to estimate the remainder for a Taylor series approximation of a given function.
 </p>
-<h3>Lecture 25 (Apr 24)<br/>
+<h3 id="lec25">Lecture 25 (Apr 24)<br/>
 <em>Taylor and Maclaurin Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Taylor_and_Maclaurin_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series" role="button">Sec. 6.3</a></h3>
 <p>
 
@@ -639,12 +639,12 @@ d) Use Taylor's Theorem to estimate the remainder for a Taylor series approximat
 <p>
 <b>Learning Objectives:</b>
 </p>
-<h3>Lecture 26 (Apr 26)<br/>
+<h3 id="lec26">Lecture 26 (Apr 26)<br/>
 <em style="font-variant: small-caps;">Review of Power Series</em></h3>
 <p>
 
 </p>
-<h3>Lecture 27 (May 1)<br/>
+<h3 id="lec27">Lecture 27 (May 1)<br/>
 <em style="font-variant: small-caps;">Review for Final Exam</em></h3>
 <p>
 
