@@ -415,11 +415,14 @@ If we consider $x\mapsto (x,f(x))$ as a curve in the plane, its velocity is give
 which is the integral of the infinitesimal length $\sqrt{1+(f'(x))^2}\,\mathrm{d}x$ that we move along the vurve after an infinitesimal increase $\mathrm{d}x$ of $x$.
 </p>
 <p>
-Similarly, we can deduces that the surface area of the surface of revolution obtained by rotating the graph of $f$ between $x=a$ and $x=b$ along the $x$-axis is given by
+Similarly, we can deduce that the surface area of the surface of revolution obtained by rotating the graph of $f$ between $x=a$ and $x=b$ along the $x$-axis is given by
 \[\in_a^b\,2\pi f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
 </p>
 <p>
 These formulas allow us to compute the length and surface area of many curves and surfaces that we encounter both in mathematics and applications. However, these integrals might be difficult to solve exactly.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Schwarz_lantern">Schwarz lantern</a> is an example of how one should be careful when one defines the arc-length and surface area a limit of polyhedral approximations. This example was produced by the German mathematician <a href="https://en.wikipedia.org/wiki/Hermann_Schwarz">Hermann Schwarz</a>. Not all approximations are good. Additional materials to learn more: <a href="https://youtu.be/VYQVlVoWoPY"><em>How to lie using visual proofs</em> by 3Blue3Brown</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -435,6 +438,9 @@ Integrals appear in many applications in Physics. IFor example, they play a role
 Among the applications, the one covered in more detail will be about the computation of the work. The importance of the formula
 \[W=\int_a^b\,F(x)\,\mathrm{d}x\]
 lies in that it allows us to determine the amound of energy needed to move a given object, such as an object attached to an spring or pumping the water out of a tank up to a given height.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a>, although widely known only for his law regarding springs, he was an English scientist with many achievements. For example, he is also credited with the discovery of microorganisms (together with <a href="https://en.wikipedia.org/wiki/Antoni_van_Leeuwenhoek">Antoni van Leeuwenhoek</a>) and he was a pioneer in gravitation theory before Newton—he was the first to hypothesize that the gravitational force should follow <a href="https://www.youtube.com/watch?v=BI3Jnz9YMFA">an inverse square law</a>. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=mxjsGnqRuhE"><em>The Nasty Feud Between Isaac Newton and Robert Hooke</em> by Smithsonian Channel</a>. <a href="https://youtu.be/VYQVlVoWoPY"><em>Newton and the equations of Nature</em> by OpenMind</a>. <a href="https://www.youtube.com/watch?v=a7M40Yo0R2E"><em>Micrographia: turning the pages of Robert Hooke's masterpiece</em> by The Royal Society</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -507,7 +513,14 @@ b) Solve problems involving applications of integration using trigonometric subs
 <h3 id="lec11">Lecture 11 (Feb 27)<br/>
 <em>Partial Fractions</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Partial_Fractions" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-4-partial-fractions" role="button">Sec. 3.4</a></h3>
 <p>
-
+Polynomials are easy to integrate. Quotient of polynomials—_rational functions_—are not so easy to integrate, but we can still integrate them easily by writting them as sums of partial fractions. In theory, every rational fraction can be written as
+\[
+P(x)+\sum_{i=1}^r\sum_{j=1}^{m_i}\frac{a_{i,j}}{(x-\zeta_i)^j}+\sum_{k=1}^s\sum_{l=1}^{n_k}\frac{u_{k,l}x+b_{k,l}}{(x^2+b_k x+c_k)^l}
+\]
+where the $\zeta_1,\ldots,\zeta_r$ are the real zeros of the denominator with multiplicities $m_1,\ldots,m_r$, and $x^2+b_1 x+c_1,\ldots,x^2+b_s x+c_s$ are the irreducible factors of degree $2$ of the denominator with multiplicites $n_1,\ldots,n_s$—note that these come from the $2s$ conjugate pairs of complex roots of the denominator.
+</p>
+<p>
+Using computational algebra, we can efficiently construct the above decomposition for a rational function and so efficiently integrate rational functions. For doing so, we will employ polynomial division, the Ruffini-Horner method, and logarithmic derivatives.
 </p>
 <p>
 <b>Learning Objectives:</b>
