@@ -374,7 +374,16 @@ c) Determine the area of a region between two curves by integrating with respect
 <h3 id="lec3">Lecture 3 (Jan 30)<br/>
 <em>Determining Volumes by Slicing</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Determining_Volumes_by_Slicing" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-2-determining-volumes-by-slicing" role="button">Sec. 2.2</a></h3>
 <p>
-
+To determine a volume, we can just slice the object and integrate along the areas of the different slices. The so-call _Slicing Method_ or _Cavalieri's Principle_ states that for a solid $K\subset\mathbb{R}$, we have
+\[\mathrm{vol}(K)=\int_a^b\,A(x)\,\mathrm{d}x\]
+where $A(x_0):=\mathrm{Area}(\{(y,z)\in\mathbb{R}^2\mid (x_0,y,z)\in K\})$ is the area of the intersection of $K$ with the plane $x=x_0$, and $a,b\in\mathbb{R}$ are such that $X$ lies between the planes $x=a$ and $x=0$—i.e. $[a,b]\supseteq \{x\in\mathbb{R}\mid A(x)\neq 0\}$. This method is a higher dimensional version of how we compute the area of regions on the plane: we integrate the length of the slices of the two-dimensiuonal regions with a vertical line along the $x$-axis.
+</p>
+<p>
+For a special kind of solids, _the solids of revolution_, produces by the rotation of a shape around an axis, the slicing method can be easily applied. Under the name of _Disk Method_, we have the formula
+\[\int_a^b\,\pi(f(x))^2\,\mathrm{d}x\]
+for computing the volume of rotating the region bounded by $y=f(x)$, $x=a$, $x=b$ and the $x$-axis around the $x$-axis. Under the name of _the Washer Method_, we have the formula
+\[\int_a^b\,\pi\left[(f(x))^2-(g(x))^2\right]\,\mathrm{d}x\]
+for computing the volume of rotating the region bounded above by $x=a$ and $x=b$, and above by $y=f(x)$ and below by $y=g(x)$ around the $x$-axis. However, these two formulas are just easy consequences of the Slicing Method or Cavaleri's Principle of the above paragraph.
 </p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Bonaventura_Cavalieri">Bonaventura Cavalieri</a>, Italian mathematician and Jesuate, known among other things as a precursor to calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=2TDFtCKMoKk"><em>Cavalieri's principle in 3D</em> by Khan Academy</a>. <a href="https://www.shellsandpebbles.com/2018/04/18/the-war-against-disorder/"><em>The War agains Disorder: The Jesuit Victory over Indivisibles</em> by Amir Alexander</a>. <a href="https://plato.stanford.edu/entries/continuity/#ContInfiMediRenaEarlModePeri"><em>The Continuum and the Infinitesimal in the Medieval, Renaissance, and Early Modern Periods</em> of <em>Continuity and Infinitesimals</em> in Standford Encyclopedia of Philosophy.</a>
 <p>
@@ -384,9 +393,11 @@ b) Find the volume of a solid of revolution using the disk method.
 c) Find the volume of a solid of revolution with a cavity using the washer method.
 </p>
 <h3 id="lec4">Lecture 4 (Feb 1)<br/>
-<em>Volumes of Revolution: Cylindrival Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
+<em>Volumes of Revolution: Cylindrical Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
 <p>
-
+A _cylindrical shell_ is the figure obtaine by rotating the region delimited by $x=a$, $x=b$, $y=f(x)$ and the $x$-axis around the $y$-axis. We can see that the volume of this figure is given by
+\[\int_a^b\,2\pi xf(x)\,\mathrm{d}x.\]
+This allows us to compute further volumes which have rotational symmetry.
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Archimedes">Archimedes</a>, the greatest mathematician of anchient history. His work was a precursor or calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=68bQ3qSl6jc"><em>How taking a bath led to Archimedes' principle</em> by Mark Salata</a>. <a href="https://www.youtube.com/watch?v=0v86Yk14rf8"><em>The real story behind Archimedes' Eureka!</em> by Armand D'Angour</a>.
@@ -399,7 +410,16 @@ b) Compare the different methods for calculating a volume of revolution.
 <h3 id="lec5">Lecture 5 (Feb 6)<br/>
 <em>Arc Length of a Curve and Surface Area</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Arc_Length_and_Surface_Area" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-4-arc-length-of-a-curve-and-surface-area" role="button">Sec. 2.4</a></h3>
 <p>
-
+If we consider $x\mapsto (x,f(x))$ as a curve in the plane, its velocity is given by $x\mapsto (1,f'(x))$ and, therefore, its speed by $x\mapsto \sqrt{1+(f'(x))^2}$. Hence the length of the graph of $f$ between $x=a$ and $x=b$ is given by
+\[\in_a^b\,\sqrt{1+(f'(x))^2}\,\mathrm{d}x,\]
+which is the integral of the infinitesimal length $\sqrt{1+(f'(x))^2}\,\mathrm{d}x$ that we move along the vurve after an infinitesimal increase $\mathrm{d}x$ of $x$.
+</p>
+<p>
+Similarly, we can deduces that the surface area of the surface of revolution obtained by rotating the graph of $f$ between $x=a$ and $x=b$ along the $x$-axis is given by
+\[\in_a^b\,2\pi f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
+</p>
+<p>
+These formulas allow us to compute the length and surface area of many curves and surfaces that we encounter both in mathematics and applications. However, these integrals might be difficult to solve exactly.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -409,7 +429,12 @@ b) Find the surface area of a solid of revolution.
 <h3 id="lec6">Lecture 6 (Feb 8)<br/>
 <em>Physical Applications</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Physical_Applications" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-5-physical-applications" role="button">Sec. 2.5</a></h3>
 <p>
-
+Integrals appear in many applications in Physics. IFor example, they play a role in the computation of the mass of an object by integrating the density, the computation of the work of a force along a tranjectory and the hydrostatic force that the liquid does over an object submerged in the liquid.
+</p>
+<p>
+Among the applications, the one covered in more detail will be about the computation of the work. The importance of the formula
+\[W=\int_a^b\,F(x)\,\mathrm{d}x\]
+lies in that it allows us to determine the amound of energy needed to move a given object, such as an object attached to an spring or pumping the water out of a tank up to a given height.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -424,7 +449,9 @@ g) Find the hydrostatic force against a submerged vertical plate.
 <h3 id="lec7">Lecture 7 (Feb 13)<br/>
 <em>Moments and Center of Mass</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Moments_and_Center_of_Mass" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-6-moments-and-centers-of-mass" role="button">Sec. 2.6</a></h3>
 <p>
-
+The _center of mass_ of an object allows us to treat a non-punctual object as a punctual object located at the center of mass for many applications in physcis. This allows us to simplify many computations. For example, _Pappus' theorem_ allows us to compute the volume of rotating a planar region along a line. More concretely, let $K\subseteq \mathbb{R}^2$ be some region and $L\mathbb{R}^2$ a line not intersecting $K$, then the volume of the object of revolution $S$ obtained by rotating $K$ around $L$ is
+\[\mathrm{vol}(S)=\mathrm{Area}(K)\mathrm{distance}(L,\mathrm{centroid}(K))\]
+where $\mathrm{centroid}(K)$ is the center of mass of $K$ assuming that the density of $K$ is uniform.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -436,7 +463,16 @@ d) Use symmetry to help locate the centroid of a thin plate.
 <h3 id="lec8">Lecture 8 (Feb 15)<br/>
 <em>Integration by Parts</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Parts" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts" role="button">Sec. 3.1</a></h3>
 <p>
-
+_Integration by parts_ is the "product rule" of integratrion, although we cannot apply it automatically without making a choice. This technique of integration is usually summarizes as
+\[\int\,u\,\mathrm{d}v=uv-\int\,v\mathrm{d}v,\]
+which is a shorthand for
+\[\int\,f(x)g'(x)\,dx=f(x)g(x)-\int\,g(x)f'(x)\,\mathrm{d}x\]
+where we take $u=f(x)$ and $dv=g'(x)\,\mathrm{d}x$. Note that both of the above equalities are up to a constant, but for definite integration this is not the case, since
+\[\[\int_a^b\,f(x)g'(x)\,dx=\left[f(b)g(b)-f(a)g(a)\right]-\int_a^b\,g(x)f'(x)\,\mathrm{d}x\]\]
+is a full equality.
+</p>
+<p>
+The power of integration by parts is that it allows us to integrate many functions, including some of the well-known ones: $\ln x$, $\arcsin x$, $\arccos x$, and $\arctan x$. Additional functions that we can integrate easy products such as $t^k\mathrm{e}^x$, $t^k\sin x$, $t^k\cos^x$, $\mathrm{e}^x\sin(ax)$ and $\mathrm{e}^x\cos(bx)$. Because of this, integration by parts is a fundamental tool in integration.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -789,9 +825,9 @@ There will be three midterm exams administered during the class. Each of these e
 The midterm exams will take place in the following days (any change will be communicated in advance):
 </p>
 <ul style="list-style: none;">
-  <li><b>1st Midterm Exam:</b> February 1</li>
-  <li><b>2nd Midterm Exam:</b> March 8</li>
-  <li><b>3rd Midterm Exam:</b> April 17</li>
+  <li><b>1st Midterm Exam:</b> February 13, 8:00 am - 8:50 am.</li>
+  <li><b>2nd Midterm Exam:</b> March 8, 8:00 am - 8:50 am.</li>
+  <li><b>3rd Midterm Exam:</b> April 17, 8:00 am - 8:50 am.</li>
 </ul>
 <p>In case you cannot attend the class the day of the midterm exam, you should inform the instructor as soon as possible and always before the exam. Otherwise, no alternative arrangement will be possible.</p>
 <h3>Final Exam (May 10, 9:00 am-10:50 am)</h3>
