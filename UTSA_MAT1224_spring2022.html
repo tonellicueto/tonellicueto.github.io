@@ -308,12 +308,12 @@
 <p>
 Recall that for a continuous function $f:[a,b]\rightarrow\mathbb{R}$,
 \[\int_a^b\,f(t)\,\mathrm{d}t\]
-is the <em>signed area</em> under $f$ in $[a,b]$. Intuitively, the positive areas comes from those regions where $f$ is positive and the negative ones from those where $f$ is negative, but the rigorous definition of this is done through <em>Riemann sums</em> where we use limits and that this notion is clear for locally constant functions (see <a href="https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas">sect. 1.1</a> and <a href="https://openstax.org/books/calculus-volume-2/pages/1-2-the-definite-integral">1.2</a> for the details). The <b>Fundamental Theorem of Calculus</b> asserts that
+is the <em>signed area</em> under $f$ in $[a,b]$. Intuitively, the positive areas comes from those regions where $f$ is positive and the negative ones from those where $f$ is negative, but the rigorous definition of this is done through <em>Riemann sums</em> where we use limits and that this notion is clear for locally constant functions (see <a href="https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas">sect. 1.1</a> and <a href="https://openstax.org/books/calculus-volume-2/pages/1-2-the-definite-integral">1.2</a> for the details). The <em>Fundamental Theorem of Calculus</em> asserts that
 \[\int_a^b\,f(t)\,\mathrm{d}t=F(b)-F(a)\]
 where $F$ is an <em>antiderivative</em> of $f$, i.e., $F$ is a continuous function $F:[a,b]\rightarrow \mathbb{R}$ such that for every $x\in (a,b)$, $F'(x)$ exists and satisfies $F'(x)=f(x)$.
 </p>
 <p>
-In another formulation of the <b>Fundamental Theorem of Calculus</b>, we just say the function $F:[a,b]\rightarrow\mathbb{R}$ given by
+In another formulation of the <em>Fundamental Theorem of Calculus</em>, we just say the function $F:[a,b]\rightarrow\mathbb{R}$ given by
 \[F(x):=\int_{a}^{x}f(t)\,\mathrm{d}t\]
 is an antiderivative of $f$ on $[a,b]$, i.e., a continuous function derivable in $(a,b)$ and such that for all $x\in(a,b)$, $F'(x)=f(x)$. Note that this is equivalent to the above version due to <a href="https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem">the Mean Value Theorem (see Theorem 4.7 in Vol. 1)</a>. However, this version asserts succintly that the antiderivative of a continuous function exists, which is not necessarily clear from the version above.
 </p>
@@ -432,15 +432,15 @@ b) Find the surface area of a solid of revolution.
 <h3 id="lec6">Lecture 6 (Feb 8)<br/>
 <em>Physical Applications</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Physical_Applications" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-5-physical-applications" role="button">Sec. 2.5</a></h3>
 <p>
-Integrals appear in many applications in Physics. IFor example, they play a role in the computation of the mass of an object by integrating the density, the computation of the work of a force along a tranjectory and the hydrostatic force that the liquid does over an object submerged in the liquid.
+Integrals appear in many applications in Physics. For example, they play a role in the computation of the mass of an object by integrating the density, the computation of the work of a force along a tranjectory and the hydrostatic force that the liquid does over an object submerged in the liquid.
 </p>
 <p>
 Among the applications, the one covered in more detail will be about the computation of the work. The importance of the formula
 \[W=\int_a^b\,F(x)\,\mathrm{d}x\]
-lies in that it allows us to determine the amound of energy needed to move a given object, such as an object attached to an spring or pumping the water out of a tank up to a given height.
+lies in that it allows us to determine the amount of energy needed to move a given object, such as an object attached to an spring or pumping the water out of a tank up to a given height.
 </p>
 <p>
-<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a>, although widely known only for his law regarding springs, he was an English scientist with many achievements. For example, he is also credited with the discovery of microorganisms (together with <a href="https://en.wikipedia.org/wiki/Antoni_van_Leeuwenhoek">Antoni van Leeuwenhoek</a>) and he was a pioneer in gravitation theory before Newton—he was the first to hypothesize that the gravitational force should follow <a href="https://www.youtube.com/watch?v=BI3Jnz9YMFA">an inverse square law</a>. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=VeH5GG-yW3w"><em>DicKtionary — M is for Mathematics — Newton and Hooke</em> by 
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a>, although widely known only for his law regarding springs, he was an English scientist with many achievements. For example, he is also credited with the discovery of microorganisms (together with <a href="https://en.wikipedia.org/wiki/Antoni_van_Leeuwenhoek">Antoni van Leeuwenhoek</a>) and he was a pioneer in gravitation theory before Newton—he was the first to hypothesize that the gravitational force should follow <a href="https://www.youtube.com/watch?v=BI3Jnz9YMFA">an inverse square law</a>. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=VeH5GG-yW3w"><em>DicKtionary — M is for Mathematics — Newton and Hooke</em> by
 TimeGhost History</a>. <a href="https://youtu.be/VYQVlVoWoPY"><em>Newton and the equations of Nature</em> by OpenMind</a>. <a href="https://www.youtube.com/watch?v=a7M40Yo0R2E"><em>Micrographia: turning the pages of Robert Hooke's masterpiece</em> by The Royal Society</a>.
 </p>
 <p>
@@ -471,7 +471,7 @@ d) Use symmetry to help locate the centroid of a thin plate.
 <em>Integration by Parts</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Parts" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts" role="button">Sec. 3.1</a></h3>
 <p>
 <em>Integration by parts</em> is the "product rule" of integratrion, although we cannot apply it automatically without making a choice. This technique of integration is usually summarizes as
-\[\int\,u\,\mathrm{d}v=uv-\int\,v\mathrm{d}v,\]
+\[\int\,u\,\mathrm{d}v=uv-\int\,v\,\mathrm{d}u,\]
 which is a shorthand for
 \[\int\,f(x)g'(x)\,dx=f(x)g(x)-\int\,g(x)f'(x)\,\mathrm{d}x\]
 where we take $u=f(x)$ and $dv=g'(x)\,\mathrm{d}x$. Note that both of the above equalities are up to a constant, but for definite integration this is not the case, since
