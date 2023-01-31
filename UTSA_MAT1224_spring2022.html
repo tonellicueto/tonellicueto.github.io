@@ -374,14 +374,14 @@ c) Determine the area of a region between two curves by integrating with respect
 <h3 id="lec3">Lecture 3 (Jan 30)<br/>
 <em>Determining Volumes by Slicing</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Determining_Volumes_by_Slicing" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-2-determining-volumes-by-slicing" role="button">Sec. 2.2</a></h3>
 <p>
-To determine a volume, we can just slice the object and integrate along the areas of the different slices. The so-call _Slicing Method_ or _Cavalieri's Principle_ states that for a solid $K\subset\mathbb{R}$, we have
+To determine a volume, we can just slice the object and integrate along the areas of the different slices. The so-call <em>Slicing Method</em> or <em>Cavalieri's Principle</em> states that for a solid $K\subset\mathbb{R}$, we have
 \[\mathrm{vol}(K)=\int_a^b\,A(x)\,\mathrm{d}x\]
 where $A(x_0):=\mathrm{Area}(\{(y,z)\in\mathbb{R}^2\mid (x_0,y,z)\in K\})$ is the area of the intersection of $K$ with the plane $x=x_0$, and $a,b\in\mathbb{R}$ are such that $X$ lies between the planes $x=a$ and $x=0$—i.e. $[a,b]\supseteq \{x\in\mathbb{R}\mid A(x)\neq 0\}$. This method is a higher dimensional version of how we compute the area of regions on the plane: we integrate the length of the slices of the two-dimensiuonal regions with a vertical line along the $x$-axis.
 </p>
 <p>
-For a special kind of solids, _the solids of revolution_, produces by the rotation of a shape around an axis, the slicing method can be easily applied. Under the name of _Disk Method_, we have the formula
+For a special kind of solids, <em>the solids of revolution</em>, produces by the rotation of a shape around an axis, the slicing method can be easily applied. Under the name of <em>Disk Method</em>, we have the formula
 \[\int_a^b\,\pi(f(x))^2\,\mathrm{d}x\]
-for computing the volume of rotating the region bounded by $y=f(x)$, $x=a$, $x=b$ and the $x$-axis around the $x$-axis. Under the name of _the Washer Method_, we have the formula
+for computing the volume of rotating the region bounded by $y=f(x)$, $x=a$, $x=b$ and the $x$-axis around the $x$-axis. Under the name of <em>the Washer Method</em>, we have the formula
 \[\int_a^b\,\pi\left[(f(x))^2-(g(x))^2\right]\,\mathrm{d}x\]
 for computing the volume of rotating the region bounded above by $x=a$ and $x=b$, and above by $y=f(x)$ and below by $y=g(x)$ around the $x$-axis. However, these two formulas are just easy consequences of the Slicing Method or Cavaleri's Principle of the above paragraph.
 </p>
@@ -395,7 +395,7 @@ c) Find the volume of a solid of revolution with a cavity using the washer metho
 <h3 id="lec4">Lecture 4 (Feb 1)<br/>
 <em>Volumes of Revolution: Cylindrical Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
 <p>
-A _cylindrical shell_ is the figure obtaine by rotating the region delimited by $x=a$, $x=b$, $y=f(x)$ and the $x$-axis around the $y$-axis. We can see that the volume of this figure is given by
+A <em>cylindrical shell</em> is the figure obtaine by rotating the region delimited by $x=a$, $x=b$, $y=f(x)$ and the $x$-axis around the $y$-axis. We can see that the volume of this figure is given by
 \[\int_a^b\,2\pi xf(x)\,\mathrm{d}x.\]
 This allows us to compute further volumes which have rotational symmetry.
 </p>
@@ -411,12 +411,12 @@ b) Compare the different methods for calculating a volume of revolution.
 <em>Arc Length of a Curve and Surface Area</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Arc_Length_and_Surface_Area" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-4-arc-length-of-a-curve-and-surface-area" role="button">Sec. 2.4</a></h3>
 <p>
 If we consider $x\mapsto (x,f(x))$ as a curve in the plane, its velocity is given by $x\mapsto (1,f'(x))$ and, therefore, its speed by $x\mapsto \sqrt{1+(f'(x))^2}$. Hence the length of the graph of $f$ between $x=a$ and $x=b$ is given by
-\[\in_a^b\,\sqrt{1+(f'(x))^2}\,\mathrm{d}x,\]
+\[\int_a^b\,\sqrt{1+(f'(x))^2}\,\mathrm{d}x,\]
 which is the integral of the infinitesimal length $\sqrt{1+(f'(x))^2}\,\mathrm{d}x$ that we move along the vurve after an infinitesimal increase $\mathrm{d}x$ of $x$.
 </p>
 <p>
 Similarly, we can deduce that the surface area of the surface of revolution obtained by rotating the graph of $f$ between $x=a$ and $x=b$ along the $x$-axis is given by
-\[\in_a^b\,2\pi f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
+\[\int_a^b\,2\pi f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
 </p>
 <p>
 These formulas allow us to compute the length and surface area of many curves and surfaces that we encounter both in mathematics and applications. However, these integrals might be difficult to solve exactly.
@@ -440,7 +440,7 @@ Among the applications, the one covered in more detail will be about the computa
 lies in that it allows us to determine the amound of energy needed to move a given object, such as an object attached to an spring or pumping the water out of a tank up to a given height.
 </p>
 <p>
-<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a>, although widely known only for his law regarding springs, he was an English scientist with many achievements. For example, he is also credited with the discovery of microorganisms (together with <a href="https://en.wikipedia.org/wiki/Antoni_van_Leeuwenhoek">Antoni van Leeuwenhoek</a>) and he was a pioneer in gravitation theory before Newton—he was the first to hypothesize that the gravitational force should follow <a href="https://www.youtube.com/watch?v=BI3Jnz9YMFA">an inverse square law</a>. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=VeH5GG-yW3w"><em>DicKtionary - M is for Mathematics - Newton and Hooke</em> by 
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a>, although widely known only for his law regarding springs, he was an English scientist with many achievements. For example, he is also credited with the discovery of microorganisms (together with <a href="https://en.wikipedia.org/wiki/Antoni_van_Leeuwenhoek">Antoni van Leeuwenhoek</a>) and he was a pioneer in gravitation theory before Newton—he was the first to hypothesize that the gravitational force should follow <a href="https://www.youtube.com/watch?v=BI3Jnz9YMFA">an inverse square law</a>. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=VeH5GG-yW3w"><em>DicKtionary — M is for Mathematics — Newton and Hooke</em> by 
 TimeGhost History</a>. <a href="https://youtu.be/VYQVlVoWoPY"><em>Newton and the equations of Nature</em> by OpenMind</a>. <a href="https://www.youtube.com/watch?v=a7M40Yo0R2E"><em>Micrographia: turning the pages of Robert Hooke's masterpiece</em> by The Royal Society</a>.
 </p>
 <p>
@@ -456,8 +456,8 @@ g) Find the hydrostatic force against a submerged vertical plate.
 <h3 id="lec7">Lecture 7 (Feb 13)<br/>
 <em>Moments and Center of Mass</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Moments_and_Center_of_Mass" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-6-moments-and-centers-of-mass" role="button">Sec. 2.6</a></h3>
 <p>
-The _center of mass_ of an object allows us to treat a non-punctual object as a punctual object located at the center of mass for many applications in physcis. This allows us to simplify many computations. For example, _Pappus' theorem_ allows us to compute the volume of rotating a planar region along a line. More concretely, let $K\subseteq \mathbb{R}^2$ be some region and $L\mathbb{R}^2$ a line not intersecting $K$, then the volume of the object of revolution $S$ obtained by rotating $K$ around $L$ is
-\[\mathrm{vol}(S)=\mathrm{Area}(K)\mathrm{distance}(L,\mathrm{centroid}(K))\]
+The <em>center of mass</em> of an object allows us to treat a non-punctual object as a punctual object located at the center of mass for many applications in physcis. This allows us to simplify many computations. For example, <em>Pappus' theorem</em> allows us to compute the volume of rotating a planar region along a line. More concretely, let $K\subset \mathbb{R}^2$ be some region and $L\subset \mathbb{R}^2$ a line not intersecting $K$, then the volume of the object of revolution $S$ obtained by rotating $K$ around $L$ is
+\[\mathrm{vol}(S)=\mathrm{Area}(K)\cdot\mathrm{distance}(L,\mathrm{centroid}(K))\]
 where $\mathrm{centroid}(K)$ is the center of mass of $K$ assuming that the density of $K$ is uniform.
 </p>
 <p>
@@ -470,12 +470,12 @@ d) Use symmetry to help locate the centroid of a thin plate.
 <h3 id="lec8">Lecture 8 (Feb 15)<br/>
 <em>Integration by Parts</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Integration_by_Parts" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts" role="button">Sec. 3.1</a></h3>
 <p>
-_Integration by parts_ is the "product rule" of integratrion, although we cannot apply it automatically without making a choice. This technique of integration is usually summarizes as
+<em>Integration by parts</em> is the "product rule" of integratrion, although we cannot apply it automatically without making a choice. This technique of integration is usually summarizes as
 \[\int\,u\,\mathrm{d}v=uv-\int\,v\mathrm{d}v,\]
 which is a shorthand for
 \[\int\,f(x)g'(x)\,dx=f(x)g(x)-\int\,g(x)f'(x)\,\mathrm{d}x\]
 where we take $u=f(x)$ and $dv=g'(x)\,\mathrm{d}x$. Note that both of the above equalities are up to a constant, but for definite integration this is not the case, since
-\[\[\int_a^b\,f(x)g'(x)\,dx=\left[f(b)g(b)-f(a)g(a)\right]-\int_a^b\,g(x)f'(x)\,\mathrm{d}x\]\]
+\[\int_a^b\,f(x)g'(x)\,dx=\left[f(b)g(b)-f(a)g(a)\right]-\int_a^b\,g(x)f'(x)\,\mathrm{d}x\]
 is a full equality.
 </p>
 <p>
@@ -518,7 +518,7 @@ Polynomials are easy to integrate. Quotient of polynomials—_rational functions
 \[
 P(x)+\sum_{i=1}^r\sum_{j=1}^{m_i}\frac{a_{i,j}}{(x-\zeta_i)^j}+\sum_{k=1}^s\sum_{l=1}^{n_k}\frac{u_{k,l}x+b_{k,l}}{(x^2+b_k x+c_k)^l}
 \]
-where the $\zeta_1,\ldots,\zeta_r$ are the real zeros of the denominator with multiplicities $m_1,\ldots,m_r$, and $x^2+b_1 x+c_1,\ldots,x^2+b_s x+c_s$ are the irreducible factors of degree $2$ of the denominator with multiplicites $n_1,\ldots,n_s$—note that these come from the $2s$ conjugate pairs of complex roots of the denominator.
+where $P(x)$ is a polynomial, the $\zeta_1,\ldots,\zeta_r$ are the real zeros of the denominator with multiplicities $m_1,\ldots,m_r$, and $x^2+b_1 x+c_1,\ldots,x^2+b_s x+c_s$ are the irreducible factors of degree $2$ of the denominator with multiplicites $n_1,\ldots,n_s$—note that these come from the $2s$ conjugate pairs of complex roots of the denominator.
 </p>
 <p>
 Using computational algebra, we can efficiently construct the above decomposition for a rational function and so efficiently integrate rational functions. For doing so, we will employ polynomial division, the Ruffini-Horner method, and logarithmic derivatives.
