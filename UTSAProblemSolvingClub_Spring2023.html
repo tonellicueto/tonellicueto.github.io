@@ -90,7 +90,8 @@
       <div class="container">
         <h2 class="display-4">UTSA Problem-Solving Club</h2>
 				<h2 class="display-4">(Spring 2023)</h2>
-        <h3>by Christopher Duffer and Dr. Josu&eacute; Tonelli-Cueto</h3>
+        <h3 id="infocomputer" style="display: block;">by Christopher Duffer &amp; Dr. Josu&eacute; Tonelli-Cueto</h3>
+        <h3 id="infophone" style="display: none;">by<br/>Christopher Duffer<br/>and<br/>Dr. Josu&eacute; Tonelli-Cueto</h3>
 				<h3>at the University of Texas at San Antonio</h3>
      </div>
 </div>
@@ -143,6 +144,8 @@ Now, since thinking on these problems in the wild can be extremely hard, we also
     <script type="text/javascript">
     <!--
     if (screen.width <= 699) {
+    document.getElementById("infocomputer").style.display="none";
+  	document.getElementById("infophone").style.display="block";
     var x;
     var i;
     x = document.getElementsByTagName("H3");
