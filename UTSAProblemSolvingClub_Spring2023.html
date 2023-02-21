@@ -90,8 +90,7 @@
       <div class="container">
         <h2 class="display-4">UTSA Problem-Solving Club</h2>
 				<h2 class="display-4">(Spring 2023)</h2>
-        <h3 id="infocomputer" style="display: block;">by Christopher Duffer &amp; Dr. Josu&eacute; Tonelli-Cueto</h3>
-        <h3 id="infophone" style="display: none;">by<br/>Christopher Duffer<br/>and<br/>Dr. Josu&eacute; Tonelli-Cueto</h3>
+        <h3>by Christopher Duffer &amp; Dr. Josu&eacute; Tonelli-Cueto</h3>
 				<h3>at the University of Texas at San Antonio</h3>
      </div>
 </div>
@@ -144,17 +143,17 @@ Now, since thinking on these problems in the wild can be extremely hard, we also
     <script type="text/javascript">
     <!--
     if (screen.width <= 699) {
-    document.getElementById("infocomputer").style.display="none";
-  	document.getElementById("infophone").style.display="block";
     var x;
     var i;
     x = document.getElementsByTagName("H3");
       for (i = 0; i < x.length; i++) {
-       x[i].style="font-size:1em;font-weight:bold;";
+       x[i].style="font-size:1.2em;font-weight:bold;text-align:center;";
       }
+    x[0].innerHTML="by<br/>Christopher Duffer<br/>&amp;<br/>Dr. Josu&eacute; Tonelli-Cueto";
+    x[2].innerHTML="Tuesdays from 5:00 pm to 7:00 pm<br/>at room MH 3.03.10<br/>in the McKinney Humanities Building<br/>and with free pizza!";
     x = document.getElementsByTagName("H2");
       for (i = 0; i < x.length; i++) {
-       x[i].style="font-size:1.4em;font-weight:bold;";
+       x[i].style="font-size:1.5em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-secondary");
     for (i = 0; i < x.length; i++) {
