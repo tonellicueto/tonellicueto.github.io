@@ -396,8 +396,8 @@ c) Find the volume of a solid of revolution with a cavity using the washer metho
 <em>Volumes of Revolution: Cylindrical Shells</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Volumes_of_Revolution,_Cylindrical_Shells" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells" role="button">Sec. 2.3</a></h3>
 <p>
 A <em>cylindrical shell</em> is the figure obtaine by rotating the region delimited by $x=a$, $x=b$, $y=f(x)$ and the $x$-axis around the $y$-axis. We can see that the volume of this figure is given by
-\[\int_a^b\,2\pi xf(x)\,\mathrm{d}x.\]
-This allows us to compute further volumes which have rotational symmetry. Note that if we rotate with respect a different vertical axis, then we don't have $2\pi x$, but $2\pi \mathrm{distance}(x,\text{axis of rotation})$.
+\[\int_a^b\,2\pi\,x\,f(x)\,\mathrm{d}x.\]
+This allows us to compute further volumes which have rotational symmetry. Note that if we rotate with respect a different vertical axis, then we don't have $2\pi\,x$, but $2\pi\,\mathrm{distance}(x,\text{axis of rotation})$.
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Archimedes">Archimedes</a>, the greatest mathematician of anchient history. His work was a precursor or calculus. Additional materials to learn more: <a href="https://www.youtube.com/watch?v=68bQ3qSl6jc"><em>How taking a bath led to Archimedes' principle</em> by Mark Salata in <em>youtube</em></a>. <a href="https://www.youtube.com/watch?v=0v86Yk14rf8"><em>The real story behind Archimedes' Eureka!</em> by Armand D'Angour in <em>youtube</em></a>.
@@ -416,7 +416,7 @@ which is the integral of the infinitesimal length $\sqrt{1+(f'(x))^2}\,\mathrm{d
 </p>
 <p>
 Similarly, we can deduce that the surface area of the surface of revolution obtained by rotating the graph of $f$ between $x=a$ and $x=b$ along the $x$-axis is given by
-\[\int_a^b\,2\pi f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
+\[\int_a^b\,2\pi\,f(x)\sqrt{1+(f'(x))^2}\,\mathrm{d}x.\]
 </p>
 <p>
 These formulas allow us to compute the length and surface area of many curves and surfaces that we encounter both in mathematics and applications. However, these integrals might be difficult to solve exactly.
@@ -637,7 +637,7 @@ b) Structure the techniques of integration seen so far in an unified way.
 <p>
 Differential equations play a central role in science, as they allow us to describe precisely how the different variables that we measure change in terms of the other variables that we measure. In general, understanding how a variable of interest—such as position, heat, concentration of a certain molecule—means understanding the underlying differential equation that describes how it varies. Now, solving differential equations
 \[\dot{x}=f(x,t),\]
-where $\dot{x}$ denotes the derivative of $x$ with respect to $t$, is hard in general—note that a more propper formal way to write the differential equation is $\dot{x}(t)=f(x(t),t)$ since we are trying to find $x$ as a function $t\mapto x(t)$ of $t$. Even when we are just interested in the evolution of a single variable $t\mapsto x(t)\in\mathbb{R}$ and not a vector function $t\mapsto x(t)\in\mathbb{R}^n$ is the solution of these differential equations hard.
+where $\dot{x}$ denotes the derivative of $x$ with respect to $t$, is hard in general—note that a more propper formal way to write the differential equation is $\dot{x}(t)=f(x(t),t)$ since we are trying to find $x$ as a function $t\mapsto x(t)$ of $t$. Even when we are just interested in the evolution of a single variable $t\mapsto x(t)\in\mathbb{R}$ and not a vector function $t\mapsto x(t)\in\mathbb{R}^n$ is the solution of these differential equations hard.
 </p>
 <p>
 Now, sometimes, the equations we want to solve are of the form
