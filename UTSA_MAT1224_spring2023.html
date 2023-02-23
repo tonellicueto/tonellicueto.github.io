@@ -493,7 +493,7 @@ As of today this sentence exmplifies the difficulty of learning mathematics, and
 <p>Additional materials to learn more: <a href="https://www.youtube.com/watch?v=440gbGszjk8"><em>Euclid: Biography of a Great Thinker</em> by Socratica</a>. <a href="https://www.youtube.com/watch?v=sjTeAjZMa7g"><em>Ancient Greece and Euclid's Elements | Math and the Rise of Civilization | Documentary</em> by Earth Planet</a>. <a href="https://www.youtube.com/watch?v=S0DSM-EkQE8"><em>How to prove a mathematical theory</em> by Scott Kennedy in <em>TED-Ed</em></a>. <a href="https://www.youtube.com/watch?v=n1mwZrVJ-TI"><em>The murder of ancient Alexandria's greatest scholar</em> by Soraya Field Fiorio in <em>TED-Ed</em></a>. <b>Film to Watch:</b> <a href="https://en.wikipedia.org/wiki/Agora_(film)">Agora</a>. Accuracy: <a href="https://aelarsen.wordpress.com/category/agora/"><em>An Historian Goes to the Movies ~ Exploring history on the screen</em></a>.
 </p>
 <p>
-  <b>Media to Watch:</b> <a href="https://www.youtube.com/watch?v=xWm3b8GWHrg">Video-Lecture on <em>Integration by Parts</em> by Prof. Robert Ghrist. </a>
+<b>Media to Watch:</b> <a href="https://www.youtube.com/watch?v=xWm3b8GWHrg">Video-Lecture on <em>Integration by Parts</em> by Prof. Robert Ghrist. </a>
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -508,7 +508,20 @@ e) Solve problems involving applications of integration using integration by par
 <p>
 Many of the integrals we find in science are of the form
 \[\int\,R(\cos x,\sin x)\,\mathrm{d}x\]
-
+where $R$ is some function depending on $\cos x$ and $\sin x$. In general, we can try the so-called <a href="https://en.wikipedia.org/wiki/Tangent_half-angle_substitution"><em>Weierstrass substitution</em> (aka the <em>tangent half-angle substitution</em>)</a>, but we will focus in trigonometric integrals that can be solved through more specialized—and faster—methods. These integrals are of the form
+\[\int \cos^a x\,\sin^bx\,\mathrm{d}x\]
+and of the form
+\[\int \sec^a x\,\tan^bx\,\mathrm{d}x.\]
+Additionally, we study how to compute integrals of the form
+\[\int \cos ax\,\cos bx\,\mathrm{d}x,\,\int \sin ax\,\sin bx\,\mathrm{d}x\text{ and }\int \sin ax\,\cos bx\,\mathrm{d}x\]
+which are very common in <a href="https://en.wikipedia.org/wiki/Fourier_analysis"><em>Fourier analysis</em></a>.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/David_Blackwell">David Blackwell</a>, an African-American mathematician famous for his contributions in probability and statisitics. For example, the <a href="https://en.wikipedia.org/wiki/Rao%E2%80%93Blackwell_theorem"><em>Rao-Blackwell theorem</em></a> in statistics is named after him; and his textbook <em>Basic Statistics</em> was one of the first textbooks on Bayesian statistics. About his life as a researcher, <a href="https://www.nytimes.com/2010/07/17/education/17blackwell.html">Blackwell commented the following</a>:</p>
+<blockquote cite="https://mathscinet.ams.org/mathscinet-getitem?mr=2463611">
+I've worked in so many areas—I'm sort of a dilettante. Basically, I'm not interested in doing research and I never have been. I'm interested in <em>understanding</em>, which is quite a different thing. And often to understand something you have to work it out yourself because no one else has done it.
+</blockquote>
+<p>Additional materials to learn more: <a href="https://www.youtube.com/watch?v=_NCIH0zfSgI"><em>Remembering David Blackwell</em> at the youtube channel of the <em>The Qualcomm Institute</em></a>. <a href="https://www.youtube.com/watch?v=Xo_YYxsFF6Y&list=PLCwE4GdJdVRIU1j2-nzpxOIi3XSNEZ3qv"><em>Conversation with David Blackwell</em> in <em>visionaryproject</em></a>. <a href="https://www.ams.org/notices/201107/rtx110700912p.pdf"><em>A tribute to David Blackwell</em> coordinated by George G. Roussas in <em>Notices of the American Mathematical Society</em></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -520,7 +533,12 @@ d) Solve problems involving applications of integration using trigonometric inte
 <h3 id="lec10">Lecture 10 (Feb 22)<br/>
 <em>Trigonometric Substitution</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Trigonometric_Substitution" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/3-3-trigonometric-substitution" role="button">Sec. 3.3</a></h3>
 <p>
-
+In this lecture, we focus on integrals of the form
+\[\int\,R(x,\sqrt{q(x)})\,\mathrm{d}x\]
+where $q(x)=\alpha x^2+\beta x+\gamma$ is some quadratic polynomial and $R$ is some function depending on $x$ and $\sqrt{q(x)}$. After a change of variables, we can assume without loss of generality that $q(x)$ is either of the form $a^2-x^2$, $a^2+x^2$ or $x^2-a^2$. In each one of these cases, we perform substitutions satisfying, respectively, $x=a\sin\theta$, $x=a\tan\theta$ and $x=a\sec\theta$. After these substitutions, we obtain trigonometric integrals that we can integrate.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/J._Ernest_Wilkins_Jr.">J. Ernest Wilkins, Jr.</a>, an African-American mathematician famous for his work in the Alamos and in nuclear energy. Together with <a href="https://en.wikipedia.org/wiki/Eugene_Wigner">Eugene Wigner</a>, he developed the Wigner-Wilkins approach for estimating the distribution of neutron energies within nuclear reactors. The latter is still used today in nuclear reactors. Additional materials to learn more: <a href="https://youtu.be/rh-AK4so40Y?t=1412">Fragment of <em>Ronald Mickens's Interview</em> about J. Ernest Wilkins, Jr. in <em>AtomicHeritage</em></a>. <a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>. <a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -538,6 +556,9 @@ where $P(x)$ is a polynomial, the $\zeta_1,\ldots,\zeta_r$ are the real zeros of
 </p>
 <p>
 Using computational algebra, we can efficiently construct the above decomposition for a rational function and so efficiently integrate rational functions. For doing so, we will employ polynomial division, the Ruffini-Horner method, and logarithmic derivatives.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/J._Ernest_Wilkins_Jr.">J. Ernest Wilkins, Jr.</a>, an African-American mathematician famous for his work in the Alamos and in nuclear energy. Together with <a href="https://en.wikipedia.org/wiki/Eugene_Wigner">Eugene Wigner</a>, he developed the Wigner-Wilkins approach for estimating the distribution of neutron energies within nuclear reactors. The latter is still used today in nuclear reactors. Additional materials to learn more: <a href="https://youtu.be/rh-AK4so40Y?t=1412">Fragment of <em>Ronald Mickens's Interview</em> about J. Ernest Wilkins, Jr. in <em>AtomicHeritage</em></a>. <a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>. <a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
