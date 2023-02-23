@@ -15,14 +15,14 @@
     <meta property="og:url" content="https://tonellicueto.xyz/course.html" />
     <meta property="og:title" content="Calc II at UTSA by J. Tonelli-Cueto" /><!--35char-->
     <meta property="og:description" content="Calculus II (MAT 1224) course at UTSA by Josu&eacute; Tonelli-Cueto in Spring 2022"><!--65char-->
-    <meta property="og:image" content="https://tonellicueto.xyz/imgs/SM4.png"><!--300KB and minimum dimensions of 300 x 200-->
+    <meta property="og:image" content="https://tonellicueto.xyz/imgs/SM4UTSA.png"><!--300KB and minimum dimensions of 300 x 200-->
     <!--Twitter metadata-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@tonellicueto" />
     <meta name="twitter:creator" content="@tonellicueto" />
     <meta name="twitter:title" content="Calculus II MAT 1224.009 (Spring 2023) (by Josu&eacute; Tonelli-Cueto)" />
     <meta name="twitter:description" content="Calculus II (MAT 1224) course at UTSA by Josu&eacute; Tonelli-Cueto in Spring 2022" />
-    <meta name="twitter:image" content="https://tonellicueto.xyz/imgs/SM4.jpg" />
+    <meta name="twitter:image" content="https://tonellicueto.xyz/imgs/SM4UTSA.jpg" />
     <!--  Bootstrap core CSS  -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -618,14 +618,38 @@ c) Evaluate an integral over a closed interval with an infinite discontinuity wi
 d) Use the comparison theorem to determine whether an improper integral is convergent or divergent.
 </p>
 <h3 id="lec13">Lecture 13 (Mar 6)<br/>
-<em style="font-variant: small-caps;">Review of Integration and Differential Equations</em></h3>
+<em style="font-variant: small-caps;">Review of Integration</em></h3>
 <p>
-
+In this lecture, we will review the techniques of integration and types of integrals seen so far in the course: <a href=#lec1>$u$-substitution (or change of variables)</a>, <a href="#lec8">integration by parts</a>, <a href="#lec9">trigonometric integrals</a>, <a href="#lec10">trigonometric substitutions</a>, <a href="#lec11">integrals of rational functions</a> and <a href="#lec12">improper integrals</a>.
+</p>
+<p>
+<em>MathInContext</em>:
+Additional materials to learn more:
+<!--<a href="https://www.youtube.com/watch?v=WQWkG9cQ8NQ"><em>Integers & Rationals are both infinite but is it the SAME infinity?</em> by Dr. Trefor Bazett in <em>youtube</em></a>.-->
+</p>
+<p>
+<b>Learning Objectives:</b>
+a) To consolidate the techniques of integration seen so far.
+b) Structure the techniques of integration seen so far in an unified way.
 </p>
 <h3 id="lec14">Lecture 14 (Mar 8)<br/>
 <em>Separation of Variables</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Separation_of_Variables" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations" role="button">Sec. 4.3</a></h3>
 <p>
-
+Differential equations play a central role in science, as they allow us to describe precisely how the different variables that we measure change in terms of the other variables that we measure. In general, understanding how a variable of interest—such as position, heat, concentration of a certain molecule—means understanding the underlying differential equation that describes how it varies. Now, solving differential equations
+\[\dot{x}=f(x,t),\]
+where $\dot{x}$ denotes the derivative of $x$ with respect to $t$, is hard in general—note that a more propper formal way to write the differential equation is $\dot{x}(t)=f(x(t),t)$ since we are trying to find $x$ as a function $t\mapto x(t)$ of $t$. Even when we are just interested in the evolution of a single variable $t\mapsto x(t)\in\mathbb{R}$ and not a vector function $t\mapsto x(t)\in\mathbb{R}^n$ is the solution of these differential equations hard.
+</p>
+<p>
+Now, sometimes, the equations we want to solve are of the form
+\[\dot{x}=g(x)h(t).\]
+When this is the case, we can <em>separate the variables</em>, i.e., write the equation as
+\[\frac{\mathfrm{d}x}{g(x)}=h(t)\mathfrm{d}x,\]
+and integrate to obtain invariants of our differential equation and so solve the differential equation. The focus of this lecture is on this case.
+</p>
+<p>
+<em>MathInContext</em>: Where do differential equations appear? Although the differential equations in physics are widely taught in many curricula, differential equations are not limited to physics. We can find them in all the sciences: in marketing
+Additional materials to learn more:
+<!--<a href="https://www.youtube.com/watch?v=WQWkG9cQ8NQ"><em>Integers & Rationals are both infinite but is it the SAME infinity?</em> by Dr. Trefor Bazett in <em>youtube</em></a>.-->
 </p>
 <p>
 <b>Learning Objectives:</b>
