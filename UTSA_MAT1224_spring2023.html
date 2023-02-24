@@ -552,7 +552,6 @@ where $q(x)=\alpha x^2+\beta x+\gamma$ is some quadratic polynomial and $R$ is s
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/J._Ernest_Wilkins_Jr.">J. Ernest Wilkins, Jr.</a>, an African-American mathematician famous for his work in the Alamos and in nuclear energy. Together with <a href="https://en.wikipedia.org/wiki/Eugene_Wigner">Eugene Wigner</a>, he developed the Wigner-Wilkins approach for estimating the distribution of neutron energies within nuclear reactors. The latter is still used today in nuclear reactors. Additional materials to learn more:
 <a href="https://youtu.be/rh-AK4so40Y?t=1412">Fragment of <em>Ronald Mickens's Interview</em> about J. Ernest Wilkins, Jr. in <em>AtomicHeritage</em></a>.
 <a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>.
-<a href="https://ahf.nuclearmuseum.org/ahf/profile/j-ernest-wilkins-jr/"><em>Biography of J. Ernest Wilkins, Jr.</em> in <em>Atomic Heritage Foundation</em></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -564,9 +563,9 @@ b) Solve problems involving applications of integration using trigonometric subs
 <p>
 Polynomials are easy to integrate. Quotient of polynomials—_rational functions_—are not so easy to integrate, but we can still integrate them easily by writting them as sums of partial fractions. In theory, every rational fraction can be written as
 \[
-P(x)+\sum_{i=1}^r\sum_{j=1}^{m_i}\frac{a_{i,j}}{(x-\zeta_i)^j}+\sum_{k=1}^s\sum_{l=1}^{n_k}\frac{u_{k,l}x+b_{k,l}}{(x^2+b_k x+c_k)^l}
+P(x)+\sum_{i=1}^r\sum_{j=1}^{m_i}\frac{a_{i,j}}{(x-\zeta_i)^j}+\sum_{k=1}^s\sum_{l=1}^{n_k}\frac{b_{k,l}x+c_{k,l}}{(x^2+\beta_k x+\gamma_k)^l}
 \]
-where $P(x)$ is a polynomial, the $\zeta_1,\ldots,\zeta_r$ are the real zeros of the denominator with multiplicities $m_1,\ldots,m_r$, and $x^2+b_1 x+c_1,\ldots,x^2+b_s x+c_s$ are the irreducible factors of degree $2$ of the denominator with multiplicites $n_1,\ldots,n_s$—note that these come from the $2s$ conjugate pairs of complex roots of the denominator.
+where $P(x)$ is a polynomial, the $\zeta_1,\ldots,\zeta_r$ are the real zeros of the denominator with multiplicities $m_1,\ldots,m_r$, and $x^2+\beta_1 x+\gamma_1,\ldots,x^2+\beta_s x+\gamma_s$ are the irreducible factors of degree $2$ of the denominator with multiplicites $n_1,\ldots,n_s$—note that these come from the $2s$ conjugate pairs of complex roots of the denominator.
 </p>
 <p>
 Using computational algebra, we can efficiently construct the above decomposition for a rational function and so efficiently integrate rational functions. For doing so, we will employ polynomial division, the Ruffini-Horner method, and logarithmic derivatives.
