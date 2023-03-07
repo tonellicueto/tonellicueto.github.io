@@ -170,6 +170,42 @@ footer {
 	font-variant: small-caps;
 }
 
+.btn-extrabook, .btn-extrabook:active{
+  background-color: #ee2523;
+  border-color : white;
+  color: white;
+  width:11em;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-extrabook:hover, .btn-extrabook:focus{
+    background-color: #FFFFFF;
+    border-color: #ee2523;
+    color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:11em;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
 .btn-book:hover, .btn-book:focus{
   background-color: black;
   border-color: #f4d019;
