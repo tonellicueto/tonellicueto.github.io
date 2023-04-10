@@ -636,7 +636,7 @@ a) To consolidate the techniques of integration seen so far.
 b) Structure the techniques of integration seen so far in an unified way.
 </p>
 <h3 id="lec14">Lecture 14 (Mar 8)<br/>
-<em>Crahs Course on Differential Applications</em><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/4-introduction" role="button">Ch. 4</a><a class="btn btn-extrabook" href="https://archive.org/embed/AmelkinDifferentialEquationsInApplicationsScienceForEveryoneMir1990" role="button">Amelkin's Book</a></h3>
+<em>Crash Course on Differential Applications</em><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/4-introduction" role="button">Ch. 4</a><a class="btn btn-extrabook" href="https://archive.org/embed/AmelkinDifferentialEquationsInApplicationsScienceForEveryoneMir1990" role="button">Amelkin's Book</a></h3>
 <p>
 Differential equations play a central role in science, as they allow us to describe precisely how the different variables that we measure change in terms of the other variables that we measure. In general, understanding how a variable of interest—such as position, heat, concentration of a certain molecule—means understanding the underlying differential equation that describes how it varies. Now, solving differential equations
 \[\dot{x}=f(x,t),\]
@@ -664,7 +664,62 @@ c) Develop and analyze elementary mathematical models.
 <h3 id="lec1516">Lecture 15-16 (Mar 20 &amp; Mar 22)<br/>
 <em>Sequences I &amp; II</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Sequences" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-1-sequences" role="button">Sec. 5.1</a></h3>
 <p>
-
+In these lectures, we introduce <em>sequences</em>, their terminology and their properties. A sequence $\{a_n\}$ is an ordered infinite list of numbers of the form
+\[
+a_1,a_2,\ldots,a_n,\ldots~\text{ or }~a_0,a_1,a_2,\ldots,a_n,\ldots
+\]
+where we call each number $a_n$, the <em>$n$th term of the sequence</em> and the subscript $n$ the <em>index variable of the term $a_n$</em>.
+</p>
+<p>
+As we cannot give an infinite list of numbers by specifying each of the terms of the sequences. We have to give a sequence $\{a_n\}$ by specifying how to compute the general term $a_n$ out of the index variable $n$. To do this, we usually use either <em>formulas</em> or <em>recurrence relations</em>. For example, the sequence of odd numbers
+\[
+\{x_n\}_{n=0}^{\infty}:=\{1,3,5,7,9,11,\ldots\}
+\]
+can be given by a formula as
+\[
+x_n=2n+1
+\]
+or by a recurrence relation as
+\[
+x_n=\begin{cases}1&\text{if }n=0\\a_{n-1}+2&\text{if }n\geq 1.\end{cases}
+\]
+In particular, we introduce <em>arithmetic</em> and <em>geometric</em> sequences which are respectively of the form $\{an+b\}$ and $\{cr^n\}$.
+</p>
+<p>
+As the index variable $n$ goes to infinity, the $n$th term $a_n$ may approach a limit value $L$. We formally define the limit, $\lim_{n\to\infty}a_n$, of a sequence $\{a_n\}$ as the unique number $L$ for which for all $\varepsilon>0$, there is a number $N_{\varepsilon}$ such that for every (index variable) $n\geq N_{\varepsilon}$,
+\[L-\varepsilon< a_n< L+\varepsilon.\]
+In other words, no matter how small $\varepsilon>0$ is, the sequence will eventually lie between $L-\varepsilon$ and $L+\varepsilon$. A sequence with a limit is called <em>convergent</em> if it has a limit, and <em>divergent</em> otherwise. For certain divergent sequences $\{a_n\}$, we write $\lim_{n\to\infty}a_n=\infty$ or $\lim_{n\to\infty}a_n=-\infty$ to indicate that the limit does not exist because the sequence grows or decreases without a bound.
+</p>
+<p>
+The first example, we study is that of a geometric series showing that
+\[\lim_{n\to\infty}r^n=\begin{cases}\infty&\text{if }r>1\\1&\text{if }r=1\\0&\text{if }|r|<1\\\text{does not exist}&\text{if }r<-1.\end{cases}\]
+After this example, we study the <em>algebraic laws</em> of limits, showing that for convergent sequences $\{a_n\}$ and $\{b_n\}$,
+\[\lim_{n\to\infty}(a_n\pm b_n)=\lim_{n\to\infty}a_n\pm\lim_{n\to\infty}b_n,\,\text{ and }\,\lim_{n\to\infty}(a_n b_n)=\left(\lim_{n\to\infty}a_n\right)\left(\lim_{n\to\infty}b_n\right),\]
+and, if $\lim_{n\to\infty}b_n\neq 0$,
+\[
+\lim_{n\to\infty}(a_n/b_n)=\left(\lim_{n\to\infty}a_n\right)/\left(\lim_{n\to\infty}b_n\right).
+\]
+We also study the <em>continuity law</em> which states that for $f:I\rightarrow \mathbb{R}$ continuous and a convergent sequence $\{a_n\}$,
+\[
+\lim_{n\to\infty}f(a_n)=f\left(\lim_{n\to\infty}a_n\right).
+\]
+Finally, we study the <em>sandwich theorem</em> or <em>squeze theorem</em> that states that for sequences $\{a_n\}$, $\{b_n\}$ and $\{c_n\}$ such that $a_n\leq b_n\leq c_n$ and that $\lim_{n\to\infty}a_n=\lim_{n\to\infty}c_n=L$, we have that $\{b_n\}$ is convergent with
+\[\lim_{n\to\infty}a_n=L.\]
+</p>
+<p>
+To end this lesson, we learn how to compute the limit of quotients. To do so, we estudy the orders of growth of different sequences, so that, by identifying the fastest grwing terms in the numerator and the denominator, we can compute the limit. In particular, we study the growth rates of sequences of the form $\{\ln^{\alpha}n\}$, $\{n^{\beta}\}$ and $\{r^n\}$, by showing that for $\alpha,\beta>0$ and $r>1$, we have
+\[
+\lim_{n\to\infty}\frac{\ln^{\alpha}n}{n^{\beta}}=\lim_{n\to\infty}\frac{\ln^{\alpha}n}{r^n}=\lim_{n\to\infty}\frac{n^{\beta}}{r^n}=0.
+\]
+In other words, powers of logarithms grow qualitatively slower than powers which in turn grow qualitatively smaller than exponentials.
+</p>
+<p>
+We end up considering the notions of <em>boundedness</em> and <em>monoticity</em> for sequences. We shows that every convergent sequence is bounded, although the converse is not true as the alternating sequence $\{(-1)^n\}$ shows. However, the <em>monotone convergence theorem</em> shows that a bounded monotone sequence is convergent. This theorem is useful to determine the existence of limits and compute them assuming that they exist.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Karl_Weierstrass">Karl Weierstrass</a> (written <em>Karl Weierstraß</em> in German), a German mathematician who, together with <a href="https://en.wikipedia.org/wiki/Bernard_Bolzano">Bernard Bolzano</em>, is considered gave the foundations of calculus, giving birth to <a href="https://en.wikipedia.org/wiki/Mathematical_analysis">modern mathematical analysis</a>. Because of this major contribution, he is known as the &ldquo;father of modern analysis&rdquo;. Interestengly, Weierstrass dropped out of university and became a high school teacher, becoming an university professor due to his scientific publications on the side that allowed him to obtain an honorary doctor's degree.</p>
+<p>Additional materials to learn more:
+<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"><em>Karl Theodor Wilhelm Weierstrass</em> by J.J. O'Connor and E.F. Robertson in <em>MacTutor History of Mathematics Archive</em></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -678,7 +733,63 @@ c) Develop and analyze elementary mathematical models.
 <h3 id="lec1617">Lecture 16-17 (Mar 22 &amp; 27)<br/>
 <em>Infinite Series I &amp; II</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Infinite_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series" role="button">Sec. 5.2</a></h3>
 <p>
-
+A <em>series</em> is an infinite sum. To define the value of a series $\sum_{n=1}^\infty a_n$ we consider the finite sums $\sum_{n=1}^Na_n$ and consider the limit as we add more and more summands, i.e.,
+\[
+\sum_{n=1}^\infty a_n:=\lim_{N\to \infty}\sum_{n=1}^Na_n.
+\]
+It is important to observe that the initial index does not have to start with $n=1$, but it also can start with $n=0$ or with any other integer value. In general, we can always rewrite $\sum_{n=c}^\infty a_n$ as $\sum_{n=0}^\infty a_{n+c}$. Also, we note that when all the terms of a series are non-negative, then, by the Monotone Convergence Theorem, the limit sum is either a finite real number or $\infty$.
+</p>
+<p>
+After introducing series, we show the <em>algebraic laws</em> of limits, which state that
+\[
+\sum_{n=0}^{\infty} ca_n=c\,\sum_{n=0}^{\infty}a_n~\text{ and }~\sum_{n=0}^{\infty}(a_n\pm b_n)=\sum_{n=0}^{\infty}a_n\pm \sum_{n=0}^{\infty}b_n
+\]
+for $\sum_{n=0}^{\infty}a_n$ and $\sum_{n=0}^{\infty}b_n$ convergent. We note that $\sum_{n=0}^{\infty}(a_n+b_n)=\sum_{n=0}^{\infty}a_n+\sum_{n=0}^{\infty}b_n$ is still true for series of non-negative terms.
+</p>
+<p>
+We finish the lesson by introducing some examples, among which the most important ones are the <em>harmonic series</em>, the <em>geometric series</em> and the <em>telescoping series</em>. The harmonic series $\sum_{n=1}^\infty \frac{1}{n}$ is a divergent series for which we can show that $\sum_{n=1}^{2^N}\frac{1}{n}\geq 1+\frac{1}{2}(N-1)$ and so
+\[\sum_{n=1}^\infty \frac{1}{n}=\infty.\]
+The geometric series is a series of the form $\sum_{n=0}^\infty r^n$ for which we can obtain its exact value by noting that for the partial sum $\sum_{n=0}^Nr^n$ we have
+\[(1-r)\sum_{n=0}^Nr^n=\sum_{n=0}^N(r^n-r^{n+1})=(1-r)+(r-r^2)+\cdots+(r^N-r^{N+1})=1-r^{N+1}.\]
+Using this identity, we obtain that the geometric series converges if and only if $|r|< 1$, and that then
+\[
+\sum_{n=0}^{\infty}r^n=\frac{1}{1-r}
+~\text{ and }~
+\sum_{n=1}^{\infty}r^n=\frac{r}{1-r}.
+\]
+Finally, a telescoping series is a series that can be written in the form
+\[
+\sum_{n=0}^\infty (b_n-b_{n+1}).
+\]
+For such a series, we have that $\sum_{n=0}^\infty (b_n-b_{n+1})=b_0-\lim_{n\to\infty}b_{n}$ and so it is convergent if and only if $\{b_n\}$ is convergent. One should observe that a telescoping series might not be recognizable at first sight, such as
+\[\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n+1}\right).\]
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Zeno%27s_paradoxes">Zeno's paradoxes</a> are paradoxes related to infinity posed by <a href="https://en.wikipedia.org/wiki/Zeno_of_Elea">the Greek philosopher Zeno of Elea</a>. Calculus can be seen as a solution to the so-called Zeno's paradoxes of motion. Funnily, while Zeno was stating his paradoxes and affirming the movement didn't exist at all, <a href="https://en.wikipedia.org/wiki/Diogenes">the Greek philosopher Diogenes</a> stood up quietly and went away walking. This led to the expression</p>
+<blockquote style="text-align:center;font-variant: small-caps;">
+Movement is proven by Walking.
+</blockquote>
+<p>
+and the expression <a href="https://en.wikipedia.org/wiki/Solvitur_ambulando"><em>solvitur ambulando</em></a> (it is solved by walking) which is used to emphasize practical experience in the solution to certain theoretical problems. One of the aparadoxes, known as <em>Achilles and the tortoise</em>, is, as retold by Aristotles, as follows:
+</p>
+<blockquote style="text-align:justify;margin-left: 5%;">
+In a race, the quickest runner (Achilles) can never over­take the slowest (the tortoise), since the pursuer must first reach the point whence the pursued started, so that the slower must always hold a lead.
+</blockquote>
+<p>
+To solve the paradox, we can use the geometric series. Assume that Achilles runs at a constant speed $V$ and the tortoise at a constant speed $v$ having the tortoise a distance advantage of $s$ over Achilles. Initially, Achilles traverse this distance $s$ in a time of $s/V$. However, in that time the tortoise has moved $sv/V$. Again, Achilles has to traverse this distance, which reach after a time of $sv/V^2$, but in this time the tortoise has moved $(sv/V^2)v=s(v/V)^2$. Continuing so an so, we see that Achilles will reach the tortoise in a time of
+\[
+\frac{s}{V}+\frac{sv}{V^2}+\frac{sv^2}{V^3}+\frac{sv^3}{V^5}+\cdots=\sum_{n=0}^{\infty}\frac{sv^n}{V^{n+1}}.
+\]
+Now, since Achilles is faster than the tortoise, $v< V$, and so this a converging geometric series with a value of
+\[
+\frac{s}{V}\frac{1}{1-\frac{v}{V}}=\frac{s}{V-v}.
+\]
+</p>
+<p>Additional materials to learn more:
+<a href="https://plato.stanford.edu/entries/paradox-zeno/"><em>Zeno's Paradoxes</em> by N. Huggett in <em>Stanford Encyclopedia of Philosophy</em></a>.
+<a href="https://www.youtube.com/watch?v=u7Z9UnWOJNY"><em>Zeno's Paradox - Numberphile</em> in <em>Numberphile</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=EfqVnj-sgcc"><em>What is Zeno's Dichotomy Paradox? - Colm Kelleher</em> by C. Kelleher in <em>TED-Ed</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=EbHqtENNnSY"><em>3 Paradoxes That Gave Us Calculus</em> by J. Tan-Holmes in <em>Up and Atom</em> in youtube</a></a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -694,19 +805,67 @@ h) Find the sum of a telescoping series.
 <h3 id="lec18">Lecture 18 (Mar 29)<br/>
 <em>The Divergence and Integral Tests</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=The_Divergence_and_Integral_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-3-the-divergence-and-integral-tests" role="button">Sec. 5.3</a></h3>
 <p>
-
+The <em>divergence test</em> states that for a convergent series $\sum_{n}a_n$ we have that
+\[\lim_{n\to\infty}a_n=0.\]
+In other words, if a series is convergent, then the general term convergences to zero. However, although this is a necessary condition, it is not sufficient, since there are series, such as the Harmonic Series, which satisfy the divergence test, but that are diverging.
+</p>
+<p>
+The <em>integral test</em> is one of the most powerful criterions for convergence. In one of its forms, it states that: given a series $\sum_{n=0}^{\infty}a_n$ of non-negative terms and decreasing function $f:[0,\infty)\rightarrow [0,\infty)$ such that $a_n=f(n)$, then $\sum_{n=0}^{\infty}a_n$ converges if and only if $\int_0^{\infty}f(x)\,\mathrm{d}x$ converges. Moreover, one can refine this result to obtain error bounds for the approximation of the series in terms of the partial sums. Unfortunately, finding the function $f:[0,\infty)\rightarrow [0,\infty)$ in the statement of the integral test is the most difficult part for applying the test. This can be seen in the series
+\[
+\sum_{n=1}^{\infty}\left(\frac{1}{n^2}+\sin^2(\pi n)\right)
+\]
+which is convergent, but for which the naive choice $f(x)=\frac{1}{x^2}+\sin^2(\pi x)$ gives a function for which $\int_1^\infty$\,f(x)\,\mathrm{d}x$ diverges—note that $f$ is not decreasing in this case.
+</p>
+<p>
+The most important case of application of the integral test are $p$-series. A <em>$p$-series</em> is a series of the form
+\[
+\sum_{n=1}^\infty \frac{1}{n^p},
+\]
+which, for $p=1$, we recover the Harmonic Series. For these series, using the integral test, we have that $\sum_{n=1}^\infty \frac{1}{n^p}$ converges if and only if $p>1$.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://es.wikipedia.org/wiki/Leonhard_Euler">Leonhard Eulers</a>, a Swiss mathematician who is the most prolific mathematician of all history. His works do not cover all branches of mathematics, but his works are pioneering in areas such as <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a> or <a href="https://en.wikipedia.org/wiki/Topology">topology</a>, which are central in contemporary mathematics.
+</p>
+<p>
+For example, Euler was a pioneer in graph theory, by solving the so-called <a href="https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg">problem of the seven bridges of Königsberg</a>. This problem ask whether was possible to walk in the city of Königsberg crossing all the birdges of the city once and only once. Euler provided a negative solution, showing why this was not possible. Since then graph theory has evolved a branch of mathematics not only of theoretical interest, but of great practical importance. Nevertheless, this is only a small sample of the impact of the work of Euler.
+</p>
+<p>Additional materials to learn more:
+<a href="https://www.youtube.com/watch?v=nZwSo4vfw6c"><em>How the Königsberg bridge problem changed mathematics - Dan Van der Vieren</em> by D. Van der Vieren in <em>TED-Ed</em> in youtube</a>.
+<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Euler/"><em>Leonhard Euler</em> by J.J. O'Connor and E.F. Robertson in the <em>MacTutor History of Mathematics Archive</em></a>.
+<a href="https://www.youtube.com/watch?v=nbumSy_KPz4"><em>¿Por qué LEONHARD EULER es mi matemático favorito? (Spanish) [Why is Leonhard Euler my favorite mathematician?]</em> by E. Sáenz de Cabezón in <em>Derivando</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=kEYUDWf_UpQ"><em>A (very) Brief History of Leonhard Euler</em> in <em>moderndaymath</em> in youtube</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
 a) Use the Divergence Test to determine whether a series diverges.
 b) Use the Integral Test to determine whether a series converges or diverges.
-c) Use the $p$-Series Test to determine whether a series converges or diverges.
-d) Estimate the sum of a series by finding bounds on its remainder term.
+c) Estimate the sum of a series by finding bounds on its remainder term.
 </p>
 <h3 id="lec19">Lecture 19 (Apr 3)<br/>
 <em>Comparison Test</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Comparison_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-4-comparison-tests" role="button">Sec. 5.4</a></h3>
 <p>
-
+The <em>comparisson test</em> allows us to determine the convergence of a non-negative series by comparing it with another non-negative series. This test is as follows: Let $\sum_na_n$ and $\sum_nb_n$ be series of non-negative terms such that for all sufficiently large $n$, $a_n\leq b_n$. If $\sum_na_n$ diverges, then $\sum_nb_n$ diverges; and if $\sum_nb_n$ converges, then $\sum_na_n$ converges. This test is used by comparing with well-known series such as the geometric series and the $p$-series.
+</p>
+<p>
+The <em>limit comparisson test</em> allows us to determine the convergence/divergence of a series by assymptotically comparing the series with another one. In its most simple form, it states the following: Let $\sum_na_n$ and $\sum_nb_n$ be series of non-negative terms. If $\lim_{n\infty}\frac{a_n}{b_n}=L\in (0,\infty)$, then $\sum_na_n$ converges if and only if $\sum_nb_n$ converges. However, if $\lim_{n\infty}\frac{a_n}{b_n}=0$ and $\sum_nb_n$ converges, then $\sum_na_n$ converges; and if $\lim_{n\infty}\frac{a_n}{b_n}=\infty$ and $\sum_nb_n$ diverges, then $\sum_na_n$ diverges.
+</p>
+<p>
+To use the limit comparisson test the best way is to identify the order of growth of the general term of the series. For example, to determine the convergence of
+\[\sum_{n=1}^\infty \frac{6n-5}{2n^3-n},\]
+we note that the fastest growing term in the numerator is $6n$ and in the denominator is $2n^3$. Hence, we obtain that
+\[
+1=\lim_{n\to\infty} \left(\frac{6n-5}{2n^3-n}\right)/\left(\frac{6n}{2n^3}\right)=\lim_{n\to\infty} \left(\frac{6n-5}{2n^3-n}\right)/\left(\frac{3}{n^2}\right).
+\]
+Hence $\sum_{n=1}^\infty \frac{6n-5}{2n^3-n}$ converges if and only if $\sum_{n=1}^\infty \frac{3}{n^2}$ converges. However, the latter is a $2$-series, and so it converges. In this way, the limit comparisson test allows us to determine converge by looking at the order of convergence to zero of the general term of the series.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Sofya_Kovalevskaya">Sofia Kovalevskaya</a>, a Russian mathematician who is known by her work in <a href="https://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equations<a/> and <a href="https://en.wikipedia.org/wiki/Mechanics">mechanics</a>, particularly for the <a href="https://en.wikipedia.org/wiki/Cauchy%E2%80%93Kowalevski_theorem">Cauchy-Kovalevskaya theorem</a> and the <a href="https://en.wikipedia.org/wiki/Lagrange,_Euler,_and_Kovalevskaya_tops">so-called Kovalevskaya top</a>. After being privately letured by the German mathematician Karl Weierstrass, she was the first woman to earn a doctorate (in the modern sense) in mathematics and to become a full professor in Europe.
+</p>
+<p>Additional materials to learn more:
+<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/"><em>Sofia Vasilyevna Kovalevskaya</em> by J.J. O'Connor and E.F. Robertson in the <em>MacTutor History of Mathematics Archive</em></a>.
+<a href="https://link.springer.com/book/10.1007/978-0-85729-929-1"><em>Remembering Sofya Kovalevskaya</em> by M. Audin published by <em>Springer</em> in 2011</a>.
+<a href="https://mujeresconciencia.com/2014/10/15/sofia-kovalevskaya-retrato-alfabetico/"><em>Sofia Kovalevskaya, retrato alfabético</em> by M. Audin in <em>mujeres con ciencia</em></a>.
+<a href="https://www.youtube.com/watch?v=pGpUGuhJVIA"><em>Sofya Kovalevskaya: Unsung Heroes of Science 2020</em> by Almudena in <em>Hertford College, Oxford</em> in youtube</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -716,7 +875,35 @@ b) Use the Limit Comparison Test to determine whether a series converges or dive
 <h3 id="lec20">Lecture 20 (Apr 5)<br/>
 <em>Alternating Sequences</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Alternating_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-5-alternating-series" role="button">Sec. 5.5</a></h3>
 <p>
-
+We study why the Alternating Harmonic Series,
+\[
+\sum_{n=1}^\infty \frac{(-1)^n}{n},
+\]
+converges. After thinking how this happens, we arrived to the so-called <em>Alternating Series Test</em> (also known as <em>Leibniz's Criterion</em>) which states that for a decreasing sequences $\{a_n\}$ of non-negative numbers converging to zero, i.e., for all $n$, $a_n\geq a_{n+1}\geq 0$ and $\lim_{n\to\infty}a_n=0$; the alternating series
+\[
+\sum_n(-1)^na_n
+\]
+converges.
+</p>
+<p>
+By considering re-orderings of the Alternating Harmonic Series, we see that
+\[\sum_{n=1}^\infty \frac{(-1)^n}{n}~\text{ and }~\sum_{n=1}^\infty\left(\frac{1}{4n-2}+\frac{1}{4n}-\frac{1}{2n+1}\right)\]
+have different sums. In other words, infinite sums might not be commutative. Because of this, we say that a series $\sum_na_n$ is <em>absolutely convergent</em> if
+\[\sum_n|a_n|\]
+converges, and <em>conditionally convergent</em> if it is convergent, but not absolutely convergent. We can easily see that absolutely convergent series are convergent, which allow us to use the tests we know for non-negative series for general series.
+</p>
+<p>
+Finally, we introduce <em>Riemann's Rearrangement Theorem</em> which motivates why we differentiate between absolute and conditional convergence. The theorem states the following: If $\sum_na_n$ converges absolutely, then, no matter how we re-arrange its terms, the series will converge to the same limit. However, if $\sum_na_n$ converges conditionally, then we can re-arrange the terms of the series in such a way that the series converges to any real number, or that it diverges to $\infty$, $-\infty$ or no value at all.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://es.wikipedia.org/wiki/Bernhard_Riemann">Bernhard Riemann</a>, a German mathematician known for his work in <a href="https://en.wikipedia.org/wiki/Mathematical_analysis">analysis</a>, <a href="https://en.wikipedia.org/wiki/Number_theory">number theory</a> and <a href="https://en.wikipedia.org/wiki/Differential_geometry">differential geometry</a>. In the latter, <a href="https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/">Riemann's lecture <em>&ldquo;On the Hypotheses on which Geometry is Based&rdquo;</em></a>; gave rise to the so-called <a href="https://en.wikipedia.org/wiki/Riemannian_geometry">Riemannian Geometry</a> which became foundational in the creation of <a href="https://en.wikipedia.org/wiki/General_relativity">General Relativity</a> by <a href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a>.
+</p>
+<p>Additional materials to learn more:
+<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/"><em>Georg Friedrich Bernhard Riemann</em> by J.J. O'Connor and E.F. Robertson in the <em>MacTutor History of Mathematics Archive</em></a>.
+<a href="https://www.youtube.com/watch?v=YYGfqpivvQI"><em>A (very) Brief History of Bernhard Riemann</em> in <em>moderndaymath</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=d6c6uIyieoo"><em>The Riemann Hypothesis - Numberphile</em> in <em>Numberphile</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=sD0NjbwqlYw"><em>Visualizing the Riemann zeta function and analytic continuation</em> in
+<em>3Blue1Brown</em> in youtube</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -727,7 +914,36 @@ c) Explain the meaning of absolute convergence and conditional convergence.
 <h3 id="lec21">Lecture 21 (Apr 10)<br/>
 <em>Ratio and Root Tests</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Ratio_and_Root_Tests" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/5-6-ratio-and-root-tests" role="button">Sec. 5.6</a></h3>
 <p>
-
+The ratio and root tests are tests based in the assymptotic comparisson with a geometric series. For the <em>ratio test</em>, we consider
+\[
+\rho=\lim_{n\to]infty}\frac{|a_{n+1}|}{|a_n|},
+\]
+and for the <em>root test</em>,
+\[
+\rho=\lim_{n\to]infty}|a_n|^{\frac{1}{n}}.
+\]
+In both cases, we have that if $\rho< 1$, then the series $\sum_n a_n$ is absolutely convergent; and if $\rho>1$, then $\sum_n a_n$ is divergent. However, if $\rho=1$, we cannot conclude anything.
+</p>
+<p>
+In general, the root test is stronger than the ratio test. If both $\lim_{n\to]infty}\frac{|a_{n+1}|}{|a_n|}$ and $\lim_{n\to]infty}|a_n|^{\frac{1}{n}}$ exist, then they are equal. However, for some series, such as
+\[\sum_{n=1}^\infty 3^{-n+\ln n},\]
+the ratio test gives absolute convergence, while the ratio test is inconclusive.
+</p>
+<p>
+<em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan M. Turing</a>, an English mathematician known for his foundational contributions to <a href="https://en.wikipedia.org/wiki/Computer_scientist">computer science</a>. He is considered the father of <a href="https://en.wikipedia.org/wiki/Theoretical_computer_science">theoretical computer science</a> and <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">artificial intelligence</a>. Among his most well-known theoretical contributions, we find
+the <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a>, which is the first theorical model for a <a href="https://en.wikipedia.org/wiki/Computer">general-purpose computer</a>;
+the <a href="https://en.wikipedia.org/wiki/Condition_number">matrix condition number</a>, which marks the foundation of <a href="https://en.wikipedia.org/wiki/Numerical_analysis">Numerical Analysis</a>;
+and the <a href="https://en.wikipedia.org/wiki/Turing_test">Turing test</a>, which is a fundamental thought experiment in the study of Artifical Intelligence.
+</p>
+<p>
+Additionally, Alan M. Turing was a pioneer in cryptography, being his work fundamental in the victory of the Allies in Second World War. In this war, he and his team (where we should mention <a href="https://en.wikipedia.org/wiki/Gordon_Welchman">Gordon Welchman</a> and <a href="https://en.wikipedia.org/wiki/Harold_Keen">Harold Keen</a> among many others) in <a href="https://en.wikipedia.org/wiki/Bletchley_Park">Bletchley Park</a> constructed one of the first computers, <a href="https://en.wikipedia.org/wiki/Bombe">the <em>Bombe</em></a>, to decode the transmissions of the <a href="https://en.wikipedia.org/wiki/Enigma_machine">German <em>Enigma</em> machine</a>. Despite this, after the discovery of his homosexuality in 1952, he was condemned and submitted to inhuman treatment. It was not until half a century later, in 2013, when Alan Turing was pardoned posthumously for the crimes due to his homosexuality. Fortunately, this law was followed by the so-called <a href="https://en.wikipedia.org/wiki/Alan_Turing_law">Alan Turing Law</a> that pardoned posthumously all men condemned for participating in homosexual acts.
+</p>
+<p>Additional materials to learn more:
+<a href="https://mathshistory.st-andrews.ac.uk/Biographies/Turing/"><em>Alan Mathison Turing</em> by J.J. O'Connor and E.F. Robertson in the <em>MacTutor History of Mathematics Archive</em></a>.
+<a href="https://www.youtube.com/watch?v=nCGF7QZvyTI"><em>The Life and Death of Alan Turing</em> in <em>Weird History</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=PLVCscCY4xI"><em>Turing Machines - How Computer Science Was Created By Accident</em> by J. Tan-Holmes in <em>Up and Atom</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=t37GQgUPa6k"><em>The Halting Problem - An Impossible Problem to Solve</em> by J. Tan-Holmes in <em>Up and Atom</em> in youtube</a>.
+<a href="https://www.youtube.com/watch?v=3wLqsRLvV-c"><em>The Turing test: Can a computer pass for a human? - Alex Gendler</em> by A. Gendler in <em>TED-Ed</em> in youtube</a>.
 </p>
 <p>
 <b>Learning Objectives:</b>
@@ -738,6 +954,14 @@ c) Describe a strategy for testing the convergence or divergence of a series.
 <h3 id="lec22">Lecture 22 (Apr 12)<br/>
 <em style="font-variant: small-caps;">Review of Series</em></h3>
 <p>
+In this lecture, we will review all what we have seen about infinite series so far in the course: <a href="#lec1516">sequences and their convergence</a>, <a href="#lec1617">series and their convergence</a>, <a href="#lec18">the divergence and the integral test</a>, <a href="#lec19">the comparisson test</a>, <a href="#lec20">the alternating test</a> and <a href="#lec21">the ratio and the root tests</a>.
+</p>
+<p>
+At the core of this lecture, we will find a general discussion of how to approach problems regarding the convergence, absolute/conditional convergence and divergence of series.
+</p>
+<h3 id="lec23">Lecture 23 (Apr 17)<br/>
+<em>Power Series and Functions</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Power_Series_and_Functions" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-1-power-series-and-functions" role="button">Sec. 6.1</a></h3>
+<p>
 
 </p>
 <p>
@@ -746,8 +970,8 @@ a) Identify a power series.
 b) Determine the interval of convergence and radius of convergence of a power series.
 c) Use a power series to represent certain functions.
 </p>
-<h3 id="lec23">Lecture 23 (Apr 17)<br/>
-<em>Power Series and Functions</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Power_Series_and_Functions" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-1-power-series-and-functions" role="button">Sec. 6.1</a></h3>
+<h3 id="lec24">Lecture 24 (Apr 24)<br/>
+<em>Properties of Power Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Properties_of_Power_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-2-properties-of-power-series" role="button">Sec. 6.2</a></h3>
 <p>
 
 </p>
@@ -758,8 +982,8 @@ b) Multiply two power series together.
 c) Differentiate and integrate power series term-by-term.
 d) Use differentiation and integration of power series to represent certain functions as power series.
 </p>
-<h3 id="lec24">Lecture 24 (Apr 19)<br/>
-<em>Properties of Power Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Properties_of_Power_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-2-properties-of-power-series" role="button">Sec. 6.2</a></h3>
+<h3 id="lec25">Lecture 25 (Apr 26)<br/>
+<em>Taylor and Maclaurin Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Taylor_and_Maclaurin_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series" role="button">Sec. 6.3</a></h3>
 <p>
 
 </p>
@@ -769,19 +993,6 @@ a) Find a Taylor or Maclaurin series representation of a function.
 b) Find the radius of convergence of a Taylor Series or Maclaurin series.
 c) Finding a Taylor polynomial of a given order for a function.
 d) Use Taylor's Theorem to estimate the remainder for a Taylor series approximation of a given function.
-</p>
-<h3 id="lec25">Lecture 25 (Apr 24)<br/>
-<em>Taylor and Maclaurin Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Taylor_and_Maclaurin_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series" role="button">Sec. 6.3</a></h3>
-<p>
-
-</p>
-<p>
-<b>Learning Objectives:</b>
-</p>
-<h3 id="lec26">Lecture 26 (Apr 26)<br/>
-<em style="font-variant: small-caps;">Review of Power Series</em></h3>
-<p>
-
 </p>
 <h3 id="lec27">Lecture 27 (May 1)<br/>
 <em style="font-variant: small-caps;">Review for Final Exam</em></h3>
@@ -931,7 +1142,7 @@ The midterm exams will take place in the following days (any change will be comm
 <ul style="list-style: none;">
   <li><b>1st Midterm Exam:</b> February 13, 8:00 am - 8:50 am.</li>
   <li><b>2nd Midterm Exam:</b> March 8, 8:00 am - 8:50 am.</li>
-  <li><b>3rd Midterm Exam:</b> April 17, 8:00 am - 8:50 am.</li>
+  <li><b>3rd Midterm Exam:</b> April 19, 8:50 am - 9:40 am.</li>
 </ul>
 <p>In case you cannot attend the class the day of the midterm exam, you should inform the instructor as soon as possible and always before the exam. Otherwise, no alternative arrangement will be possible.</p>
 <h3>Final Exam (May 10, 9:00 am-10:50 am)</h3>
