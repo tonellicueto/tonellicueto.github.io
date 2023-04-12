@@ -1052,7 +1052,7 @@ with interval of convergence $(-1,1]$ and radius of convergence $R=1$.
 <p>
 As of now, we have seen one power series, the geometric series $\sum_{n=0}^\infty x_n$. This power series has radious of convergence $1$ and interval of convergence $(-1,1)$, where this series satisfies
 \[\sum_{n=0}^\infty x_n=\frac{1}{1-x}.\]
-Note that conbiming this series and using the algebraic laws for series, we can write several rational functions where zero is not a root of the denominator as power series centered at $x=0$.
+Note that combining this series and using the algebraic laws for series, we can write several rational functions where zero is not a root of the denominator as power series centered at $x=0$.
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Maryna_Viazovska">Maryna Viazovska</a>, an Ukranian mathematician known for her work in <a href="https://en.wikipedia.org/wiki/Sphere_packing">sphere packing</a>, where she solved the problem in eight and twenty-four dimensions. Because of these contributions, in 2022, she was awarded the <a href="https://en.wikipedia.org/wiki/Fields_Medal">Fields Medal</a> which is the most prestigious prize that a mathematician under 40 years old can win.
@@ -1071,7 +1071,18 @@ c) Use a power series to represent certain functions.
 <h3 id="lec24">Lecture 24 (Apr 24)<br/>
 <em>Properties of Power Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Properties_of_Power_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-2-properties-of-power-series" role="button">Sec. 6.2</a></h3>
 <p>
-
+How can generate new power series out of series that we now? We can add, multiply, differentiate and integrate existing power series in order to get new ones. In this way, given power series $\sum_{n=0}^\infty c_nx^n$ and $\sum_{n=0}^\infty \tilde{c}_nx^n$ and $x\in I$ where $I$ is an interval where both series converge absolutely, we have the following:
+\[\left(\sum_{n=0}^\infty c_nx^n\right)\pm \left(\sum_{n=0}^\infty \tilde{c}_nx^n\right)=\sum_{n=0}^\infty \left(c_n\pm \tilde{c}_n\right)x^n\]
+\[\left(\sum_{n=0}^\infty c_nx^n\right)\left(\sum_{n=0}^\infty \tilde{c}_nx^n\right)=\sum_{n=0}^\infty \left(\sum_{i=0}^n c_i \tilde{c}_{n-i}\right)x^n\]
+\[\left(\sum_{n=0}^\infty c_nx^n\right)'=\sum_{n=0}^\infty \left(c_n x^n\right)'=\sum_{n=0}^\infty n c_n x^{n-1}\]
+\[\int\left(\sum_{n=0}^\infty c_nx^n\right)\mathrm{d}x=\sum_{n=0}^\infty \int\left(c_n x^n\right)\mathrm{d}x=\sum_{n=0}^\infty \frac{c_n}{n+1} x^{n+1}+C\]
+\[\int_a^x\left(\sum_{n=0}^\infty c_nt^n\right)\mathrm{d}t=\sum_{n=0}^\infty \int_a^x\left(c_n t^n\right)\mathrm{d}t=\sum_{n=0}^\infty \frac{c_n}{n+1} x^{n+1}-\sum_{n=0}^\infty \frac{c_n}{n+1} a^{n+1}\]
+Hence, by doing arithmetic operations and differentiating and integrating term-by-term power series, we can power series for new functions in term of old functions. For example, by integrating
+\[\frac{1}{1+x^2}=\sum_{n=0}^{\infty}(-1)^nx^{2n},\]
+we obtain
+\[\arctan(x)=\sum_{n=0}^\infty \frac{(-1)^n}{2n+1}x^{2n+1}\]
+with radius of convergence $1$. Now, for $x=1$, this series converges by the alternating series test, and so
+\[\frac{\pi}{4}=\sum_{n=0}^\infty \frac{(-1)^n}{2n+1}.\]
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan">Srinivasa Ramanujan</a>, an Indian mathematician who made significant contributions <a href="https://en.wikipedia.org/wiki/Mathematical_analysis">mathematical analysis</a>, <a href="https://en.wikipedia.org/wiki/Number_theory">number theory</a>, <a href="https://en.wikipedia.org/wiki/Series_(mathematics)">infinite series</a> and <a href="https://en.wikipedia.org/wiki/Continued_fraction">continued fractions</a>, even though he lacked formal training as a mathematician.
@@ -1102,7 +1113,19 @@ d) Use differentiation and integration of power series to represent certain func
 <h3 id="lec25">Lecture 25 (Apr 26)<br/>
 <em>Taylor and Maclaurin Series</em><a class="btn btn-wiki" href="https://mathresearch.utsa.edu/wiki/index.php?title=Taylor_and_Maclaurin_Series" role="button">UTSA Wiki</a><a class="btn btn-book" href="https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series" role="button">Sec. 6.3</a></h3>
 <p>
-
+For now, we only now how to sum one power series: the geometric series. However, the <em>Taylor series</em> of a function $f:I\rightarrow \mathbb{R}$ at a point $a$,
+\[\sum_{n=0}^{\infty}\frac{1}{n!}f^{(n)}(a)(x-a)^n=f(a)+f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+\frac{f'''(a)}{6}(x-a)^3+\cdots,\]
+allows us to obtain power series for the so-called \emph{analytic functions}, which includes the exponential, the sine, the cosine, the tangent, the $n$th root (of a positive number) and all the functions obtained by adding, substacting, multiplying, dividing and composing them.
+</p>
+<p>
+In general, it is difficult to tell if an arbitrary function can be written as a Taylor series. Even if the series converges, there is no guarantee of equality beyond the center. For example, the function
+\[f(x)=\begin{cases}\mathrm{e}^{-\frac{1}{x^2}}&\text{if }x\neq 0\\0&\text{if }x=0\end{cases}\]
+has the Taylor series $\sum_{n=0}^\infty 0x^n$ at $0$, but it is equal to zero only at $x=0$. However, to obtain obtaining the sum of different power series, it is enough to know the power series of the elementary functions mentioned in the previous paragrapgh and know how to combine them to obtain the power series we want to obtain the value of.
+</p>
+<p>
+Nevertheless, the <em>Taylor's theorem with Remainder</em> states that for $x\in [a-R,a+R]$,
+\[\left|f(x)-\sum_{n=0}^N\frac{1}{n!}f^{(n)}(a)(x-a)\right|\leq \frac{1}{(N+1)!}\max_{t\in [a-R,a+R]}\left|f^{(N+1)}(t)\right|R^{N+1}.\]
+This result allow us to estimate any sufficiently good function $f$ by partial sums of its Taylor series around any point, even if the Taylor series does not converge to the function. 
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Joseph_Fourier">Joseph Fourier</a>, a French mathematician and physicist most well known for the series and transform that bear his name: <a href="https://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> and <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier Transform</a>. These notions led to the development of <a href="https://en.wikipedia.org/wiki/Harmonic_analysis">Harmonic analysis</a> and of modern analysis as we know it today. Fourier series are an alternative to Taylor series, which in many areas—such quantum mechanics, partial differential equations and signal analysis—play a central role. The Fourier transform is very important in computation, where the so-called <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a> is at the center of many of today's efficient algorithms.
