@@ -1115,7 +1115,7 @@ d) Use differentiation and integration of power series to represent certain func
 <p>
 For now, we only now how to sum one power series: the geometric series. However, the <em>Taylor series</em> of a function $f:I\rightarrow \mathbb{R}$ at a point $a$,
 \[\sum_{n=0}^{\infty}\frac{1}{n!}f^{(n)}(a)(x-a)^n=f(a)+f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+\frac{f'''(a)}{6}(x-a)^3+\cdots,\]
-allows us to obtain power series for the so-called \emph{analytic functions}, which includes the exponential, the sine, the cosine, the tangent, the $n$th root (of a positive number) and all the functions obtained by adding, substacting, multiplying, dividing and composing them.
+allows us to obtain power series for the so-called <em>analytic functions</em>, which includes the exponential, the sine, the cosine, the tangent, the $n$th root (of a positive number) and all the functions obtained by adding, substacting, multiplying, dividing and composing them.
 </p>
 <p>
 In general, it is difficult to tell if an arbitrary function can be written as a Taylor series. Even if the series converges, there is no guarantee of equality beyond the center. For example, the function
@@ -1125,7 +1125,7 @@ has the Taylor series $\sum_{n=0}^\infty 0x^n$ at $0$, but it is equal to zero o
 <p>
 Nevertheless, the <em>Taylor's theorem with Remainder</em> states that for $x\in [a-R,a+R]$,
 \[\left|f(x)-\sum_{n=0}^N\frac{1}{n!}f^{(n)}(a)(x-a)\right|\leq \frac{1}{(N+1)!}\max_{t\in [a-R,a+R]}\left|f^{(N+1)}(t)\right|R^{N+1}.\]
-This result allow us to estimate any sufficiently good function $f$ by partial sums of its Taylor series around any point, even if the Taylor series does not converge to the function. 
+This result allow us to estimate any sufficiently good function $f$ by partial sums of its Taylor series around any point, even if the Taylor series does not converge to the function.
 </p>
 <p>
 <em>MathInContext</em>: <a href="https://en.wikipedia.org/wiki/Joseph_Fourier">Joseph Fourier</a>, a French mathematician and physicist most well known for the series and transform that bear his name: <a href="https://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> and <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier Transform</a>. These notions led to the development of <a href="https://en.wikipedia.org/wiki/Harmonic_analysis">Harmonic analysis</a> and of modern analysis as we know it today. Fourier series are an alternative to Taylor series, which in many areas—such quantum mechanics, partial differential equations and signal analysis—play a central role. The Fourier transform is very important in computation, where the so-called <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a> is at the center of many of today's efficient algorithms.
@@ -1327,6 +1327,8 @@ UTSA continues its partnership with TutorMe, a free 24/7 online tutoring platfor
 <p>The following extra materials will be helpful.</p>
 <div class="row" style="text-align:center;"><div class="col-md-6">
   <a class="btn btn-secondary" href="../pdf/Table_of_Derivatives_and_Antiderivatives.pdf" role="button" style="width:70%;">Table of Derivatives and Antiderivatives</a>
+</div><div class="col-md-6">
+  <a class="btn btn-secondary" href="../pdf/Useful_Limits_for_Understanding_Growth.pdf" role="button" style="width:70%;">Useful Limits for Understanding Growth</a>
 </div><!--<div class="col-md-6">
   <a class="btn btn-secondary" href="" role="button" style="width:70%;"></a>
 </div>-->
@@ -1369,6 +1371,10 @@ UTSA continues its partnership with TutorMe, a free 24/7 online tutoring platfor
        x[i].style="font-size:1.4em;font-weight:bold;";
       }
     x = document.getElementsByClassName("btn btn-book");
+    for (i = 0; i < x.length; i++) {
+     x[i].style="width:100%;";
+    }
+    x = document.getElementsByClassName("btn btn-extrabook");
     for (i = 0; i < x.length; i++) {
      x[i].style="width:100%;";
     }
