@@ -85,25 +85,25 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2023-05-30</lastmod>
+    <lastmod>2023-06-07</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2023-05-30</lastmod>
+    <lastmod>2023-06-07</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/Long_CV_tonellicueto.pdf</loc>
-    <lastmod>2023-02-28</lastmod>
+    <lastmod>2023-06-07</lastmod>
     <priority>1</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/pdf/UnDetailed_CV_tonellicueto.pdf</loc>
-    <lastmod>2023-02-28</lastmod>
+    <lastmod>2023-06-07</lastmod>
     <priority>1</priority>
    </url>
 
@@ -433,6 +433,21 @@
 </url>
 
 <!--Posters-->
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/FoCM2023_posterI.pdf</loc>
+<lastmod>2022-06-07</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/FoCM2023_posterII.pdf</loc>
+<lastmod>2022-06-07</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/FoCM2023_posterIII.pdf</loc>
+<lastmod>2022-06-07</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/RSMEUMA2_poster.pdf</loc>
