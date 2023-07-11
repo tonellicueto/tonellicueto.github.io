@@ -85,13 +85,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <lastmod>2023-07-11</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <lastmod>2023-07-11</lastmod>
     <priority>0.9</priority>
    </url>
 
@@ -297,10 +297,10 @@
 
 <!--Slides-->
 
-<!--<url>
-<loc>https://tonellicueto.xyz/pdf/RSME2023_slides.pdf</loc>
-<lastmod>2023-01-06</lastmod>
-</url>-->
+<url>
+<loc>https://tonellicueto.xyz/pdf/SIAMAG23_slides.pdf</loc>
+<lastmod>2023-07-11</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/23CodExTalk_slides.pdf</loc>
