@@ -272,20 +272,32 @@
 
 <!-- Portrait-->
 <url>
-<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index000.JPG</loc>
-<lastmod>2022-01-18</lastmod>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index000.jpg</loc>
+<lastmod>2022-08-15</lastmod>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index001.jpg</loc>
-<lastmod>2022-01-18</lastmod>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index001.png</loc>
+<lastmod>2022-08-15</lastmod>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index002.jpg</loc>
-<lastmod>2022-04-22</lastmod>
+<lastmod>2022-08-15</lastmod>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index003.png</loc>
+<lastmod>2022-08-15</lastmod>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/imgs/josue_tonellicueto_index004.png</loc>
+<lastmod>2022-08-15</lastmod>
 <priority>0.6</priority>
 </url>
 
