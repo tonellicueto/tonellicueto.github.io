@@ -108,7 +108,14 @@
     <div class="jumbotron" style="margin-bottom: 0px;">
      <div class="row" style="display: flex;">
       <div class="col-md-5" align="center">
-            <img id="profilepic" itemprop="image" src="imgs/index002.jpg" style="width: 66.5%;" class="img-responsive center_image" alt="Fotograf&iacute;a de Josu&eacute; Tonelli Cueto en Inria.  &copy; Inria / Photo B. Fourrier" onclick="changeProfileImage()"/>
+        <img id="profilepic0"  itemprop="image" src="imgs/index000.jpg" style="width: 66.5%;display: none;" class="img-responsive center_image" alt="Retrato de Josu&eacute; Tonelli-Cueto por Emmi Arvidsson." onclick="changeProfileImage()"/>
+        <img id="profilepic1" itemprop="image" src="imgs/index001.png" style="width: 80%;display: none;" class="img-responsive center_image" alt="Retrato de Josu&eacute; Tonelli-Cueto en la TU Berlin por Evgeniya Lagoda." onclick="changeProfileImage()"/>
+        <img id="profilepic2" itemprop="image" src="imgs/index002.jpg" style="width: 66.5%;display: none;" class="img-responsive center_image" alt="Retrato de Josu&eacute; Tonelli-Cueto en Inria.  &copy; Inria / Foto B. Fourrier." onclick="changeProfileImage()"/>
+        <img id="profilepic3" itemprop="image" src="imgs/index003.png" style="width: 64.4%;display: none;" class="img-responsive center_image" alt="Retrato de Josu&eacute; Tonelli-Cueto con Gato Suchen por Evgeniya Lagoda." onclick="changeProfileImage()"/>
+        <img id="profilepic4" itemprop="image" src="imgs/index004.png" style="width: 66.5%;display: block;" class="img-responsive center_image" alt="Retrato de Josu&eacute; Tonelli-Cueto con un tel&eacute;fono por Evgeniya Lagoda." onclick="changeProfileImage()"/>
+
+        <img id="profilepicclicks0" itemprop="image" src="imgs/indexclicks.jpg" style="width: 62.7%;display: none;" class="img-responsive center_image" alt="Gato Suchen diciendo en inglés que no hay más clicks." onclick="changeProfileImage()"/>
+        <img id="profilepicclicks1" itemprop="image" src="imgs/indexclicks1.jpg" style="width: 73.5%;display: none;" class="img-responsive center_image" alt="Gato Suchen meando y preguntandose por qué la persona sigue dando clicks." onclick="changeProfileImage()"/>
       </div>
       <div class="col-md-7" style="text-align:center;">
 
@@ -148,7 +155,14 @@
 <footer style="padding-top:1em;">
     <p style="text-align:left;margin-bottom:0;padding-bottom:0;">&emsp;&emsp;&copy;Josu&eacute; Tonelli-Cueto
         <span id="finalsentence" style="float:right;"> C&oacute;digo de la p&aacute;gina creado por el arte de copiar, pegar y cruzar los dedos&emsp;&emsp;</span></p>
-    <p style="text-align:left;margin-top:0;padding-top:0;" id="copyrightimage">&emsp;&emsp;Retrato: &copy; Inria / Photo B. Fourrier</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimage0">&emsp;&emsp;Retrato hecho por Emmi Arvidsson.</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimage1">&emsp;&emsp;Retrato tomado por Evgeniya Lagoda.</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimage2">&emsp;&emsp;Retrato tomado por B. Fourrier (&copy; Inria).</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimage3">&emsp;&emsp;Retrato tomado por Evgeniya Lagoda</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:block;" id="copyrightimage4">&emsp;&emsp;Retrato tomado por Evgeniya Lagoda</p>
+
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimageclicks0">&emsp;&emsp;Foto tomada por Josu&eacute; Tonelli-Cueto</p>
+    <p style="text-align:left;margin-top:0;padding-top:0;display:none;" id="copyrightimageclicks1">&emsp;&emsp;Foto tomada por Josu&eacute; Tonelli-Cueto</p>
 <hr style="margin: 0;">
 </footer> <!--  /container  -->
 
@@ -162,50 +176,80 @@
     <!-- change of profile image -->
     <script type="text/javascript">
     <!--
-    let count=0;
-    let profimgs=3;
-    let lim=3*profimgs;
+    let count=-1;
+    let profimgs=4;
+    let rand=Math.floor(Math.random() * (profimgs+1))%(profimgs+1);
+    let lim=4*(profimgs+1);
     function changeProfileImage() {
     count++;
     if (count < lim){
-     if (count%profimgs == 2)
+      document.getElementById("profilepic0").style.display="none";
+      document.getElementById("copyrightimage0").style.display="none";
+      document.getElementById("profilepic1").style.display="none";
+      document.getElementById("copyrightimage1").style.display="none";
+      document.getElementById("profilepic2").style.display="none";
+      document.getElementById("copyrightimage2").style.display="none";
+      document.getElementById("profilepic3").style.display="none";
+      document.getElementById("copyrightimage3").style.display="none";
+      document.getElementById("profilepic4").style.display="none";
+      document.getElementById("copyrightimage4").style.display="none";
+
+     if (count > 0){rand=(Math.floor(Math.random() * profimgs)+1+rand)%(profimgs+1);}
+
+     if (rand==0)
      {
-         document.getElementById("profilepic").style="width: 66.5%;"
-         document.getElementById("profilepic").src = "imgs/index001.jpg";
-         document.getElementById("profilepic").alt = "Retrato de Josu&eacute; Tonelli Cueto hecho por Emmi Arvidsson";
-         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Emmi Arvidsson";
+       document.getElementById("profilepic0").style.display="block";
+       document.getElementById("copyrightimage0").style.display="block";
      }
-     else if (count%profimgs == 0)
+     else if (rand==1)
      {
-         document.getElementById("profilepic").style="width: 66.5%;"
-         document.getElementById("profilepic").src = "imgs/index002.jpg";
-         document.getElementById("profilepic").alt = "Fotograf&iacute;a de Josu&eacute; Tonelli Cueto en Inria.  &copy; Inria / Photo B. Fourrier";
-         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Inria / Photo B. Fourrier";
+       document.getElementById("profilepic1").style.display="block";
+       document.getElementById("copyrightimage1").style.display="block";
      }
-     else if (count%profimgs == 1)
+     else if (rand==2)
      {
-         document.getElementById("profilepic").style="width: 80%;"
-         document.getElementById("profilepic").src = "imgs/index000.png";
-         document.getElementById("profilepic").alt = "Fotograf&iacute;a de Josu&eacute; Tonelli Cueto en la TU Berlin";
-         document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Retrato: &copy; Evgeniya Lagoda";
+       document.getElementById("profilepic2").style.display="block";
+       document.getElementById("copyrightimage2").style.display="block";
+     }
+     else if (rand==3)
+     {
+       document.getElementById("profilepic3").style.display="block";
+       document.getElementById("copyrightimage3").style.display="block";
+     }
+     else if (rand==4)
+     {
+       document.getElementById("profilepic4").style.display="block";
+       document.getElementById("copyrightimage4").style.display="block";
      }
     }
     else if (count == lim)
     {
-        document.getElementById("profilepic").style="width: 62.7%;"
-        document.getElementById("profilepic").src = "imgs/indexclicks.jpg";
-        document.getElementById("profilepic").alt = "Gato Suchen diciendo que no m&aacute;s clicks en ingl&eacute;s";
-        document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Imagen: &copy; Josu&eacute; Tonelli Cueto";
+        document.getElementById("profilepic0").style.display="none";
+        document.getElementById("copyrightimage0").style.display="none";
+        document.getElementById("profilepic1").style.display="none";
+        document.getElementById("copyrightimage1").style.display="none";
+        document.getElementById("profilepic2").style.display="none";
+        document.getElementById("copyrightimage2").style.display="none";
+        document.getElementById("profilepic3").style.display="none";
+        document.getElementById("copyrightimage3").style.display="none";
+        document.getElementById("profilepic4").style.display="none";
+        document.getElementById("copyrightimage4").style.display="none";
+
+        document.getElementById("profilepicclicks0").style.display="block";
+        document.getElementById("copyrightimageclicks0").style.display="block";
     }
-    else if (count == 5*profimgs)
+    else if (count == lim +10)
     {
-        document.getElementById("profilepic").style="width: 73.5%;"
-        document.getElementById("profilepic").src = "imgs/indexclicks1.jpg";
-        document.getElementById("profilepic").alt = "Gato Suchen peeing";
-        document.getElementById("copyrightimage").innerHTML = "&emsp;&emsp;Imagen: &copy; Josu&eacute; Tonelli Cueto";
+       document.getElementById("profilepicclicks0").style.display="none";
+       document.getElementById("copyrightimageclicks0").style.display="none";
+
+       document.getElementById("profilepicclicks1").style.display="block";
+       document.getElementById("copyrightimageclicks1").style.display="block";
     }
     else {}
     }
+
+    window.onload = changeProfileImage;
     //-->
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -228,7 +272,7 @@
       for (i = 0; i < x.length; i++) {
        x[i].style="font-size:1em;font-weight:bold;";
     }
-    x[0].innerHTML='Postdoc en<br/><a href="https://www.utsa.edu/">UT San Antonio</a>';
+    x[0].innerHTML='Postdoc en<br/><a href="https://www.jhu.edu/">John Hopkins University</a>';
     x = document.getElementsByClassName("jumbotron");
      x[0].style="margin-bottom: 0.4em;";
     x = document.getElementsByClassName("col-md-5");
