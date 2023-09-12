@@ -108,8 +108,8 @@
     <!--  Main jumbotron for a primary marketing message or call to action  -->
 
 <div class="jumbotron" style="margin-bottom: 0px;">
- <div class="row" style="display: flex;">
-  <div class="col-md-5" align="center">
+ <div class="row" style="display:flex;align-items: center;">
+  <div class="col-md-5" style="text-align:center;">
        <img id="profilepic0"  itemprop="image" src="imgs/index000.jpg" style="width: 66.5%;display: none;" class="img-responsive center_image" alt="Portrait of Josu&eacute; Tonelli-Cueto by Emmi Arvidsson." onclick="changeProfileImage()"/>
        <img id="profilepic1" itemprop="image" src="imgs/index001.png" style="width: 80%;display: none;" class="img-responsive center_image" alt="Picture of Josu&eacute; Tonelli-Cueto at TU Berlin by Evgeniya Lagoda." onclick="changeProfileImage()"/>
        <img id="profilepic2" itemprop="image" src="imgs/index002.jpg" style="width: 66.5%;display: none;" class="img-responsive center_image" alt="Picture of Josu&eacute; Tonelli-Cueto at Inria.  &copy; Inria / Photo B. Fourrier." onclick="changeProfileImage()"/>
@@ -127,26 +127,29 @@
         <!--<h4 style="color:#ee2523;font-variant: small-caps;">In the Job Market</h4>-->
 
         <div class="row" align="center" style="padding-top:3vw;font-size:2vw;"><!--3vw padding top if not searching for a job, 1vw otherwise!-->
-          <div class="col">
+          <div class="col-md-6">
             <a class="btn btn-secondary" href="aboutme.html" role="button" style="width:80%;">About me</a>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <a class="btn btn-secondary" href="https://illsaidthoughts.xyz/" role="button" style="width:80%;">Blog</a>
           </div>
       </div>
       <div class="row" align="center" style="padding-top:2vw;font-size:2vw;">
-          <div class="col">
+          <div class="col-md-6">
             <a class="btn btn-phd" href="doctoralthesis.html" role="button" style="width:80%;">Doctoral thesis</a>
           </div>
-          <div class="col">
+          <!--<div class="col-md-6">
             <a class="btn btn-pikasle"  href="https://pikasle.com/" role="button" style="width:80%;">$\pi kasle$</a>
+          </div>-->
+          <div class="col-md-6">
+            <a class="btn btn-jovenesrsme2025"  href="https://jovenes2025.rsme.es/index_en.html" role="button" style="width:80%;">jóvenesRSME2025</a>
           </div>
       </div>
       <div class="row" align="center" style="padding-top:2vw;font-size:2vw;">
-          <div class="col">
+          <div class="col-md-6">
              <a class="btn btn-arxiv" href="arXiv.html" role="button" style="width:80%;"><i class="ai ai-arxiv-square"></i> my arXiv</a>
           </div>
-          <div class="col">
+          <div class="col-md-6">
              <a class="btn btn-secondary" href="contact.html" role="button" style="width:80%;">Contact me</a>
           </div>
        </div>
@@ -283,8 +286,6 @@
      x[1].style="font-size:1em;padding-top:5vw;";
      x[2].style="font-size:1em;padding-top:5vw;";
      x[3].style="font-size:1em;padding-top:5vw;";
-    x = document.getElementsByClassName("btn btn-phd");
-     x[0].innerHTML="Doc. thesis";
     document.getElementById("finalsentence").innerHTML="";
     }
     //-->

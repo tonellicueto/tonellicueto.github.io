@@ -170,6 +170,14 @@
 <!-- COURSES -->
 
 <url>
+ <loc>https://tonellicueto.xyz/JHU_probability_fall2023.html</loc>
+ <lastmod>2023-09-12</lastmod>
+ <priority>0.3</priority>
+</url>
+
+
+
+<url>
  <loc>https://tonellicueto.xyz/UTSA_MAT1224_spring2023.html</loc>
  <lastmod>2023-04-09</lastmod>
  <priority>0.3</priority>

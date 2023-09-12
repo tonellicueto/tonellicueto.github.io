@@ -137,6 +137,22 @@ footer {
     width:30%;font-size:inherit;
 }
 
+.btn-jovenesrsme2025, .btn-jovenesrsme2025:active{
+	background-color: black;
+	border-color : white;
+	color: white;
+  width:30%;font-size:inherit;
+}
+
+.btn-jovenesrsme2025:hover, .btn-jovenesrsme2025:focus{
+    background-color: white;
+		border-color: black;
+		color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:30%;font-size:inherit;
+}
+
 
 span a, span a:active, span a:hover{
     color: #ee2523;

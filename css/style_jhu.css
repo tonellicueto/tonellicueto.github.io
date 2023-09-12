@@ -1,0 +1,286 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+html body{
+background-color : #FFFFFF;
+}
+body {
+  margin-top: 35px;
+  padding-top: 2rem;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.jumbotron {
+    margin-bottom: 50px;
+    background-color:#002D72;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+footer {
+    color:#FFFFFF;
+    background-color:#002D72;
+}
+
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0.05px;
+  width: auto;
+}
+
+.navbar-default {
+  background-color:teal;
+  color: blue;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+.navbar-custom {
+	color:#002D72;
+	background-color:#FFFFFF;
+}
+.navbar-custom2 {
+	color:#FFFFFF;
+	background-color:#002D72;
+}
+
+
+/*Maybe the important can be quit in the future, for now, this works*/
+.nav-pills>li>a{
+     color: #FFFFFF!important;
+}
+
+.nav-pills>li>a.active,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background-color: #FFFFFF!important;
+    color: #002D72!important;
+    font-style:normal;font-variant:normal;
+}
+
+
+
+.navbar-nav > .active > a{color: #FFFFFF!important; background-color: #002D72;}
+.navbar-nav > li > a:hover{color: #FFFFFF!important; background-color: #002D72;font-style:normal;font-variant:normal;}
+.navbar-nav > li > a{color: #002D72!important; font-size: 1.3em;}
+
+
+
+.navbar-nav > li > .dropdown-menu {background-color:  #00B7EB;}
+
+.navbar-nav > li > .dropdown-menu a{color: #002D72;}
+
+.navbar-nav > li > .dropdown-menu a:hover{background-color: #00B7EB;}
+
+.btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
+  background-color: #002D72;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+	font-weight:bold;
+	font-variant: small-caps;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
+  background-color: #FFFFFF;
+  border-color : #002D72;
+  color: #002D72;
+	font-weight:bold;
+}
+
+.btn-MGP, .btn-MGP:active{
+	background-color: #88480a;
+  border-color : #002D72;
+  color: #002D72;
+  width:49%;
+}
+
+.btn-MGP:hover, .btn-MGP:focus{
+	background-color: #002D72;
+  border-color : #88480a;
+  color: #88480a;
+  width:49%;
+  font-size:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  font-variant:inherit;
+}
+
+.btn-wiki, .btn-wiki:active{
+  background-color: #FFFFFF;
+	border-color : #002D72;
+	color: #002D72;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-wiki:hover, .btn-wiki:focus{
+  background-color: #002D72;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-book, .btn-book:active{
+  background-color: #f4d019;
+	border-color : black;
+	color: black;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-booktop, .btn-booktop:active{
+  background-color: #f4d019;
+	border-color : black;
+	color: black;
+  font-weight:bold;
+	font-variant: small-caps;
+}
+
+.btn-extrabook, .btn-extrabook:active{
+  background-color: #ee2523;
+  border-color : white;
+  color: white;
+  width:11em;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-extrabook:hover, .btn-extrabook:focus{
+    background-color: #FFFFFF;
+    border-color: #ee2523;
+    color: black;
+    font-variant:inherit;
+    font-style:inherit;
+    width:11em;
+    display: inline;
+    font-size:medium;
+    float:right;
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+    height:1.5em;
+    width:11em;
+    padding: 0em 0em;
+    text-align: center;
+}
+
+.btn-book:hover, .btn-book:focus{
+  background-color: #002D72;
+  border-color: #f4d019;
+  color: #f4d019;
+  display: inline;
+  font-size:medium;
+  float:right;
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+  height:1.5em;
+  width:11em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.btn-booktop:hover, .btn-booktop:focus{
+  background-color: black;
+  border-color: #f4d019;
+  color: #f4d019;
+  font-weight:bold;
+}
+
+
+span a, span a:active, span a:hover{
+    color: #002D72;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: medium;
+}
+
+ a { color: inherit; }
+
+ a:active, a:hover{
+    color: #FFFFFF;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: inherit;
+}
+
+p{
+  text-align:justify;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+
+.infocomputer td:nth-child(even){
+	color:#002D72;
+	font-weight:normal;
+	text-align:left;
+  padding: 0 0.5em;
+}
+
+.infocomputer td:nth-child(odd){
+	color:#31261D;
+	font-weight:bold;
+	text-align:right;
+	padding: 0 0.5em;
+}
+
+.phone tr:nth-child(even){
+	color:#002D72;
+	font-weight:normal;
+	text-align:right;
+  padding: 0 0.5em;
+}
+
+.phone tr:nth-child(odd) td{
+	color:#31261D;
+	font-weight:bold;
+	text-align:left;
+	padding: 0 0.5em;
+}
