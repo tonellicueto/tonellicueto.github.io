@@ -85,13 +85,13 @@
 
    <url>
     <loc>https://tonellicueto.xyz/cv.html</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-07-25</lastmod>
     <priority>0.9</priority>
    </url>
 
    <url>
     <loc>https://tonellicueto.xyz/cv_es.html</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-07-25</lastmod>
     <priority>0.9</priority>
    </url>
 
@@ -316,6 +316,16 @@
 </url>
 
 <!--Slides-->
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/MEGA2024_slides.pdf</loc>
+<lastmod>2024-07-25</lastmod>
+</url>
+
+<url>
+<loc>https://tonellicueto.xyz/pdf/ISSAC24_slides.pdf</loc>
+<lastmod>2024-07-25</lastmod>
+</url>
 
 <url>
 <loc>https://tonellicueto.xyz/pdf/BIRSCMO2024A_slides.pdf</loc>
